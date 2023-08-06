@@ -1,0 +1,155 @@
+
+THE_EARTHKINGDOM = {
+    icon = earth_kingdom
+
+	visible = {
+		ROOT = {
+			is_in_array = {
+				array = global.earth_kingdom
+				value = THIS.id
+			}
+		}
+	}
+	visible_when_empty = yes
+
+	scripted_gui = earth_kingdom_ui
+
+	priority = {
+		base = 1000
+	}
+}
+
+WESTERN_ALLIANCE = {
+    icon = western_kingdom
+
+	visible = {
+		ROOT = {
+			is_in_array = {
+				array = global.western_alliance
+				value = THIS.id
+			}
+		}
+	}
+	visible_when_empty = yes
+
+	scripted_gui = western_alliance_ui
+
+	priority = {
+		base = 1000
+	}
+}
+
+earth_factions_category = {
+    icon = earth_kingdom
+
+	visible = {
+		AND = {
+			capital_scope = {
+				OR = {
+					is_on_continent = europe
+					is_on_continent = north_america
+					is_on_continent = south_america
+				}
+			}
+		}
+	}
+
+	priority = {
+		base = 1000
+	}
+}
+
+EAR_dai_li_category = {
+    icon = dai_li
+
+    picture = GFX_decision_cat_ear_dai_li
+
+	visible = {
+		TAG = EAR
+	}
+	#visible_when_empty = yes
+
+	priority = {
+		base = 900
+	}
+}
+
+EAR_firenation_hostility_category = {
+    icon = conquest
+
+    picture = GFX_decision_cat_fir_colonies
+
+	visible = {
+		TAG = EAR
+	}
+	#visible_when_empty = yes
+
+	priority = {
+		base = 700
+	}
+}
+
+EAR_ba_sing_se_wall = {
+    icon = dai_li
+
+    picture = GFX_decision_cat_ba_sing_se_wall
+
+	visible = {
+		TAG = EAR
+	}
+
+	priority = {
+		base = 600
+	}
+}
+
+#Earth kingdom Defense
+EAR_defense_category = {
+    icon = military_operation
+
+	picture = GFX_decision_cat_ear_defense
+
+	visible = {
+		has_idea = earth_nation
+	}
+
+	priority = {
+		base = 10
+	}
+}
+
+earth_economic_buildup_category = {
+    icon = GFX_decision_category_buildup
+
+	picture = GFX_decision_cat_ear_buildup
+
+	visible = {
+		has_idea = earth_nation
+	}
+}
+
+earth_military_buildup_category = {
+    icon = GFX_decision_category_military_buildup
+
+	picture = GFX_decision_cat_ear_military
+
+	visible = {
+		has_idea = earth_nation
+	}
+}
+earth_chenbao_nwt_conflict = {
+	allowed = {
+		OR = {
+			original_tag = NWT
+			original_tag = MER
+			original_tag = NAT
+		}
+	}
+	priority = 950
+	icon = GFX_decision_category_military_buildup
+	visible = {
+		NOT = {
+			has_start_date > 15.1.1
+		}
+	}
+}

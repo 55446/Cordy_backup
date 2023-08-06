@@ -1,0 +1,181 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					has_start_date < 13.1.1
+				}
+				set_global_flag = avatar_aang
+				set_global_flag = avatar_born_air
+				set_global_flag = avatar_sat
+				set_global_flag = avatar_team_appa
+				set_global_flag = avatar_team_gyatso
+
+				set_variable = { global.avatar_age = 12 }
+				set_variable = { global.avatar_influence = 50 }
+				set_variable = { global.avatar_spirituality = 25 }
+				set_variable = { global.avatar_state = 0 }
+				set_variable = { global.avatar_airbender_skill = 80 }
+				set_variable = { global.avatar_waterbender_skill = 0 }
+				set_variable = { global.avatar_earthbender_skill = 0 }
+				set_variable = { global.avatar_firebender_skill = 0 }
+				every_country = {
+					set_country_flag = avatar_friendly
+				}
+			}
+			if = {
+				limit = {
+					has_start_date > 13.1.1
+				}
+				set_global_flag = avatar_aang
+				set_global_flag = avatar_born_air
+				set_global_flag = avatar_team_appa
+				set_global_flag = avatar_unknown
+				set_global_flag = avatar_iceberg
+
+				if = {
+					limit = {
+						has_start_date < 60.01.01
+					}
+					set_variable = { global.avatar_age = 52 }
+				}
+				if = {
+					limit = {
+						has_start_date > 60.01.01
+						has_start_date < 3925.01.01
+					}
+					set_variable = { global.avatar_age = 106 }
+				}
+				if = {
+					limit = {
+						has_start_date > 3925.01.01
+						has_start_date < 113.01.01
+					}
+					set_variable = { global.avatar_age = 111 }
+				}
+				set_variable = { global.avatar_influence = 20 }
+				set_variable = { global.avatar_airbender_skill = 100 }
+				set_variable = { global.avatar_waterbender_skill = 0 }
+				set_variable = { global.avatar_earthbender_skill = 0 }
+				set_variable = { global.avatar_firebender_skill = 0 }
+
+				set_variable = { global.appa_strength = 0 }
+				set_variable = { global.momo_strength = 0 }
+				set_variable = { global.hawky_strength = 0 }
+				set_variable = { global.gyatso_strength = 0 }
+				set_variable = { global.katara_strength = 0 }
+				set_variable = { global.zuko_strength = 0 }
+				set_variable = { global.toph_strength = 0 }
+				set_variable = { global.iroh_strength = 0 }
+				set_variable = { global.sokka_strength = 0 }
+				set_variable = { global.suki_strength = 0 }
+				set_variable = { global.boulder_strength = 0 }
+				set_variable = { global.jet_strength = 0 }
+				set_variable = { global.bumi_strength = 0 }
+				
+				set_variable = { global.zuko_chance = 0 }
+				set_variable = { global.black_sun_invasion = 0 }
+				set_variable = { global.white_lotus_strenght = 0 }
+				every_country = {
+					set_country_flag = avatar_friendly
+				}
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+			clamp_variable = {
+			    var = global.avatar_influence
+			    min = 0
+			    max = 100
+			}
+			clamp_variable = {
+			    var = global.avatar_spirituality
+			    min = 0
+			    max = 100
+			}
+			clamp_variable = {
+			    var = global.avatar_state
+			    min = 0
+			    max = 100
+			}
+			clamp_variable = {
+			    var = global.avatar_airbender_skill
+			    min = 0
+			    max = 100
+			}
+			clamp_variable = {
+			    var = global.avatar_waterbender_skill
+			    min = 0
+			    max = 100
+			}
+			clamp_variable = {
+			    var = global.avatar_earthbender_skill
+			    min = 0
+			    max = 100
+			}
+			clamp_variable = {
+			    var = global.avatar_firebender_skill
+			    min = 0
+			    max = 100
+			}
+		}
+	}
+
+	on_monthly = {
+		effect = {
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+				if = {
+					limit = {
+						OR = {
+							has_global_flag = avatar_team_katara
+						}
+					}
+					add_to_variable = {
+					    var = global.avatar_waterbender_skill
+					    value = 1
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_global_flag = avatar_team_toph
+							has_global_flag = avatar_team_boulder
+							has_global_flag = avatar_team_bumi
+						}
+					}
+					add_to_variable = {
+					    var = global.avatar_earthbender_skill
+					    value = 1
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_global_flag = avatar_team_zuko
+						}
+					}
+					add_to_variable = {
+					    var = global.avatar_firebender_skill
+					    value = 1
+					}
+				}
+				if = {
+					limit = {
+						OR = {
+							has_global_flag = avatar_team_gyatso
+						}
+					}
+					add_to_variable = {
+					    var = global.avatar_airbender_skill
+					    value = 1
+					}
+				}
+			}
+		}
+	}
+}

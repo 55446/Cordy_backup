@@ -1,0 +1,75 @@
+state={
+	id=40
+	name="STATE_40"
+	manpower = 11600
+	state_category = large_town
+
+	history={
+		owner = LAM
+		controller = LAM
+		add_core_of = LAM
+		
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+	
+		victory_points = { 6105 40 }
+	
+		12.1.1 = {
+			owner = LAM
+			controller = LAM
+			add_core_of = LAM
+
+			buildings = {
+				infrastructure = 3
+				dockyard = 2
+				ranch = 1
+				lumber_mill = 2
+				mine = 3
+				masonry = 1
+			}
+		}
+
+		52.5.16 = {
+			owner = LAM
+			controller = LAM
+		}
+
+		106.2.4 = {
+			owner = LAM
+			controller = FIR
+		}
+
+		111.10.30 = {
+			owner = LAM
+			controller = FIR
+		}
+	}
+
+	provinces={
+		68 160 1000 2864 3273 4308 4348 4424 6089 6099 6105 6110 6122 6157 
+	}
+}

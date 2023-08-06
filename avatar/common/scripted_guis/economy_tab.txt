@@ -1,0 +1,862 @@
+
+scripted_gui = {
+
+	production_tab_ui = {
+		context_type = player_context
+		window_name = "production_tab_ui_window"
+		parent_window_token = production_tab
+
+	}
+
+	state_deposit_mapicon_gui = {
+		context_type = state_mapicon
+		window_name = "state_deposit_mapicon_gui"
+		#parent_window_token = construction_tab
+		#dirty = ROOT.state_lore_text_state_id
+		visible = { ROOT = { has_country_flag = state_deposit_mapicon_visible } }
+		mapicon_targets = {
+			target_array = global.states
+		}
+		effects = {
+			
+		}
+		properties = {
+			
+		}
+	}
+
+	economy_tab_ui = {
+		context_type = player_context
+		window_name = "economy_tab_ui_window"
+		parent_window_token = construction_tab
+
+		triggers = {
+
+			toggle_auto_visible = {
+				NOT = {
+					has_country_flag = auto_construction_interface
+				}
+			}
+			toggle_vanilla_visible = {
+				has_country_flag = auto_construction_interface
+			}
+
+			famine_icon_visible = {
+				has_dynamic_modifier = { modifier = famine }
+			}
+			food_shortages_icon_visible = {
+				has_dynamic_modifier = { modifier = food_shortages }
+			}
+			food_surplus_icon_visible = {
+				has_dynamic_modifier = { modifier = food_surplus_idea }
+			}
+			burgerking_icon_visible = {
+				has_dynamic_modifier = { modifier = burgerking }
+			}
+
+			extreme_poverty_icon_visible = {
+				has_dynamic_modifier = { modifier = extreme_poverty }
+			}
+			poverty_icon_visible = {
+				has_dynamic_modifier = { modifier = poverty }
+			}
+			struggeling_icon_visible = {
+				has_dynamic_modifier = { modifier = struggeling }
+			}
+			middeling_icon_visible = {
+				has_dynamic_modifier = { modifier = middeling }
+			}
+			wealth_icon_visible = {
+				has_dynamic_modifier = { modifier = wealth }
+			}
+			extreme_wealth_icon_visible = {
+				has_dynamic_modifier = { modifier = extreme_wealth }
+			}
+
+			mil_to_civ_icon_visible = {
+				check_variable = { military_ic_transfer > 0 }
+			}
+			civ_to_mil_icon_visible = {
+				check_variable = { military_ic_transfer < 0 }
+			}
+
+			toggle_core_visible = {
+				NOT = {
+					has_country_flag = core_all_construction_flag
+				}
+				has_country_flag = auto_construction_interface
+			}
+			toggle_all_visible = {
+				has_country_flag = core_all_construction_flag
+				has_country_flag = auto_construction_interface
+			}
+
+		}
+
+		effects = {
+
+			toggle_core_click = {
+				ROOT = {
+					set_country_flag = core_all_construction_flag
+				}
+			}
+			toggle_all_click = {
+				ROOT = {
+					clr_country_flag = core_all_construction_flag
+				}
+			}
+
+			state_deposits_view_click = {
+				if = {
+					limit = {
+						has_country_flag = state_deposit_mapicon_visible
+					}
+					clr_country_flag = state_deposit_mapicon_visible
+				}
+				else = { set_country_flag = state_deposit_mapicon_visible }
+			}
+
+
+			toggle_auto_click = {
+				ROOT = {
+					set_country_flag = auto_construction_interface
+				}
+			}
+			toggle_vanilla_click = {
+				ROOT = {
+					clr_country_flag = auto_construction_interface
+				}
+			}
+		}
+
+		properties = {
+			large_ratio_bar = {
+				frame = ration_ratio_var
+			}
+        }
+
+	}
+	
+
+
+
+	auto_construction_ui = {
+		context_type = player_context
+		window_name = "auto_construction_ui_window"
+		parent_window_token = construction_tab
+
+		visible = {
+			has_country_flag = auto_construction_interface
+		}
+
+		triggers = {
+
+			farm_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = farm
+							size > 0
+							include_locked = no
+						}
+						check_variable = { field > 0 }
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = farm
+							size > 0
+							include_locked = no
+						}
+						check_variable = { field > 0 }
+						is_core_of = ROOT
+					}
+				}
+			}
+			mill_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = mill
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = mill
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			fishing_stand_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = fishing_stand
+							size > 0
+							include_locked = no
+						}
+						check_variable = { water > 0 }
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = fishing_stand
+							size > 0
+							include_locked = no
+						}
+						check_variable = { water > 0 }
+						is_core_of = ROOT
+					}
+				}
+			}
+			ranch_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = ranch
+							size > 0
+							include_locked = no
+						}
+						check_variable = { animal > 0 }
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = ranch
+							size > 0
+							include_locked = no
+						}
+						check_variable = { animal > 0 }
+						is_core_of = ROOT
+					}
+				}
+			}
+			lumber_mill_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = lumber_mill
+							size > 0
+							include_locked = no
+						}
+						check_variable = { forest > 0 }
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = lumber_mill
+							size > 0
+							include_locked = no
+						}
+						check_variable = { forest > 0 }
+						is_core_of = ROOT
+					}
+				}
+			}
+			quarry_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = quarry
+							size > 0
+							include_locked = no
+						}
+						check_variable = { stonefield > 0 }
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = quarry
+							size > 0
+							include_locked = no
+						}
+						check_variable = { stonefield > 0 }
+						is_core_of = ROOT
+					}
+				}
+			}
+			mine_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = mine
+							size > 0
+							include_locked = no
+						}
+						check_variable = { mountain > 0 }
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = mine
+							size > 0
+							include_locked = no
+						}
+						check_variable = { mountain > 0 }
+						is_core_of = ROOT
+					}
+				}
+			}
+			crop_weaving_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = crop_weaving
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = crop_weaving
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			animal_weaving_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = animal_weaving
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = animal_weaving
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			steelworks_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = steelworks
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = steelworks
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+
+			smithy_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = arms_factory
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			factory_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = factory
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			harbour_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = harbour
+							size > 0
+							include_locked = no
+						}
+						is_coastal = yes
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = harbour
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+				}
+			}
+			dockyard_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = no
+						}
+						is_coastal = yes
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = dockyard
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+						is_coastal = yes
+					}
+				}
+			}
+			consumer_good_factory_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = consumer_good_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = consumer_good_factory
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			luxury_good_factory_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = luxury_good_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = luxury_good_factory
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			manufactory_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = industrial_complex
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			carpentry_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = carpentry
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = carpentry
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			masonry_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = masonry
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = masonry
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+			steel_beam_factory_construction_click_enabled = {
+				if = {
+					limit = {
+						has_country_flag = core_all_construction_flag
+					}
+					any_owned_state = {
+						free_building_slots = {
+							building = steel_beam_factory
+							size > 0
+							include_locked = no
+						}
+					}
+				}
+				else = {
+					any_owned_state = {
+						free_building_slots = {
+							building = steel_beam_factory
+							size > 0
+							include_locked = no
+						}
+						is_core_of = ROOT
+					}
+				}
+			}
+		}
+
+		effects = {
+
+			farm_construction_click = {
+				add_farm_random = yes
+			}
+			farm_construction_shift_click = {
+				add_farm_random = yes
+				add_farm_random = yes
+				add_farm_random = yes
+				add_farm_random = yes
+				add_farm_random = yes
+			}
+			mill_construction_click = {
+				add_mill_random = yes
+			}
+			mill_construction_shift_click = {
+				add_mill_random = yes
+				add_mill_random = yes
+				add_mill_random = yes
+				add_mill_random = yes
+				add_mill_random = yes
+			}
+			fishing_stand_construction_click = {
+				add_fishing_stand_random = yes
+			}
+			fishing_stand_construction_shift_click = {
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+				add_fishing_stand_random = yes
+			}
+			ranch_construction_click = {
+				add_ranch_random = yes
+			}
+			ranch_construction_shift_click = {
+				add_ranch_random = yes
+				add_ranch_random = yes
+				add_ranch_random = yes
+				add_ranch_random = yes
+				add_ranch_random = yes
+			}
+			lumber_mill_construction_click = {
+				add_lumber_mill_random = yes
+			}
+			lumber_mill_construction_shift_click = {
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+				add_lumber_mill_random = yes
+			}
+			quarry_construction_click = {
+				add_quarry_random = yes
+			}
+			quarry_construction_shift_click = {
+				add_quarry_random = yes
+				add_quarry_random = yes
+				add_quarry_random = yes
+				add_quarry_random = yes
+				add_quarry_random = yes
+			}
+			mine_construction_click = {
+				add_mine_random = yes
+			}
+			mine_construction_shift_click = {
+				add_mine_random = yes
+				add_mine_random = yes
+				add_mine_random = yes
+				add_mine_random = yes
+				add_mine_random = yes
+			}
+			crop_weaving_construction_click = {
+				add_crop_weaving_random = yes
+			}
+			crop_weaving_construction_shift_click = {
+				add_crop_weaving_random = yes
+				add_crop_weaving_random = yes
+				add_crop_weaving_random = yes
+				add_crop_weaving_random = yes
+				add_crop_weaving_random = yes
+			}
+			animal_weaving_construction_click = {
+				add_animal_weaving_random = yes
+			}
+			animal_weaving_construction_shift_click = {
+				add_animal_weaving_random = yes
+				add_animal_weaving_random = yes
+				add_animal_weaving_random = yes
+				add_animal_weaving_random = yes
+				add_animal_weaving_random = yes
+			}
+			steelworks_construction_click = {
+				add_steelworks_random = yes
+			}
+			steelworks_construction_shift_click = {
+				add_steelworks_random = yes
+				add_steelworks_random = yes
+				add_steelworks_random = yes
+				add_steelworks_random = yes
+				add_steelworks_random = yes
+			}
+
+			smithy_construction_click = {
+				add_smithy_random = yes
+			}
+			smithy_construction_shift_click = {
+				add_smithy_random = yes
+				add_smithy_random = yes
+				add_smithy_random = yes
+				add_smithy_random = yes
+				add_smithy_random = yes
+			}
+			factory_construction_click = {
+				add_factory_random = yes
+			}
+			factory_construction_shift_click = {
+				add_factory_random = yes
+				add_factory_random = yes
+				add_factory_random = yes
+				add_factory_random = yes
+				add_factory_random = yes
+			}
+			harbour_construction_click = {
+				add_harbour_random = yes
+			}
+			harbour_construction_shift_click = {
+				add_harbour_random = yes
+				add_harbour_random = yes
+				add_harbour_random = yes
+				add_harbour_random = yes
+				add_harbour_random = yes
+			}
+			dockyard_construction_click = {
+				add_dockyard_random = yes
+			}
+			dockyard_construction_shift_click = {
+				add_dockyard_random = yes
+				add_dockyard_random = yes
+				add_dockyard_random = yes
+				add_dockyard_random = yes
+				add_dockyard_random = yes
+			}
+			consumer_good_factory_construction_click = {
+				add_consumer_good_factory_random = yes
+			}
+			consumer_good_factory_construction_shift_click = {
+				add_consumer_good_factory_random = yes
+				add_consumer_good_factory_random = yes
+				add_consumer_good_factory_random = yes
+				add_consumer_good_factory_random = yes
+				add_consumer_good_factory_random = yes
+			}
+			luxury_good_factory_construction_click = {
+				add_luxury_good_factory_random = yes
+			}
+			luxury_good_factory_construction_shift_click = {
+				add_luxury_good_factory_random = yes
+				add_luxury_good_factory_random = yes
+				add_luxury_good_factory_random = yes
+				add_luxury_good_factory_random = yes
+				add_luxury_good_factory_random = yes
+			}
+
+			manufactory_construction_click = {
+				add_manufactory_random = yes
+			}
+			manufactory_construction_shift_click = {
+				add_manufactory_random = yes
+				add_manufactory_random = yes
+				add_manufactory_random = yes
+				add_manufactory_random = yes
+				add_manufactory_random = yes
+			}
+			carpentry_construction_click = {
+				add_carpentry_random = yes
+			}
+			carpentry_construction_shift_click = {
+				add_carpentry_random = yes
+				add_carpentry_random = yes
+				add_carpentry_random = yes
+				add_carpentry_random = yes
+				add_carpentry_random = yes
+			}
+			masonry_construction_click = {
+				add_masonry_random = yes
+			}
+			masonry_construction_shift_click = {
+				add_masonry_random = yes
+				add_masonry_random = yes
+				add_masonry_random = yes
+				add_masonry_random = yes
+				add_masonry_random = yes
+			}
+			steel_beam_factory_construction_click = {
+				add_steel_beam_factory_random = yes
+			}
+			steel_beam_factory_construction_shift_click = {
+				add_steel_beam_factory_random = yes
+				add_steel_beam_factory_random = yes
+				add_steel_beam_factory_random = yes
+				add_steel_beam_factory_random = yes
+				add_steel_beam_factory_random = yes
+			}
+
+		}
+
+	}
+	
+}

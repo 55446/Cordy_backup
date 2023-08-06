@@ -1,0 +1,90 @@
+
+state={
+	id=61
+	name="STATE_61"
+
+	history={
+		owner = FMB
+		controller = FMB
+		add_core_of = FMB
+
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = FMB
+			controller = FMB
+			add_core_of = FMB
+			buildings = {
+				infrastructure = 2
+				arms_factory = 0
+				ranch = 1
+				lumber_mill = 1
+				carpentry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FMB
+			controller = FMB
+
+		}
+		106.2.4 = {
+			owner = FMB
+			controller = FMB
+			FIR = {
+				set_province_controller = 6224
+				set_province_controller = 6198
+				set_province_controller = 2095
+				set_province_controller = 6254
+				set_province_controller = 1708
+				set_province_controller = 6281
+
+			}
+
+		}
+		111.10.30 = {
+			owner = FMB
+			controller = FMB
+
+		}
+
+	}
+
+	provinces={
+		57 291 358 1016 1101 1689 2554 2901 3024 3229 3345 3457 3791 4600 4892 4957 7558 7619 7657 7667 
+	}
+	manpower=3700
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

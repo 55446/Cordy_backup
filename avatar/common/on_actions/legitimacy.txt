@@ -1,0 +1,100 @@
+on_actions = {
+	on_startup = {
+		effect = {
+
+			every_country = {
+				set_variable = { centralisation_variable = mtth:legitimacy_target_100 }
+				
+				add_dynamic_modifier = { modifier = legitimacy_effects }
+
+				set_variable = { current_liberty = centralisation_variable }
+
+				set_temp_variable = { authority_temp = 100 }
+				subtract_from_temp_variable = { authority_temp = centralisation_variable }
+				set_variable = { current_authority = authority_temp }
+
+				clamp_variable = { var = centralisation_variable min = 0 max = 100 }
+
+				set_variable = { centralisation_show = centralisation_variable }
+				multiply_variable = { centralisation_show = 2.4 }
+			}
+
+		}
+	}
+
+	on_weekly = {
+		effect = {
+
+			if = {
+				limit = {
+					check_variable = { centralisation_variable < mtth:legitimacy_target_100 }
+					check_variable = { modifier@weekly_centralisation < 0 }
+				}
+				subtract_from_variable = { centralisation_variable = modifier@weekly_centralisation }
+			}
+			if = {
+				limit = {
+					check_variable = { centralisation_variable < mtth:legitimacy_target_100 }
+					check_variable = { modifier@weekly_centralisation > 0 }
+				}
+				add_to_variable = { centralisation_variable = 0.05 }
+			}
+
+			if = {
+				limit = {
+					check_variable = { centralisation_variable > mtth:legitimacy_target_100 }
+					check_variable = { modifier@weekly_centralisation > 0 }
+				}
+				subtract_from_variable = { centralisation_variable = modifier@weekly_centralisation }
+			}
+			if = {
+				limit = {
+					check_variable = { centralisation_variable > mtth:legitimacy_target_100 }
+					check_variable = { modifier@weekly_centralisation < 0 }
+				}
+				subtract_from_variable = { centralisation_variable = 0.05 }
+			}
+			clamp_variable = { var = centralisation_variable min = 0 max = 100 }
+			
+		}
+	}
+
+
+	on_daily = {
+		effect = {
+			
+			set_variable = { current_liberty = centralisation_variable }
+
+			set_temp_variable = { authority_temp = 100 }
+			subtract_from_temp_variable = { authority_temp = centralisation_variable }
+			set_variable = { current_authority = authority_temp }
+
+			clamp_variable = { 
+				var = centralisation_variable 
+				min = 0 
+				max = 100 
+			}
+
+			set_variable = { centralisation_show = centralisation_variable }
+			multiply_variable = { centralisation_show = 2.4 }
+
+		}
+	}
+
+	on_monthly = {
+		effect = {
+
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = legitimacy_effects }
+					}
+				}
+				add_dynamic_modifier = { modifier = legitimacy_effects }
+			}
+		}
+	}
+
+
+	
+}

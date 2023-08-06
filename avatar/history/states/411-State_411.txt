@@ -1,0 +1,82 @@
+
+state={
+	id=411
+	name="STATE_411"
+
+	history={
+		add_dynamic_modifier = { modifier = dragon_moose_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 3
+				#lumber_mill = 1
+				mine = 4
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		62 139 719 767 826 992 2987 3078 3837 4494 4629 4788 5474 8258 8368 8369 8414 8443 8467 
+	}
+	manpower=3500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

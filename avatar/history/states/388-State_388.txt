@@ -1,0 +1,73 @@
+state={
+	id=388
+	name="STATE_388"
+	manpower = 1570
+	state_category = small_island
+
+	history={
+	
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.4
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = SEN
+		controller = SEN
+		add_core_of = SEN
+		12.1.1 = {
+			owner = SEN
+			controller = SEN
+			add_core_of = SEN
+
+			buildings = {
+				infrastructure = 2
+				10514 = {
+					naval_base = 1
+				}
+				10504 = {
+					naval_base = 1
+				}
+			}
+		}
+
+		52.5.16 = {
+			owner = SEN
+			controller = SEN
+		}
+
+		106.2.4 = {
+			owner = SEN
+			controller = FIR
+		}
+
+		111.10.30 = {
+			owner = SEN
+			controller = FIR
+		}
+	}
+
+	provinces={
+		1382 2536 2947 8087 8101 10504 10514 
+	}
+}

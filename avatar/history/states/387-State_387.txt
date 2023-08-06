@@ -1,0 +1,96 @@
+
+state={
+	id=387
+	name="STATE_387"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.7
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			8154 20 
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 6
+				arms_factory = 1
+				dockyard = 1
+				farm = 2
+				fishing_stand = 1
+				consumer_good_factory = 1
+				carpentry = 1
+				masonry = 1
+				steel_beam_factory = 1
+				8154 = {
+					naval_base = 3
+				}
+				10510 = {
+					naval_base = 1
+
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		213 1136 1647 1762 2046 2099 2167 2270 2824 2890 4113 4129 4794 4821 4953 5051 8060 8070 8092 8113 8128 8135 8154 8155 8161 8176 10510 
+	}
+	manpower=17000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

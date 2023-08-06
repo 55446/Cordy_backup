@@ -1,0 +1,96 @@
+ideas = {
+	hidden_ideas = {
+
+		chin_legacy_spirit = {
+			
+			removal_cost = -1
+
+			on_add = {
+				set_variable = { victory_condition = token:chin_legacy_spirit }
+				set_variable = { victory_condition_description = token:chin_legacy_spirit_description }
+				set_variable = { victory_condition_delayed = token:chin_legacy_spirit_delayed }
+			}
+
+			cancel = {
+				NOT = {
+					check_variable = { victory_condition = token:chin_legacy_spirit }
+				}
+			}
+			
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		chin_legacy_spirit_description = {
+			removal_cost = -1
+		}
+		chin_legacy_spirit_delayed = {
+			removal_cost = -1
+		}
+
+	}
+	
+	country = {
+
+		CHN_judical_system = {
+
+			removal_cost = -1
+			
+			modifier = {
+				weekly_centralisation = 0.1
+				stability_factor = -0.05
+				required_garrison_factor = -0.05	
+			}
+		}
+		
+		CHN_chin_resistance = {
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.50
+				conscription_factor = -0.20
+				stability_factor = -0.10
+			}
+		}
+
+
+		CHN_romanticism = {
+
+			removal_cost = -1
+			
+			modifier = {
+				research_speed_factor = -0.05
+				earth_culture_drift = 0.02
+			}
+		}
+
+		CHN_kyoshi_rivalry = {
+
+			removal_cost = -1
+
+			targeted_modifier = {
+				tag = KYI
+				trade_cost_for_target_factor = 2
+			}
+			
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+
+		CHN_triumph_over_kyoshi = {
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				unit_quality_target = 0.01
+			}
+		}
+
+		
+		
+	}
+	
+}

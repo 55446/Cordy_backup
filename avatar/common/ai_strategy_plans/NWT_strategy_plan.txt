@@ -1,0 +1,162 @@
+NWT_1 = {
+	allowed = {
+		tag = NWT
+	}
+	enable = {
+		NWT = {
+			 NOT = {has_idea = one_tribe} 
+			}
+	}
+	abort = {
+		NWT = {has_idea = one_tribe }
+	}
+	weight = 10
+	traits = {
+		gifted_speaker = 5
+		unemployment_benefits = 5
+		unification_minister = 5
+		chauvinist = 0
+		naturalist = 0
+		multiculturalist = 0
+		royalist = 0
+		pacifist = 0
+		personality_cultist = 0
+	}
+	ideas = {
+		NWT_unification_minister = 1000
+		economy_1 = 100
+		economy_2 = 0
+		economy_3 = 0
+	}
+	research = {	
+		age_1 = 5
+		age_2 = 5
+		age_3 = 5
+		age_4 = 5
+		age_5 = 5
+		age_6 = 5	
+		military_doctrine = 5
+		cat_power = 0
+		cat_substance = 0
+		cat_change = 9
+		cat_freedom = 0
+		bender = 4
+		infantry_weapons = 6
+		basic_weapons = 6
+		ranged_weapons = 7
+		sword_tech = 6
+		spear_tech = 6
+		pike_tech = 0
+		light_armor = 7
+		heavy_armor = 0
+		cavalry = 0
+		archer_tech = 8
+		nav_patrol = 9
+		nav_raid = 9
+		nav_screen = 7
+		nav_capital = 6
+		nav_wooden = 8
+		nav_ironclad = 8
+		nav_wooden_armor = 7
+		nav_ironclad_armor = 7
+		nav_tactics = 6
+		nav_heavy_weapons = 7
+		nav_light_weapons = 7
+		nav_support = 7
+		nav_navigation = 9
+		nav_crew = 8
+		nav_mines = 9
+		nav_invasion = 4	
+		cat_light_cavalry = 0
+		motorisation = 0
+		birb_tech = 0
+		air_tech = 0
+		aircraft = 0
+		air_balloon = 0
+		light_airship = 0
+		heavy_airship = 0
+		train_tech = 0
+		inventions = 8	
+		construction = 8
+		infra_construction = 0
+		civil_construction = 0
+		fort_construction = 0
+		resource_construction = 0
+		farm_construction = 4
+		ranch_construction = 4
+		mill_construction = 6
+		wood_construction = 2
+		stone_construction = 2
+		iron_construction = 2
+		factory_construction = 7
+		air_construction = 0
+		society_reforms = 9
+		society_conservative = 9
+		society_progressive = 0
+		society_domestication = 0
+		industry_tech = 9
+		industry_construction = 8
+		industry_production = 9
+		industry_resources = 8
+		ranch_tech = 6
+	}
+	ai_strategy = {
+		type = alliance
+		id = EAR
+		value = 0
+	}
+	ai_strategy = {
+		type = build_building
+		id = lumber_mill
+		target = 6
+		value = 1
+	}
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 0.1
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = spear_equipment
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = heavy_armor
+		value = 2
+	}
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 10
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.3
+		state = 20
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = 0 
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = admiral
+		value = 0 
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = decision
+		value = 1 
+	}
+	ai_strategy = {
+		type = pp_spend_priority
+		id = guarantee
+		value = 0 
+	}
+	ai_strategy = {
+	type = build_army
+	id = convoy
+	value = 0
+	}
+}

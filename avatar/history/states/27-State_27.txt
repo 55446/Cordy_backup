@@ -1,0 +1,80 @@
+
+state={
+	id=27
+	name="STATE_27"
+
+	history={
+		owner = SWT
+		controller = SWT
+		add_core_of = SWT
+		
+		add_dynamic_modifier = { modifier = buffalo_herd }
+		add_to_variable = {
+			var = forest
+			value = 0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = SWT
+			controller = SWT
+			add_core_of = SWT
+			buildings = {
+				infrastructure = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = SWT
+			controller = SWT
+
+		}
+		106.2.4 = {
+			owner = SWT
+			controller = SWT
+
+		}
+		111.10.30 = {
+			owner = SWT
+			controller = SWT
+
+		}
+
+	}
+
+	provinces={
+		375 656 1416 2231 2858 3085 3161 3434 3655 3782 4029 4195 4404 4460 4664 4883 4886 5581 10264 10286 10289 10296 10331 10354 10355 
+	}
+	manpower=654
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+}

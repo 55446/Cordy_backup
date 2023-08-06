@@ -1,0 +1,80 @@
+
+state={
+	id=340
+	name="STATE_340"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = NCB
+		controller = NCB
+		add_core_of = NCB
+		12.1.1 = {
+			owner = NCB
+			controller = NCB
+			add_core_of = NCB
+			buildings = {
+				infrastructure = 1
+				quarry = 1
+				mine = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = NCB
+			controller = NCB
+
+		}
+		106.2.4 = {
+			owner = NCB
+			controller = NCB
+
+		}
+		111.10.30 = {
+			owner = NCB
+			controller = NCB
+
+		}
+
+	}
+
+	provinces={
+		85 194 477 941 1327 1787 3010 8441 8470 
+	}
+	manpower=790
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

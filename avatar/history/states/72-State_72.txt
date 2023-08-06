@@ -1,0 +1,85 @@
+
+state={
+	id=72
+	name="STATE_72"
+
+	history={
+		owner = SWT
+		controller = SWT
+		add_core_of = SWT
+
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			5351 10 
+		}
+		12.1.1 = {
+			owner = SWT
+			controller = SWT
+			add_core_of = SWT
+			buildings = {
+				infrastructure = 2
+				arms_factory = 1
+				1386 = {
+					naval_base = 1
+				}
+			}
+
+		}
+		52.5.16 = {
+			owner = SWT
+			controller = SWT
+
+		}
+		106.2.4 = {
+			owner = SWT
+			controller = SWT
+
+		}
+		111.10.30 = {
+			owner = SWT
+			controller = SWT
+
+		}
+
+	}
+
+	provinces={
+		642 903 1386 2044 2319 2702 2919 3735 3804 4921 5212 5278 5351 5423 5619 5653 10092 10099 10102 10106 10112 10120 10128 10131 10141 10148 10162 10179 10186 10187 10204 10631 
+	}
+	manpower=4250
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

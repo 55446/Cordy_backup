@@ -1,0 +1,79 @@
+
+state={
+	id=102
+	name="STATE_102"
+
+	history={
+		owner = NIX
+		controller = NIX
+		add_core_of = NIX
+
+		add_dynamic_modifier = { modifier = eel_herd }
+		add_to_variable = {
+			var = forest
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = NIX
+			controller = NIX
+			add_core_of = NIX
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				lumber_mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		1400 1812 2195 2760 2773 2817 3543 3550 4052 5343 6253 6258 
+	}
+	manpower=6400
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

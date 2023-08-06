@@ -1,0 +1,83 @@
+
+state={
+	id=42
+	name="STATE_42"
+
+	history={
+		owner = LAM
+		controller = LAM
+		add_core_of = LAM
+		
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = LAM
+			controller = LAM
+			add_core_of = LAM
+			buildings = {
+				infrastructure = 2
+
+			}
+
+		}
+		52.5.16 = {
+			owner = LAM
+			controller = LAM
+
+		}
+		106.2.4 = {
+			owner = LAM
+			controller = LAM
+			FIR = {
+				set_province_controller = 6170
+
+			}
+
+		}
+		111.10.30 = {
+			owner = LAM
+			controller = LAM
+
+		}
+
+	}
+
+	provinces={
+		135 231 255 510 1081 1157 1805 2908 2938 3028 3269 3471 4570 4577 5377 5529 6093 6095 6098 6107 6112 6136 6152 6170 
+	}
+	manpower=600
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+}

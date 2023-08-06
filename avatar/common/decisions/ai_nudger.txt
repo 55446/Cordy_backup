@@ -1,0 +1,182 @@
+ai_nudger_category = {
+	ai_research_domestication_0 = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = domestication_0}
+				}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 } 
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100
+		complete_effect = {
+			ROOT = {
+				set_technology = {domestication_0 = 1}
+				country_event = invention.5
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+
+	ai_research_the_wheel = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = the_wheel}
+				}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 } 
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100	
+		complete_effect = {
+			ROOT = {
+				set_technology = {the_wheel = 1}
+				event = invention.4
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+	ai_research_plow = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = plow}
+				}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 } 
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100
+		complete_effect = {
+			ROOT = {
+				set_technology = {plow = 1}
+				country_event = invention.15
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+	ai_research_domestication_1 = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = domestication_1}
+				}		
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 }
+			 check_variable = {ROOT.tech_age > 1 }		
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100	
+		complete_effect = {
+			ROOT = {
+				set_technology = {domestication_1 = 1}
+				country_event = invention.6
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+ai_research_botanics = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = botanics}
+				}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 }
+			 check_variable = {ROOT.tech_age > 1 }	
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100
+		complete_effect = {
+			ROOT = {
+				set_technology = {botanics = 1}
+				country_event = invention.13
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+ai_research_candles = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = candles}
+				}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 }
+			 check_variable = {ROOT.tech_age > 1 }	
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100
+		complete_effect = {
+			ROOT = {
+				set_technology = {candles = 1}
+				country_event = invention.9
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+ai_research_metal_processing = {
+		available = {
+			NOT = {
+					ROOT = {has_tech = metal_processing}
+				}
+		}
+		fire_only_once = yes
+		custom_cost_trigger = {
+			 check_variable = {ROOT.knowledge_variable > 99.999 }
+			 check_variable = {ROOT.tech_age > 1 }	
+			}
+		custom_cost_text = decision_cost_knowledge_variable_100
+		complete_effect = {
+			ROOT = {
+				set_technology = {metal_processing = 1}
+				country_event = invention.2
+				recalculate_age = yes
+			}
+			hidden_effect = {
+				subtract_from_variable = {ROOT.knowledge_variable = 100}
+			}	
+		}
+		ai_will_do = {
+			base = 80
+		}
+	}
+}	

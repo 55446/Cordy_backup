@@ -1,0 +1,228 @@
+scripted_gui = {
+
+	major_spirit_container = {
+		context_type = player_context
+		
+		window_name = "majorspiritcontainer"
+		parent_window_token = politics_tab
+		
+		visible = {
+			always = yes
+		}
+		
+		triggers = {
+			
+		}
+
+		properties = {
+			major_spirit_box = {
+				image = "[GetVictoryCondition]"
+			}
+		}
+		
+	}
+
+	major_spirit_diplo_view = {
+		context_type = selected_country_context
+
+		window_name = "majorspiritcontainerdiplo"
+		parent_window_token = selected_country_view
+
+		visible = {
+			always = yes
+		}
+
+		properties = {
+			major_spirit_box = {
+				image = "[GetVictoryCondition]"
+			}
+		}
+	}
+
+	extra_country_info_view = {
+		context_type = selected_country_context
+
+		window_name = "extracountryinfocontainer"
+		parent_window_token = selected_country_view
+
+		visible = {
+			always = yes
+		}
+
+		triggers = {
+			
+		}
+	}
+	
+	political_ideology_new = {
+		context_type = player_context
+		
+		window_name = "countrypoliticsnew"
+		parent_window_token = politics_tab
+		
+		visible = {
+			always = yes
+		}
+		
+		properties = {
+			state_indicator = {
+				x = centralisation_show
+			}
+			state_target = {
+				x = mtth:legitimacy_target
+			}
+
+			air_1 = {
+				image = "[get_air_icon_1]"
+			}
+			air_2 = {
+				image = "[get_air_icon_2]"
+			}
+			air_3 = {
+				image = "[get_air_icon_3]"
+			}
+			air_4 = {
+				image = "[get_air_icon_4]"
+			}
+			air_5 = {
+				image = "[get_air_icon_5]"
+			}
+		}
+
+		triggers = {
+			state_indicator_visible = {
+				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+			}
+			state_target_visible = {
+				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+			}
+			legitimacy_level_visible = {
+				NOT = { TAG = SAT TAG = WAT TAG = EAT TAG = NAT }
+			}
+
+			fir_legit_bg_visible = {
+				has_government = fire_culture
+			}
+			fir_high_legitimacy_visible = {
+				has_government = fire_culture
+			}
+			fir_low_legitimacy_visible = {
+				has_government = fire_culture
+			}
+
+			ear_legit_bg_visible = {
+				has_government = earth_culture
+			}
+			ear_high_legitimacy_visible = {
+				has_government = earth_culture
+			}
+			ear_low_legitimacy_visible = {
+				has_government = earth_culture
+			}
+
+			water_legit_bg_visible = {
+				has_government = water_culture
+			}
+			water_high_legitimacy_visible = {
+				has_government = water_culture
+			}
+			water_low_legitimacy_visible = {
+				has_government = water_culture
+			}
+
+			air_legit_bg_visible = {
+				has_government = air_culture
+				NOT = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_high_legitimacy_visible = {
+				has_government = air_culture
+				NOT = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_low_legitimacy_visible = {
+				has_government = air_culture
+				NOT = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+
+			air_spirit_bg_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_council_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_1_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_2_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_3_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_4_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+			air_5_visible = {
+				has_government = air_culture
+				OR = {
+					TAG = SAT
+					TAG = WAT
+					TAG = EAT
+					TAG = NAT
+				}
+			}
+		}
+		
+	}
+	
+}

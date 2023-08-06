@@ -1,0 +1,76 @@
+
+state={
+	id=219
+	name="STATE_219"
+
+	history={
+		add_dynamic_modifier = { modifier = ostrich_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.8
+		}
+		add_to_variable = {
+			var = water
+			value = 0.1		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		victory_points = {
+			1744 5 
+		}
+		owner = TAK
+		controller = TAK
+		add_core_of = TAK
+		12.1.1 = {
+			owner = TAK
+			controller = TAK
+			add_core_of = TAK
+			buildings = {
+				infrastructure = 4
+				arms_factory = 1
+				farm = 1
+				ranch = 1
+				mill = 1
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = PFC
+			controller = PFC
+			add_core_of = PFC
+		}
+		111.10.30 = {
+			owner = PFC
+			controller = PFC
+			add_core_of = PFC
+		}
+
+	}
+
+	provinces={
+		157 338 495 1330 1376 1744 1970 2286 2794 3960 3988 5453 7059 7122 7136 7171 7176 7201 7209 10451 
+	}
+	manpower=16680
+	buildings_max_level_factor=1.000
+	state_category=town
+}

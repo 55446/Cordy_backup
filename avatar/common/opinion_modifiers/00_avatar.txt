@@ -1,0 +1,15 @@
+opinion_modifiers = {
+	
+	friendly_approach = {
+		value = 50
+		months = 48
+	}
+	
+	northern_passage_crisis = {
+		value = -100
+	}
+	northern_passage_crisis_trade = {
+		value = -200
+		trade = yes
+	}
+}

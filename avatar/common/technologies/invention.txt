@@ -1,0 +1,106 @@
+technologies = {
+
+	domestication_0 = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	domestication_1 = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	domestication_2 = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	the_wheel = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	basic_gear = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	advanced_gear = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	steam_engine = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	improved_coal_engine = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	modern_engine = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	aerodynamics = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	thermodynamics = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	candles = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	ink = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	libraries = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	basic_tool_making = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	metal_processing = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	steelmaking = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	plow = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	botanics = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	heal_practices = {
+		research_cost = 1
+		allow = { always = no }
+	}
+
+	
+
+
+}

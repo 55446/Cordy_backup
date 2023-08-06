@@ -1,0 +1,82 @@
+
+state={
+	id=96
+	name="STATE_96"
+
+	history={
+		owner = WBA
+		controller = WBA
+		add_core_of = WBA
+
+		add_to_variable = {
+			var = forest
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.1
+		}
+		add_to_variable = {
+			var = field
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = WBA
+			controller = WBA
+			add_core_of = WBA
+			buildings = {
+				infrastructure = 2
+				3786 = {
+					naval_base = 1
+				}
+				6338 = {
+					naval_base = 1
+				}
+			}
+
+		}
+		52.5.16 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		106.2.4 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		111.10.30 = {
+			owner = WBA
+			controller = WBA
+
+		}
+
+	}
+
+	provinces={
+		2623 3356 3786 3948 4652 4786 5054 6282 6299 6338 10384 10387 10390 10393 10397 10401 10404 
+	}
+	manpower=2500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

@@ -1,0 +1,138 @@
+
+scripted_gui = {
+
+	economy_state_ui = {
+		context_type = selected_state_context
+		
+		window_name = "economy_state_ui_window"
+		parent_window_token = selected_state_view
+
+		visible = {
+			always = yes
+		}
+
+		effects = {
+			open_construction_click = {
+				if = {
+					limit = {
+						ROOT = {
+						check_variable = { close_construction = 0 }
+						}
+					}
+					ROOT = {
+					set_variable = { close_construction = 1 }
+					}
+				}
+				else = {
+					ROOT = {
+					set_variable = { close_construction = 0 }
+					}
+				}
+				if = {
+					limit = {
+						ROOT = {
+						check_variable = { show_construction < 1 }
+						}
+					}
+					ROOT = {
+					set_variable = { show_construction = 1 }
+					}
+				}
+			}
+			increase_infra_click = {
+				THIS = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = no
+					}
+				}
+			}
+			#send_settlers_click = {
+			#	THIS = {
+			#		add_building_construction = {
+			#			type = settlement
+			#			level = 1
+			#			instant_build = no
+			#		}
+			#	}
+			#}
+		}
+
+		triggers = {
+			increase_infra_click_enabled = {
+				is_controlled_by = ROOT
+				free_building_slots = {
+					building = infrastructure
+					size > 0
+					include_locked = no
+				}
+			}
+			#send_settlers_click_enabled = {
+			#	NOT = {
+			#		is_core_of = ROOT
+			#	}
+			#	is_controlled_by = ROOT
+			#	free_building_slots = {
+			#		building = settlement
+			#		size > 0
+			#		include_locked = no
+			#	}
+			#}
+			send_settlers_visible = {
+				NOT = {
+					is_core_of = ROOT
+				}
+				is_controlled_by = ROOT
+			}
+
+			open_construction_visible = {
+				OR = {
+					is_controlled_by = ROOT
+					controller = {
+						is_puppet_of = ROOT
+					}
+				}
+			}
+
+			forest_icon_visible = {
+				has_variable = forest
+			}
+			forest_visible = {
+				has_variable = forest
+			}
+			mountain_icon_visible = {
+				has_variable = mountain
+			}
+			mountain_visible = {
+				has_variable = mountain
+			}
+			field_icon_visible = {
+				has_variable = field
+			}
+			field_visible = {
+				has_variable = field
+			}
+			water_icon_visible = {
+				has_variable = water
+			}
+			water_visible = {
+				has_variable = water
+			}
+			stonefield_icon_visible = {
+				has_variable = stonefield
+			}
+			stonefield_visible = {
+				has_variable = stonefield
+			}
+			animal_icon_visible = {
+				has_variable = animal
+			}
+			animal_visible = {
+				has_variable = animal
+			}
+		}
+
+	}
+	
+}

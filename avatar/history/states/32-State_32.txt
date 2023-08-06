@@ -1,0 +1,86 @@
+
+state={
+	id=32
+	name="STATE_32"
+
+	history={
+		owner = YII
+		controller = YII
+		add_core_of = YII
+		
+		add_dynamic_modifier = { modifier = ostrich_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.7
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = YII
+			controller = YII
+			add_core_of = YII
+			buildings = {
+				infrastructure = 3
+				arms_factory = 1
+				lumber_mill = 2
+				quarry = 1
+				mine = 1
+				masonry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = YII
+			controller = YII
+
+		}
+		106.2.4 = {
+			owner = YII
+			controller = YII
+
+		}
+		111.10.30 = {
+			owner = YII
+			controller = YII
+
+		}
+
+	}
+
+	provinces={
+		359 1178 1209 1834 3140 4064 5077 8886 8903 8928 8949 8970 8974 8981 
+	}
+	manpower=8790
+	buildings_max_level_factor=1.000
+	state_category=town
+}

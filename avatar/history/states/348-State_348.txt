@@ -1,0 +1,80 @@
+
+state={
+	id=348
+	name="STATE_348"
+
+	history={
+		add_dynamic_modifier = { modifier = desert_herd }
+		add_to_variable = {
+			var = forest
+			value = 0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = MPO
+		controller = MPO
+		add_core_of = MPO
+		12.1.1 = {
+			owner = MPO
+			controller = MPO
+			add_core_of = MPO
+			buildings = {
+				infrastructure = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = MPO
+			controller = MPO
+
+		}
+		106.2.4 = {
+			owner = MPO
+			controller = MPO
+
+		}
+		111.10.30 = {
+			owner = MPO
+			controller = MPO
+
+		}
+
+	}
+
+	provinces={
+		233 284 320 434 760 773 812 1188 1236 1593 1847 2000 2054 2742 2755 2863 3018 3717 3920 4063 4540 5253 8483 8557 8562 8611 8619 8643 
+	}
+	manpower=720
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+	local_supplies=0.000
+}

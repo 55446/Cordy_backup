@@ -1,0 +1,72 @@
+
+state={
+	id=214
+	name="STATE_214"
+
+	history={
+		add_dynamic_modifier = { modifier = ostrich_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.6
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.7
+		}
+		add_to_variable = {
+			var = water
+			value = 0.2		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1		}
+		add_to_variable = {
+			var = animal
+			value = 0.6
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = MAK
+		controller = MAK
+		add_core_of = MAK
+		12.1.1 = {
+			owner = MAK
+			controller = MAK
+			add_core_of = MAK
+			buildings = {
+				infrastructure = 4
+				dockyard = 1
+				farm = 1
+				mill = 1
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = MFC
+			controller = MFC
+			add_core_of = MFC
+		}
+		111.10.30 = {
+			owner = MFC
+			controller = MFC
+			add_core_of = MFC
+		}
+
+	}
+
+	provinces={
+		247 880 1509 1564 2057 2297 2644 2731 3007 3498 4210 4848 7026 7055 7097 7138 7163 7193 7200 7208 7212 7221 7234 7241 
+	}
+	manpower=13500
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

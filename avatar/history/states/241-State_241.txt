@@ -1,0 +1,96 @@
+
+state={
+	id=241
+	name="STATE_241"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = EBA
+		controller = EBA
+		add_core_of = EBA
+		12.1.1 = {
+			owner = EBA
+			controller = EBA
+			add_core_of = EBA
+			buildings = {
+				infrastructure = 2
+				lumber_mill = 1
+				quarry = 1
+				mine = 1
+				masonry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = EBA
+			controller = EBA
+
+		}
+		106.2.4 = {
+			owner = EBA
+			controller = EBA
+			FIR = {
+				set_province_controller = 7269
+				set_province_controller = 7299
+				set_province_controller = 134
+				set_province_controller = 3274
+				set_province_controller = 1427
+				set_province_controller = 4008
+				set_province_controller = 4532
+				set_province_controller = 4735
+				set_province_controller = 344
+
+			}
+
+		}
+		111.10.30 = {
+			owner = EBA
+			controller = EBA
+
+		}
+
+	}
+
+	provinces={
+		307 436 504 618 756 816 1404 1914 2134 2291 2569 2802 3057 3195 3246 3774 3874 4033 4765 4799 7325 7356 7382 7412 7457 7489 7499 7509 7524 7537 7539 
+	}
+	manpower=4200
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

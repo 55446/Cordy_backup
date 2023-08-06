@@ -1,0 +1,87 @@
+
+state={
+	id=434
+	name="STATE_434"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.8
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = YII
+		controller = YII
+		add_core_of = YII
+		12.1.1 = {
+			owner = YII
+			controller = YII
+			add_core_of = YII
+			buildings = {
+				infrastructure = 6
+				arms_factory = 1
+				harbour = 1
+				farm = 2
+				fishing_stand = 1
+				lumber_mill = 1
+				crop_weaving = 2
+				consumer_good_factory = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = YII
+			controller = YII
+
+		}
+		106.2.4 = {
+			owner = YII
+			controller = YII
+
+		}
+		111.10.30 = {
+			owner = YII
+			controller = YII
+
+		}
+
+	}
+
+	provinces={
+		212 281 753 924 947 1143 1179 2355 4630 9099 9113 9144 9164 9170 9194 9195 9214 9228 9257 
+	}
+	manpower=13950
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

@@ -1,0 +1,80 @@
+
+state={
+	id=310
+	name="STATE_310"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.7
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.2
+		}
+		add_to_variable = {
+			var = field
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.1
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = SEN
+		controller = SEN
+		add_core_of = SEN
+		12.1.1 = {
+			owner = SEN
+			controller = SEN
+			add_core_of = SEN
+			buildings = {
+				infrastructure = 2
+				lumber_mill = 1
+				carpentry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = SEN
+			controller = SEN
+
+		}
+		106.2.4 = {
+			owner = SEN
+			controller = SEN
+
+		}
+		111.10.30 = {
+			owner = SEN
+			controller = SEN
+
+		}
+
+	}
+
+	provinces={
+		36 189 332 1444 1896 1991 2650 2758 3100 3261 3941 4014 4633 5352 7787 7822 7843 7845 7868 7885 7935 7957 
+	}
+	manpower=6750
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

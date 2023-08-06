@@ -1,0 +1,91 @@
+
+state={
+	id=391
+	name="STATE_391"
+
+	history={
+	
+		add_to_variable = {
+			var = forest
+			value = 0.4
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+		}
+		add_to_variable = {
+			var = water
+			value = 1.0
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		victory_points = {
+			8182 35 
+		}
+		owner = SEN
+		controller = SEN
+		add_core_of = SEN
+		12.1.1 = {
+			owner = SEN
+			controller = SEN
+			add_core_of = SEN
+			buildings = {
+				infrastructure = 6
+				harbour = 2
+				fishing_stand = 1
+				crop_weaving = 1
+				consumer_good_factory = 1
+				luxury_good_factory = 1
+				8182 = {
+					naval_base = 2
+
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = SEN
+			controller = SEN
+
+		}
+		106.2.4 = {
+			owner = SEN
+			controller = SEN
+
+		}
+		111.10.30 = {
+			owner = SEN
+			controller = SEN
+			FIR = {
+				set_province_controller = 1818
+				set_province_controller = 1614
+				set_province_controller = 8299
+				set_province_controller = 8313
+				set_province_controller = 8267
+				set_province_controller = 5435
+			}
+		}
+
+	}
+
+	provinces={
+		1173 1512 1597 1614 1818 2242 3114 3184 3887 3944 4489 4905 5435 8078 8095 8100 8117 8127 8142 8166 8182 8201 8267 8299 8313 
+	}
+	manpower=12600
+	buildings_max_level_factor=1.000
+	state_category=city
+}

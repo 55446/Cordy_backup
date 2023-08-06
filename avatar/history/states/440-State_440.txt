@@ -1,0 +1,82 @@
+
+state={
+	id=440
+	name="STATE_440"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.8
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = GAO
+		controller = GAO
+		add_core_of = GAO
+		12.1.1 = {
+			owner = GAO
+			controller = GAO
+			add_core_of = GAO
+			buildings = {
+				infrastructure = 1
+				ranch = 1
+				quarry = 3
+				masonry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = GAO
+			controller = GAO
+
+		}
+		106.2.4 = {
+			owner = GAO
+			controller = GAO
+
+		}
+		111.10.30 = {
+			owner = GAO
+			controller = GAO
+
+		}
+
+	}
+
+	provinces={
+		93 214 494 1226 1513 2143 2249 3507 4007 5056 8801 8823 8834 8898 8945 
+	}
+	manpower=5470
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+	local_supplies=0.000
+}

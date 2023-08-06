@@ -1,0 +1,38 @@
+﻿l_english:
+ fire_people_in_ek_tooltip:0 "£population_texticon  Fire Citizen in the Earthkingdom: $RIGHT|-=0$"
+ fire_people_in_ek_bad_tooltip:0 "£population_texticon  Fire Citizen in the Earthkingdom: $RIGHT|-0$"
+ 
+ war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%*-=2$"
+ war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%*-=2$"
+ war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Politics and Decisions: $RIGHT|%*-2$"
+ occupation_war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%*-=2$"
+ occupation_war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%*-=2$"
+ occupation_war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Occupied States: $RIGHT|%*-2$"
+ casualty_war_weariness_set_tooltip:0 "Set £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%*-=2$"
+ casualty_war_weariness_add_tooltip:0 "Add £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%*-=2$"
+ casualty_war_weariness_remove_tooltip:0 "Remove £war_weariness_texticon  §YWar Weariness§! from Fallen Soldiers: $RIGHT|%*-2$"
+ 
+ peasant_anger_add_tooltip:0 "Add Peasant Anger: $RIGHT|-=0$"
+ peasant_anger_remove_tooltip:0 "Remove Peasant Anger: $RIGHT|-0$"
+ peasant_appeasement_add_tooltip:0 "Add Peasant Appeasement: $RIGHT|-=0$"
+ peasant_appeasement_remove_tooltip:0 "Remove Peasant Appeasement: $RIGHT|-0$"
+
+ transfer_manpower_to_state:0 "Sends $RIGHT|0G$ §YCombatants§! to [?from.GetName]"
+ pressure_points_attacker:0 "[?FROM.attacker.GetName] §YPressure Points§!: $RIGHT|0G+=$"
+ pressure_points_defender:0 "[?FROM.defender.GetName] §YPressure Points§!: $RIGHT|0G+=$"
+ attacker_kill_ttp:0 "[?FROM.attacker.GetName] §YCasualties§!: $RIGHT|0R$ / $LEFT|0G$"
+ defender_kill_ttp:0 "[?FROM.defender.GetName] §YCasualties§!: $RIGHT|0R$ / $LEFT|0G$"
+
+ var_money_printing_set_tooltip:0 "Set Inflation: $RIGHT|-=2%$"
+ var_money_printing_add_tooltip:0 "Add Inflation: $RIGHT|-=2%$"
+
+
+ unit_quality_set_tooltip:0 "Set §YUnit Quality§!: $RIGHT|%+2$"
+ unit_quality_add_tooltip:0 "Add §YUnit Quality§!: $RIGHT|%+2$"
+ unit_quality_remove_tooltip:0 "Remove §YUnit Quality§!: $RIGHT|%+2$"
+
+ add_stonefield_tooltip:0 "Add £resource_deposites|5 §YStonefields§!: $RIGHT|+1$"
+
+ increase_castle_size:0 "Add §YWall§! Level to [?castle_construction.GetTokenLocalizedKey]: $RIGHT|0Y$"
+
+ chin_support_tt:0 "Add §uChin supporters§!: $RIGHT|=Y0%%$"

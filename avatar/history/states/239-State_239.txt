@@ -1,0 +1,77 @@
+
+state={
+	id=239
+	name="STATE_239"
+
+	history={
+		add_dynamic_modifier = { modifier = bison_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0.2
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = SAT
+		controller = SAT
+		add_core_of = SAT
+		12.1.1 = {
+			owner = SAT
+			controller = SAT
+			add_core_of = SAT
+			buildings = {
+				infrastructure = 1
+				farm = 1
+			}
+
+		}
+		52.5.16 = {
+			owner = SAT
+			controller = SAT
+
+		}
+		106.2.4 = {
+			owner = SAT
+			controller = SAT
+
+		}
+		111.10.30 = {
+			owner = SAT
+			controller = SAT
+
+		}
+
+	}
+
+	provinces={
+		1489 1498 1516 1595 1947 2192 2447 2484 2487 2494 2571 2604 2678 2697 2815 2986 3359 3549 3645 3882 4025 4793 5020 5187 5354 5359 5467 9747 9748 9750 9754 9764 9770 9771 9772 9773 9774 9781 9786 9799 9800 9803 9810 9812 9813 9814 9815 9820 9825 9828 9832 9834 9844 9854 9860 9868 9883 9889 9890 9900 9913 9924 
+	}
+	manpower=1300
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,94 @@
+
+state={
+	id=152
+	name="STATE_152"
+
+	history={
+		owner = MER
+		controller = MER
+		add_core_of = MER
+
+		add_dynamic_modifier = { modifier = eel_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			707 10 
+		}
+		12.1.1 = {
+			owner = MER
+			controller = MER
+			add_core_of = MER
+			buildings = {
+				infrastructure = 3
+				carpentry = 1
+				farm = 1
+				consumer_good_factory = 1
+				mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = MER
+			controller = MER
+			FIR = {
+				set_province_controller = 6657
+				set_province_controller = 6635
+				set_province_controller = 1521
+				set_province_controller = 2584
+				set_province_controller = 6757
+				set_province_controller = 455
+
+			}
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		173 230 387 707 3000 3172 3397 5513 6719 6784 6785 6823 6851 
+	}
+	manpower=12900
+	buildings_max_level_factor=1.000
+	state_category=town
+}

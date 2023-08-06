@@ -1,0 +1,82 @@
+
+state={
+	id=22
+	name="STATE_22"
+	history={
+		owner = EAT
+			controller = EAT
+			add_core_of = EAT
+
+		add_dynamic_modifier = { modifier = bison_herd }
+		add_dynamic_modifier = { modifier = cat_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0.2
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = EAT
+			controller = EAT
+			add_core_of = EAT
+			buildings = {
+				infrastructure = 2
+				ranch = 1
+				arms_factory = 1
+				farm = 2
+				lumber_mill = 1
+				}
+
+			}
+		52.5.16 = {
+			owner = EAT
+			controller = EAT
+
+		}
+		106.2.4 = {
+			owner = EAT
+			controller = EAT
+
+		}
+		111.10.30 = {
+			owner = EAT
+			controller = EAT
+
+		}
+
+	}
+
+	provinces={
+		152 1326 1628 2017 3296 3571 4092 4590 5214 5336 5603 8971 8983 8985 8988 8990 8992 8995 8998 8999 9003 9020 9024 9032 9049 9053 9059 9067 9068 
+	}
+	manpower=2100
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

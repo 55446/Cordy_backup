@@ -1,0 +1,98 @@
+
+state={
+	id=99
+	name="STATE_99"
+
+	history={
+		owner = WBA
+		controller = WBA
+		add_core_of = WBA
+
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = WBA
+			controller = WBA
+			add_core_of = WBA
+			buildings = {
+				infrastructure = 3
+				lumber_mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		106.2.4 = {
+			owner = WBA
+			controller = WBA
+			FIR = {
+				set_province_controller = 5447
+				set_province_controller = 2827
+				set_province_controller = 6347
+				set_province_controller = 6313
+				set_province_controller = 6356
+				set_province_controller = 1153
+				set_province_controller = 3818
+				set_province_controller = 1638
+				set_province_controller = 6321
+				set_province_controller = 2274
+				set_province_controller = 6352
+				set_province_controller = 1841
+				set_province_controller = 553
+				set_province_controller = 2125
+				set_province_controller = 6348
+				set_province_controller = 6342
+				set_province_controller = 6364
+
+			}
+
+		}
+		111.10.30 = {
+			owner = WBA
+			controller = WBA
+
+		}
+
+	}
+
+	provinces={
+		39 553 991 1153 1638 1841 2125 2273 2274 2526 2827 3091 3795 3818 4767 4960 5447 5594 6219 6291 6313 6321 6342 6347 6348 6352 6356 6364 10378 
+	}
+	manpower=1600
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

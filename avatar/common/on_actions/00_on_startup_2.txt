@@ -1,0 +1,37 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				add_ideas = {
+					strategic_redeployment_blocker
+				}
+				add_dynamic_modifier = { modifier = dynamic_bender_capacity }
+				add_dynamic_modifier = { modifier = fast_manpower days = 10 }
+				add_dynamic_modifier = { modifier = population_resource_bought_on_market }
+			}
+
+			if = {
+				limit = {
+					has_start_date > 13.01.01
+				}
+				EAR = {
+					ear_exiles_52 = yes
+				}
+			}
+			if = {
+				limit = {
+					has_start_date > 60.01.01
+				}
+				EAR = {
+					ear_exiles_106 = yes
+				}
+			}
+			SWT = {
+			country_event = swt.2
+			}
+		}
+	}
+
+
+}

@@ -1,0 +1,68 @@
+state={
+	id=375
+	name="STATE_375"
+	manpower = 4000
+	state_category = enclave
+
+	history={
+	
+		add_to_variable = {
+			var = forest
+			value = 0.1		}
+		add_to_variable = {
+			var = mountain
+			value = 0.1		}
+		add_to_variable = {
+			var = field
+			value = 0.5
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+	
+		victory_points = { 4186 15 }
+		owner = SEN
+		controller = SEN
+		add_core_of = SEN
+		12.1.1 = {
+			owner = SEN
+			controller = SEN
+			add_core_of = SEN
+
+			buildings = {
+				infrastructure = 6
+				arms_factory = 1
+			}
+		}
+
+		52.5.16 = {
+			owner = SEN
+			controller = SEN
+		}
+
+		106.2.4 = {
+			owner = SEN
+			controller = SEN
+		}
+
+		111.10.30 = {
+			owner = SEN
+			controller = SEN
+		}
+	}
+
+	provinces={
+		14 4186 5255 5559 7965 7984 7986 8025 8041 8052 8067 
+	}
+}

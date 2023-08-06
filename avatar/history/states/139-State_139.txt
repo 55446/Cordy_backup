@@ -1,0 +1,85 @@
+
+state={
+	id=139
+	name="STATE_139"
+
+	history={
+		owner = EBA
+		controller = EBA
+		add_core_of = EBA
+
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.1
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			6530 5 
+		}
+		12.1.1 = {
+			owner = EBA
+			controller = EBA
+			add_core_of = EBA
+			buildings = {
+				infrastructure = 3
+				dockyard = 1
+				fishing_stand = 1
+				consumer_good_factory = 1
+				mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = EBA
+			controller = EBA
+
+		}
+		106.2.4 = {
+			owner = EBA
+			controller = EBA
+
+		}
+		111.10.30 = {
+			owner = EBA
+			controller = EBA
+
+		}
+
+	}
+
+	provinces={
+		35 246 462 638 766 1163 1474 1484 1850 2023 2489 2838 2843 2875 2894 2912 3168 3856 4449 4656 4918 4944 5184 5302 5471 6466 6530 6544 6599 6632 6665 6685 6758 6759 6889 6891 6992 10409 
+	}
+	manpower=4700
+	buildings_max_level_factor=1.000
+	state_category=town
+}

@@ -1,0 +1,76 @@
+
+state={
+	id=233
+	name="STATE_233"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0.2
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = WBA
+		controller = WBA
+		add_core_of = WBA
+		12.1.1 = {
+			owner = WBA
+			controller = WBA
+			add_core_of = WBA
+			buildings = {
+				infrastructure = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		106.2.4 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		111.10.30 = {
+			owner = WBA
+			controller = WBA
+
+		}
+
+	}
+
+	provinces={
+		1146 2034 2135 2338 2836 3048 3316 4054 4166 4516 5315 5623 7078 7098 7104 7124 7129 7204 7236 7239 7242 7249 7259 
+	}
+	manpower=960
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+	local_supplies=0.000
+}

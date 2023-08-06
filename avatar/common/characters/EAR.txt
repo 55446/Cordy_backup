@@ -1,0 +1,1483 @@
+characters = {
+	EAR_zaifeng = {
+		name = "EAR_zaifeng"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EAR/Portrait_Earthkingdom_51.dds"
+			}
+		}
+		country_leader = {
+			desc = "51st Earthking"
+			ideology = constitutional_monarchy
+			traits = { earthking }
+			expire="91.1.1.1"
+			id=-1
+		}
+	}
+
+	EAR_kuei = {
+		name = "Kuei"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EAR/Portrait_Earthkingdom_Kuei.dds"
+			}
+		}
+		country_leader = {
+			desc = "52nd Earthking"
+			ideology = constitutional_monarchy
+			traits = { earthking }
+			expire="130.1.1"
+			id=-1
+		}
+	}
+
+	EAR_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/EAR/Portrait_Earthkingdom_colonialism.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=colonialism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=elective_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=absolute_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=anarchism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+
+
+
+
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	EAR_minister_of_personnel_1 = { 
+		name = ear_minister_of_personnel_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_minister_of_personnel_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { gifted_speaker }
+		}		
+	}
+	EAR_minister_of_personnel_2 = { 
+		name = ear_minister_of_personnel_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_minister_of_personnel_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { close_to_the_people }
+		}		
+	}
+	EAR_minister_of_personnel_3 = { 
+		name = ear_minister_of_personnel_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_minister_of_personnel_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { military_organiser }
+		}		
+	}
+	EAR_minister_of_personnel_4 = { 
+		name = ear_minister_of_personnel_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_minister_of_personnel_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { administrator }
+		}		
+	}
+	EAR_minister_of_personnel_5 = { 
+		name = ear_minister_of_personnel_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_minister_of_personnel_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { lawgiver }
+		}		
+	}
+	EAR_minister_of_personnel_6 = { 
+		name = ear_minister_of_personnel_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_personnel_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_minister_of_personnel_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { prime_minister }
+		}		
+	}
+	EAR_minister_of_finance_1 = { 
+		name = ear_minister_of_finance_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_minister_of_finance_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { fiscal_conservative }
+		}		
+	}
+	EAR_minister_of_finance_2 = { 
+		name = ear_minister_of_finance_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_minister_of_finance_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { regulation_proponent }
+		}		
+	}
+	EAR_minister_of_finance_3 = { 
+		name = ear_minister_of_finance_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_minister_of_finance_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { architect }
+		}		
+	}
+	EAR_minister_of_finance_4 = { 
+		name = ear_minister_of_finance_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_minister_of_finance_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { local_investor }
+		}		
+	}
+	EAR_minister_of_finance_5 = { 
+		name = ear_minister_of_finance_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_minister_of_finance_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { experienced_merchant }
+		}		
+	}
+	EAR_minister_of_finance_6 = { 
+		name = ear_minister_of_finance_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_finance_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_minister_of_finance_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { agrarian_reformer }
+		}		
+	}
+
+	EAR_minister_of_culture_1 = { 
+		name = ear_minister_of_culture_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_minister_of_culture_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { chauvinist }
+		}		
+	}
+	EAR_minister_of_culture_2 = { 
+		name = ear_minister_of_culture_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_minister_of_culture_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { royalist }
+		}		
+	}
+	EAR_minister_of_culture_3 = { 
+		name = ear_minister_of_culture_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_minister_of_culture_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { naturalist }
+		}		
+	}
+	EAR_minister_of_culture_4 = { 
+		name = ear_minister_of_culture_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_minister_of_culture_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { pacifist }
+		}		
+	}
+	EAR_minister_of_culture_5 = { 
+		name = ear_minister_of_culture_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_minister_of_culture_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { multiculturalist }
+		}		
+	}
+	EAR_minister_of_culture_6 = { 
+		name = ear_minister_of_culture_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_culture_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_minister_of_culture_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { personality_cultist }
+		}		
+	}
+
+	EAR_minister_of_justice_1 = { 
+		name = ear_minister_of_justice_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_minister_of_justice_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { neutral_judge }
+		}		
+	}
+	EAR_minister_of_justice_2 = { 
+		name = ear_minister_of_justice_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_minister_of_justice_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { corrupt_judge }
+		}		
+	}
+	EAR_minister_of_justice_3 = { 
+		name = ear_minister_of_justice_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_minister_of_justice_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { tough_on_crime }
+		}		
+	}
+	EAR_minister_of_justice_4 = { 
+		name = ear_minister_of_justice_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_minister_of_justice_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { non_bender_activist }
+		}		
+	}
+	EAR_minister_of_justice_5 = { 
+		name = ear_minister_of_justice_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_minister_of_justice_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { feminist }
+		}		
+	}
+	EAR_minister_of_justice_6 = { 
+		name = ear_minister_of_justice_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_justice_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_minister_of_justice_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { colonial_activist }
+		}		
+	}
+
+	EAR_minister_of_works_1 = { 
+		name = ear_minister_of_works_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_minister_of_works_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { cruel_supervisor }
+		}		
+	}
+	EAR_minister_of_works_2 = { 
+		name = ear_minister_of_works_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_minister_of_works_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { motivated_pioneer }
+		}		
+	}
+	EAR_minister_of_works_3 = { 
+		name = ear_minister_of_works_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_minister_of_works_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { workers_syndicat }
+		}		
+	}
+	EAR_minister_of_works_4 = { 
+		name = ear_minister_of_works_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_minister_of_works_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { low_standards }
+		}		
+	}
+	EAR_minister_of_works_5 = { 
+		name = ear_minister_of_works_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_minister_of_works_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { unemployment_benefits }
+		}		
+	}
+	EAR_minister_of_works_6 = { 
+		name = ear_minister_of_works_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_works_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_minister_of_works_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { outsourcer }
+		}		
+	}
+
+	EAR_minister_of_rites_1 = { 
+		name = ear_minister_of_rites_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_minister_of_rites_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { warrior_culture }
+		}		
+	}
+	EAR_minister_of_rites_2 = { 
+		name = ear_minister_of_rites_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_minister_of_rites_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { genericerialist }
+		}		
+	}
+	EAR_minister_of_rites_3 = { 
+		name = ear_minister_of_rites_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_minister_of_rites_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { orthodox }
+		}		
+	}
+	EAR_minister_of_rites_4 = { 
+		name = ear_minister_of_rites_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_minister_of_rites_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { xenophobe }
+		}		
+	}
+	EAR_minister_of_rites_5 = { 
+		name = ear_minister_of_rites_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_minister_of_rites_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { jingoist }
+		}		
+	}
+	EAR_minister_of_rites_6 = { 
+		name = ear_minister_of_rites_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_minister_of_rites_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_minister_of_rites_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { fanatic }
+		}		
+	}
+
+	EAR_head_of_intelligence_1 = { 
+		name = ear_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = ear_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { spymaster }
+		}		
+	}
+	EAR_head_of_intelligence_2 = { 
+		name = ear_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = ear_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { constable }
+		}		
+	}
+	EAR_head_of_intelligence_3 = { 
+		name = ear_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = ear_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { head_censor }
+		}		
+	}
+	EAR_head_of_intelligence_4 = { 
+		name = ear_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = ear_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { master_torturer }
+		}		
+	}
+	EAR_head_of_intelligence_5 = { 
+		name = ear_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = ear_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { master_assassin }
+		}		
+	}
+	EAR_head_of_intelligence_6 = { 
+		name = ear_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = ear_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { astrologist }
+		}		
+	}
+
+	EAR_quartermaster_1 = { 
+		name = ear_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = ear_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { logistician_2 }
+		}		
+	}
+	EAR_quartermaster_2 = { 
+		name = ear_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = ear_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { forager_2 }
+		}		
+	}
+	EAR_quartermaster_3 = { 
+		name = ear_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = ear_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	EAR_quartermaster_4 = { 
+		name = ear_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = ear_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	EAR_quartermaster_5 = { 
+		name = ear_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = ear_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	EAR_quartermaster_6 = { 
+		name = ear_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_generic_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = ear_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+
+
+	###   ###  #    #    # 
+	#  # #   # #    #    # 
+	#  # ##### #    #    # 
+	#  # #   # #    #    # 
+	###  #   # #    #### # 
+
+
+	EAR_quon = { 
+		name = "Quon"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/EAR/Portrait_Earthkingdom_Daili1.dds"
+			}
+			army = {
+				small = "GFX_idea_ear_dai_li_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = ear_quon
+			cost = 200
+			removal_cost = -1
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				has_country_flag = EAR_dai_li_minister_of_personnel
+			}
+			visible = {
+				has_country_flag = EAR_dai_li_minister_of_personnel
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { cruel_overseer }
+		}
+		corps_commander = {
+			traits = { generic }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAR_hiroshi = { 
+		name = "Hiroshi"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/EAR/Portrait_Earthkingdom_Daili2.dds"
+			}
+			army = {
+				small = "GFX_idea_ear_dai_li_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = ear_hiroshi
+			cost = 200
+			removal_cost = -1
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				has_country_flag = EAR_dai_li_minister_of_finance
+			}
+			visible = {
+				has_country_flag = EAR_dai_li_minister_of_finance
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { corrupt_spymaster }
+		}
+		corps_commander = {
+			traits = { generic }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAR_juno = { 
+		name = "Juno"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/EAR/Portrait_Earthkingdom_Daili3.dds"
+			}
+			army = {
+				small = "GFX_idea_ear_dai_li_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = ear_juno
+			cost = 200
+			removal_cost = -1
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				has_country_flag = EAR_dai_li_minister_of_culture
+			}
+			visible = {
+				has_country_flag = EAR_dai_li_minister_of_culture
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { extreme_royalist }
+		}
+		corps_commander = {
+			traits = { generic }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAR_moku = { 
+		name = "Moku"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/EAR/Portrait_Earthkingdom_Daili4.dds"
+			}
+			army = {
+				small = "GFX_idea_ear_dai_li_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = ear_moku
+			cost = 200
+			removal_cost = -1
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				has_country_flag = EAR_dai_li_minister_of_justice
+			}
+			visible = {
+				has_country_flag = EAR_dai_li_minister_of_justice
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { dai_li_judge }
+		}
+		corps_commander = {
+			traits = { generic }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAR_saiful = { 
+		name = "Saiful"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/EAR/Portrait_Earthkingdom_Daili5.dds"
+			}
+			army = {
+				small = "GFX_idea_ear_dai_li_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = ear_saiful
+			cost = 200
+			removal_cost = -1
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				has_country_flag = EAR_dai_li_minister_of_works
+			}
+			visible = {
+				has_country_flag = EAR_dai_li_minister_of_works
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { cruel_supervisor }
+		}
+		corps_commander = {
+			traits = { generic }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+
+	EAR_cam = { 
+		name = "Cam"
+		portraits = {
+			civilian = {
+				large =  "gfx/leaders/EAR/Portrait_Earthkingdom_Daili6.dds"
+			}
+			army = {
+				small = "GFX_idea_ear_dai_li_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = ear_cam
+			cost = 200
+			removal_cost = -1
+			allowed = {
+				original_tag = EAR
+			}
+			available = {
+				has_country_flag = EAR_dai_li_minister_of_rites
+			}
+			visible = {
+				has_country_flag = EAR_dai_li_minister_of_rites
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { orthodox }
+		}
+		corps_commander = {
+			traits = { generic }
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+	}
+}

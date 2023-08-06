@@ -1,0 +1,86 @@
+
+state={
+	id=34
+	name="STATE_34"
+
+	history={
+		owner = NAT
+		controller = NAT
+		add_core_of = NAT
+		
+		add_dynamic_modifier = { modifier = walrus_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.8
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = NAT
+			controller = NAT
+			add_core_of = NAT
+			buildings = {
+				infrastructure = 2
+				farm = 2
+				lumber_mill = 2
+				quarry = 2
+				6068 = {
+					naval_base = 2
+
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = NAT
+			controller = NAT
+
+		}
+		106.2.4 = {
+			owner = NAT
+			controller = NAT
+
+		}
+		111.10.30 = {
+			owner = NAT
+			controller = NAT
+
+		}
+
+	}
+
+	provinces={
+		4351 6068 6083 6084 6087 6090 6094 6100 
+	}
+	manpower=3000
+	buildings_max_level_factor=1.000
+	state_category=town
+}

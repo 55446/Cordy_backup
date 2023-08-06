@@ -1,0 +1,66 @@
+state={
+	id=266
+	name="STATE_266"
+	manpower = 7560
+	state_category = town
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.5
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.4
+		}
+		add_to_variable = {
+			var = water
+			value = 0.5
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = WUL
+		controller = WUL
+		add_core_of = WUL
+		12.1.1 = {
+			owner = WUL
+			controller = WUL
+			add_core_of = WUL
+
+			buildings = {
+				infrastructure = 3
+				harbour = 1
+				fishing_stand = 1
+			}
+		}
+
+		52.5.16 = {
+			controller = FIR
+		}
+
+		106.2.4 = {
+			controller = FIR
+		}
+
+		111.10.30 = {
+			controller = FIR
+		}
+	}
+
+	provinces={
+		1885 2461 2788 3020 3793 4747 4858 5009 5416 5557 7333 7339 7364 7365 7367 7380 10461 
+	}
+}

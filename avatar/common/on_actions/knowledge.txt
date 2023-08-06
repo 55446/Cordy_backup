@@ -1,0 +1,78 @@
+on_actions = {
+
+	on_startup = {
+		effect = {
+			every_country = {
+				set_variable = { literacy_variable = modifier@knowledge_gain }
+				clamp_variable = { var = literacy_variable min = 0 max = 100 }
+
+				#### ages
+
+				recalculate_age = yes
+			}
+		}
+	}
+
+	on_daily = {
+		effect = {
+
+			set_variable = { knowledge_daily = 0 }
+
+			# base gain
+			add_to_variable = { knowledge_daily = 0.1 }
+
+			# modifiers
+			add_to_variable = { knowledge_daily = modifier@knowledge }
+
+			# factor
+			set_variable = { knowledge_factor_calc = literacy_variable }
+			divide_variable = { knowledge_factor_calc = 100 }
+			add_to_variable = { knowledge_factor_calc = 1 }
+			clamp_variable = { 
+				var = knowledge_factor_calc 
+				min = 0 
+				#max = 0
+			}
+			multiply_variable = { knowledge_daily = knowledge_factor_calc }
+
+			add_to_variable = { knowledge_variable = knowledge_daily }
+
+	
+
+
+
+			if = {
+				limit = {
+					check_variable = { literacy_variable < mtth:literacy_target_100 }
+					check_variable = { modifier@knowledge < 0.01 }
+				}
+				add_to_variable = { literacy_variable = 0.01 }
+			}
+			if = {
+				limit = {
+					check_variable = { literacy_variable < mtth:literacy_target_100 }
+					check_variable = { modifier@knowledge > 0.01 }
+				}
+				add_to_variable = { literacy_variable = modifier@knowledge }
+			}
+
+			if = {
+				limit = {
+					check_variable = { literacy_variable > mtth:literacy_target_100 }
+					check_variable = { modifier@knowledge > -0.01 }
+				}
+				add_to_variable = { literacy_variable = -0.01 }
+			}
+			if = {
+				limit = {
+					check_variable = { literacy_variable > mtth:literacy_target_100 }
+					check_variable = { modifier@knowledge < -0.01 }
+				}
+				add_to_variable = { literacy_variable = modifier@knowledge }
+			}
+			clamp_variable = { var = literacy_variable min = 0 max = 100 }
+			
+		}
+	}
+
+}

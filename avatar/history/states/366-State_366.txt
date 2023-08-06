@@ -1,0 +1,72 @@
+state={
+	id=366
+	name="STATE_366"
+	manpower = 3000
+	state_category = small_island
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.3
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		add_core_of = INT
+		victory_points = { 3731 10 }
+	
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+
+			buildings = {
+				infrastructure = 5
+				3731 = {
+					naval_base = 1
+				}
+			}
+		}
+
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+		}
+
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+		}
+
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+		}
+	}
+
+	provinces={
+		3731 
+	}
+}

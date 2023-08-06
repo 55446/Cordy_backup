@@ -1,0 +1,260 @@
+on_actions = {
+
+	on_annex = {
+	    effect = {
+	    	if = {
+	    		limit = {
+	    			FROM = {
+	    				has_country_flag = calculator
+	    			}
+	    		}
+	    		FROM = {
+	    			clr_country_flag = calculator
+	    		}
+	    		random_country = {
+	    			set_country_flag = calculator
+	    		}
+	    	}
+	    }
+	}
+
+	on_monthly = {
+		effect = {
+
+			### dragon hunt
+
+			if = {
+				limit = {
+					tag = FIR
+					has_country_flag = hunting_dragons
+					any_state = {
+						NOT = {
+							state = 302
+						}
+						has_dynamic_modifier = { modifier = dragon_herd }
+					}
+				}
+
+				random_list = {
+					30 = {
+
+					}
+					0 = {
+						modifier = { add = 10 95 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						modifier = { add = 10 323 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						modifier = { add = 10 326 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						modifier = { add = 10 264 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						modifier = { add = 10 167 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						modifier = { add = 10 181 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						modifier = { add = 10 267 = { has_dynamic_modifier = { modifier = dragon_herd }}}
+						random_owned_state = {
+							set_variable = { global.dragon_attack = THIS.id }
+							set_state_flag = dragon_attack
+							THIS.OWNER = { country_event = { id = firenation.5  days = 5 } }
+						}
+					}
+				}
+			}
+
+
+			### peoples initiative
+			set_variable = { initiative_chance = modifier@peoples_initiative }
+			multiply_variable = { initiative_chance = 100 }
+
+			random = {
+				chance = initiative_chance
+				random_list = {
+					ai_priority_steel = {
+
+					}
+					ai_priority_animal_products = {
+						country_event = { id = centralisation.5  days = 1  random_days = 30 }
+					}
+					ai_priority_wood = {
+						country_event = { id = centralisation.7  days = 1  random_days = 30 }
+					}
+					ai_priority_iron = {
+						
+					}
+					ai_priority_textile = {
+						country_event = { id = centralisation.9  days = 1  random_days = 30 }
+					}
+					ai_priority_minerals = {
+						country_event = { id = centralisation.8  days = 1  random_days = 30 }
+					}
+					ai_priority_grain = {
+						country_event = { id = centralisation.4  days = 1  random_days = 30 }
+					}
+					ai_priority_fossile_fuels = {
+						
+					}
+					ai_priority_food = {
+						random_list = {
+							1 = {
+								country_event = { id = centralisation.6  days = 1  random_days = 30 }
+							}
+							1 = {
+								country_event = { id = centralisation.4  days = 1  random_days = 30 }
+							}
+						}
+					}
+					ai_priority_consumer_goods = {
+						country_event = { id = centralisation.10  days = 1  random_days = 30 }
+					}
+					ai_priority_luxury_goods = {
+						country_event = { id = centralisation.11  days = 1  random_days = 30 }
+					}
+					ai_priority_planks = {
+						country_event = { id = centralisation.2  days = 1  random_days = 30 }
+					}
+					ai_priority_bricks = {
+						country_event = { id = centralisation.3  days = 1  random_days = 30 }
+					}
+					ai_priority_steel_beams = {
+						
+					}
+
+					0.1 = {
+						random_list = {
+							1 = {
+								country_event = { id = centralisation.12  days = 1  random_days = 30 }
+							}
+							1 = {
+								country_event = { id = centralisation.13  days = 1  random_days = 30 }
+							}
+							1 = {
+								country_event = { id = centralisation.1  days = 1  random_days = 30 }
+							}
+						}
+					}
+
+				}
+			}
+
+
+			### calendar
+
+			if = {
+				limit = {
+					has_country_flag = calculator
+				}
+
+				random_list = {
+					70 = { }
+					30 = {
+						random_state = {
+							limit = {
+								THIS.OWNER =  {
+									OR = {
+										tag = NWT
+										# tag = SWT
+									}
+								}
+								NOT = { 
+								has_state_flag = watertribe_barbarians_flag
+								has_dynamic_modifier = { modifier = watertribe_barbarians }
+								has_idea = one_tribe
+								}
+							}
+							set_state_flag = watertribe_barbarians_flag
+							set_state_flag = show_barbarian_territories
+							add_dynamic_modifier = { modifier = watertribe_barbarians	}
+							THIS.OWNER = { country_event = watertribe_barbarians.1 }
+						}
+					}
+				}
+
+				### great comet
+
+				if = {
+					limit = {
+						check_variable = { global.year = global.great_comet_year }
+						check_variable = { global.calendar_month = global.great_comet_month }
+					}
+					news_event = { id = calendar_event.1 days = global.great_comet_day }
+				}
+
+				### volcano
+
+				if = {
+					limit = {
+						check_variable = { global.year = global.volcano_year }
+						check_variable = { global.calendar_month = global.volcano_month }
+					}
+					var:global.volcano_state.OWNER = { 
+						country_event = nature.1 
+						days = global.volcano_day 
+					}
+
+				}
+				
+				### months and years
+
+
+				### counter
+				if = {
+					limit = {
+						NOT = {
+							check_variable = { global.calendar_month = 12 }
+						}
+					}
+					add_to_variable = { global.calendar_month = 1 }
+
+					else = {
+						set_variable = { global.calendar_month = 1 }
+						add_to_variable = { global.calendar_year = 1 }
+						add_to_variable = { global.after_genocide_year = 1 }
+					}
+				}
+
+
+				### spring event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 3 }
+					}
+					news_event = { id = calendar.2 days = 20 }
+				}
+				### summer event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 6 }
+					}
+					news_event = { id = calendar.3 days = 21 }
+				}
+				### fall event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 9 }
+					}
+					news_event = { id = calendar.4 days = 23 }
+				}
+				### winter event
+				if = {
+					limit = {
+						check_variable = { global.calendar_month = 12 }
+					}
+					news_event = { id = calendar.5 days = 21 }
+				}
+
+			}
+
+
+			#### water full moon
+
+			#if = {
+			#	limit = {
+			#		has_idea = water_nation
+			#	}
+			#	swap_ideas = {
+			#		remove_idea = half_moon
+			#		add_idea = full_moon
+			#	}
+			#	hidden_effect = {
+			#		news_event = { id = calendar.1 days = 4 }
+			#	}
+			#}
+		}
+	}
+
+}

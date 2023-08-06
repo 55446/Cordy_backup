@@ -1,0 +1,89 @@
+GAO_build_army_1 = {
+	allowed = {tag = GAO}
+	enable ={
+		GAO = { num_divisions > -1
+		num_divisions < 2
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = 
+	{
+		type = build_army 
+		id = swordsmen 
+		value = 2 
+	}
+
+}
+GAO_build_army_2 = {
+	allowed = {tag = GAO}
+	enable ={
+		GAO = { num_divisions > 1
+		num_divisions < 4
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = 
+	{
+		type = build_army 
+		id = swordsmen 
+		value = 4 
+	}
+
+}
+GAO_build_army_3 = {
+	allowed = {tag = GAO}
+	enable ={
+		GAO = { num_divisions > 3
+		num_divisions < 6
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = 
+	{
+		type = build_army 
+		id = swordsmen 
+		value = 6 
+	}
+
+}
+GAO_build_army_4 = {
+	allowed = {tag = GAO}
+	enable ={
+		GAO = { num_divisions > 5
+		num_divisions < 8
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = 
+	{
+		type = build_army 
+		id = swordsmen 
+		value = 8 
+	}
+
+}
+GAO_build_army_5 = {
+	allowed = {tag = GAO}
+	enable ={
+		GAO = { num_divisions > 7
+		num_divisions < 10
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = 
+	{
+		type = build_army 
+		id = swordsmen 
+		value = 10 
+	}
+
+}
+GAO_swordsmen_only = {
+	allowed = {tag = GAO}
+	enable = {always = yes}
+	ai_strategy = {
+		type = unit_ratio
+		id = swordsmen
+		value = 1
+	}
+}

@@ -1,0 +1,1577 @@
+characters={
+	FIR_sozin = {
+		name = FIR_sozin
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Sozin"
+			}
+			army = {
+				large = "GFX_Portrait_Sozin"
+				small = "GFX_Portrait_Sozin_small"
+			}
+		}
+		country_leader = {
+			ideology = colonialism
+			traits = {
+				firelord
+				philosopher
+			}
+			expire = "32.4.7"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
+				skilled_staffer 
+				offensive_infantry 
+				fast_planner 
+				aggressive_assaulter 
+				firelord 
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id=-1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
+
+	FIR_ozai = {
+		name = FIR_ozai
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Ozai_young"
+			}
+			army = {
+				large = "GFX_Portrait_Ozai_young"
+				small = "GFX_Portrait_Ozai_young_small"
+			}
+		}
+		country_leader = {
+			ideology = colonialism
+			traits = {
+				firelord
+			}
+			expire = "138.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
+				skilled_staffer 
+				offensive_infantry 
+				fast_planner 
+				aggressive_assaulter 
+				firelord 
+			}
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 3
+			legacy_id=-1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
+
+	FIR_azulon = {
+		name = FIR_azulon
+		portraits={
+			civilian = {
+				large = "GFX_Portrait_Azulon_young"
+			}
+			army = {
+				large = "GFX_Portrait_Azulon_young"
+				small = "GFX_Portrait_Azulon_young_small"
+			}
+		}
+		country_leader = {
+			ideology = colonialism
+			traits = {
+				firelord
+			}
+			expire = "110.1.1"
+			id = -1
+		}
+		field_marshal = {
+			traits = { 
+				skilled_staffer 
+				offensive_infantry 
+				fast_planner 
+				aggressive_assaulter 
+				firelord 
+			}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=-1
+
+			visible = { 
+				has_character_flag = FIR_character_born
+				has_character_flag = FIR_character_general
+				NOT = { has_character_flag = FIR_character_death } 
+			}
+		}
+	}
+
+	FIR_shaozu = {
+		name = "Shaozu"
+		portraits={
+			army = {
+				large="GFX_Portrait_Firenation_Generic_13"
+				small = "GFX_Portrait_Firenation_Generic_13_small"
+			}
+		}
+		field_marshal = {
+			traits = { generic supply_organisation endurance_general organizer }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 4
+			legacy_id=-1
+		}
+	}
+
+	FIR_yotto={
+		name="Yotto"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_14_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_14"
+			}
+		}
+		corps_commander={
+			traits={ generic trait_engineer }
+			skill=3
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor = {
+			slot = field_marshal
+			idea_token = yotto
+			cost = 100
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { transportation_expert_1 }
+		}
+	}
+
+	FIR_arashi={
+		name="Arashi"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_7_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_7"
+			}
+		}
+		advisor = {
+			slot = war_minister
+			idea_token = arashi
+			cost = 100
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { amphibious_specialist_1 }
+		}
+		field_marshal={
+			traits={ generic offensive_infantry trait_engineer naval_invader naval_liason }
+			skill=5
+			attack_skill=5
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	FIR_track={
+		name="Dosan"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_5_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_5"
+			}
+		}
+		corps_commander={
+			traits={ generic offensive_infantry cavalry_leader sneak_attack }
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	FIR_konran={
+		name="Konran"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_3_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_3"
+			}
+		}
+		corps_commander={
+			traits={ generic trait_engineer trait_mountaineer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+		advisor = {
+			slot = head_of_weaponry
+			idea_token = konran
+			cost = 100
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { swordsmen_guildmaster_1 }
+		}
+	}
+	FIR_waruidesu={
+		name="Waruidesu"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_2_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_2"
+			}
+		}
+		corps_commander={
+			traits={ generic naval_invader }
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	FIR_jeong={
+		name="Jeong"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_6_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_6"
+			}
+		}
+		corps_commander={
+			traits={ generic }
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	FIR_lee={
+		name="Lee"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_8_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_8"
+			}
+		}
+		navy_leader={
+			traits={ battleship_adherent naval_lineage generic }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+		advisor = {
+			slot = grand_admiral
+			idea_token = lee
+			cost = 100
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { navigator }
+		}
+	}
+	FIR_ogodei={
+		name="Ogodei"
+		portraits={
+			army={
+				small="GFX_Portrait_Firenation_Generic_9_small"
+			}
+			army={
+				large="GFX_Portrait_Firenation_Generic_9"
+			}
+		}
+		navy_leader={
+			traits={ generic }
+			skill=3
+			attack_skill=2
+			defense_skill=2
+			maneuvering_skill=1
+			coordination_skill=1
+			legacy_id=-1
+		}
+	}
+
+
+	FIR_generic={
+		name="Generic"
+		portraits={
+			civilian={
+				large="gfx/leaders/FIR/Portrait_Firenation_constitutional_monarchy.dds"
+			}
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=constitutional_monarchy
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=elective_chiefdom
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=active_pacifism
+			expire="120.4.7.1"
+			id=-1
+		}
+		country_leader={
+			desc="POLITICS_ADOLF_HITLER_DESC"
+			ideology=anarchism
+			expire="120.4.7.1"
+			id=-1
+		}
+	}
+
+
+
+	 ###   ###   #   #  #   ###   ###   ###    ###            
+	#   #  #  #  #   #  #  #     #   #  #  #  #         
+	#####  #  #  #   #  #   ##   #   #  ##     ##       
+	#   #  #  #  #   #  #     #  #   #  # #      #      
+	#   #  ###    ###   #  ###    ###   #  #  ###    
+
+
+	FIR_minister_of_personnel_1 = { 
+		name = fir_minister_of_personnel_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_personnel_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = fir_minister_of_personnel_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { gifted_speaker }
+		}		
+	}
+	FIR_minister_of_personnel_2 = { 
+		name = fir_minister_of_personnel_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_personnel_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = fir_minister_of_personnel_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { close_to_the_people }
+		}		
+	}
+	FIR_minister_of_personnel_3 = { 
+		name = fir_minister_of_personnel_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_personnel_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = fir_minister_of_personnel_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { military_organiser }
+		}		
+	}
+	FIR_minister_of_personnel_4 = { 
+		name = fir_minister_of_personnel_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_personnel_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = fir_minister_of_personnel_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { administrator }
+		}		
+	}
+	FIR_minister_of_personnel_5 = { 
+		name = fir_minister_of_personnel_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_personnel_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = fir_minister_of_personnel_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { lawgiver }
+		}		
+	}
+	FIR_minister_of_personnel_6 = { 
+		name = fir_minister_of_personnel_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_personnel_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_personnel
+			idea_token = fir_minister_of_personnel_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { prime_minister }
+		}		
+	}
+
+	FIR_minister_of_finance_1 = { 
+		name = fir_minister_of_finance_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_finance_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = fir_minister_of_finance_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { fiscal_conservative }
+		}		
+	}
+	FIR_minister_of_finance_2 = { 
+		name = fir_minister_of_finance_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_finance_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = fir_minister_of_finance_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { regulation_proponent }
+		}		
+	}
+	FIR_minister_of_finance_3 = { 
+		name = fir_minister_of_finance_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_finance_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = fir_minister_of_finance_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { architect }
+		}		
+	}
+	FIR_minister_of_finance_4 = { 
+		name = fir_minister_of_finance_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_finance_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = fir_minister_of_finance_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { local_investor }
+		}		
+	}
+	FIR_minister_of_finance_5 = { 
+		name = fir_minister_of_finance_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_finance_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = fir_minister_of_finance_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { experienced_merchant }
+		}		
+	}
+	FIR_minister_of_finance_6 = { 
+		name = fir_minister_of_finance_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_finance_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_finance
+			idea_token = fir_minister_of_finance_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { agrarian_reformer }
+		}		
+	}
+
+	FIR_minister_of_culture_1 = { 
+		name = fir_minister_of_culture_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_culture_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = fir_minister_of_culture_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { chauvinist }
+		}		
+	}
+	FIR_minister_of_culture_2 = { 
+		name = fir_minister_of_culture_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_culture_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = fir_minister_of_culture_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { royalist }
+		}		
+	}
+	FIR_minister_of_culture_3 = { 
+		name = fir_minister_of_culture_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_culture_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = fir_minister_of_culture_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { naturalist }
+		}		
+	}
+	FIR_minister_of_culture_4 = { 
+		name = fir_minister_of_culture_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_culture_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = fir_minister_of_culture_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { pacifist }
+		}		
+	}
+	FIR_minister_of_culture_5 = { 
+		name = fir_minister_of_culture_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_culture_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = fir_minister_of_culture_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { multiculturalist }
+		}		
+	}
+	FIR_minister_of_culture_6 = { 
+		name = fir_minister_of_culture_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_culture_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_culture
+			idea_token = fir_minister_of_culture_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { personality_cultist }
+		}		
+	}
+
+	FIR_minister_of_justice_1 = { 
+		name = fir_minister_of_justice_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_justice_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = fir_minister_of_justice_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { neutral_judge }
+		}		
+	}
+	FIR_minister_of_justice_2 = { 
+		name = fir_minister_of_justice_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_justice_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = fir_minister_of_justice_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { corrupt_judge }
+		}		
+	}
+	FIR_minister_of_justice_3 = { 
+		name = fir_minister_of_justice_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_justice_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = fir_minister_of_justice_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { tough_on_crime }
+		}		
+	}
+	FIR_minister_of_justice_4 = { 
+		name = fir_minister_of_justice_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_justice_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = fir_minister_of_justice_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { non_bender_activist }
+		}		
+	}
+	FIR_minister_of_justice_5 = { 
+		name = fir_minister_of_justice_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_justice_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = fir_minister_of_justice_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { feminist }
+		}		
+	}
+	FIR_minister_of_justice_6 = { 
+		name = fir_minister_of_justice_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_justice_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_justice
+			idea_token = fir_minister_of_justice_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { colonial_activist }
+		}		
+	}
+
+	FIR_minister_of_works_1 = { 
+		name = fir_minister_of_works_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_works_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = fir_minister_of_works_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { cruel_supervisor }
+		}		
+	}
+	FIR_minister_of_works_2 = { 
+		name = fir_minister_of_works_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_works_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = fir_minister_of_works_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { motivated_pioneer }
+		}		
+	}
+	FIR_minister_of_works_3 = { 
+		name = fir_minister_of_works_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_works_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = fir_minister_of_works_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { workers_syndicat }
+		}		
+	}
+	FIR_minister_of_works_4 = { 
+		name = fir_minister_of_works_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_works_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = fir_minister_of_works_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { low_standards }
+		}		
+	}
+	FIR_minister_of_works_5 = { 
+		name = fir_minister_of_works_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_works_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = fir_minister_of_works_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { unemployment_benefits }
+		}		
+	}
+	FIR_minister_of_works_6 = { 
+		name = fir_minister_of_works_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_works_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_works
+			idea_token = fir_minister_of_works_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { outsourcer }
+		}		
+	}
+
+	FIR_minister_of_rites_1 = { 
+		name = fir_minister_of_rites_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_rites_1"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = fir_minister_of_rites_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { warrior_culture }
+		}		
+	}
+	FIR_minister_of_rites_2 = { 
+		name = fir_minister_of_rites_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_rites_2"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = fir_minister_of_rites_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { materialist }
+		}		
+	}
+	FIR_minister_of_rites_3 = { 
+		name = fir_minister_of_rites_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_rites_3"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = fir_minister_of_rites_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { orthodox }
+		}		
+	}
+	FIR_minister_of_rites_4 = { 
+		name = fir_minister_of_rites_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_rites_4"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = fir_minister_of_rites_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { xenophobe }
+		}		
+	}
+	FIR_minister_of_rites_5 = { 
+		name = fir_minister_of_rites_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_rites_5"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = fir_minister_of_rites_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { jingoist }
+		}		
+	}
+	FIR_minister_of_rites_6 = { 
+		name = fir_minister_of_rites_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_minister_of_rites_6"
+			}
+		}
+		advisor = {
+			slot = minister_of_rites
+			idea_token = fir_minister_of_rites_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { fanatic }
+		}		
+	}
+
+	FIR_head_of_intelligence_1 = { 
+		name = fir_head_of_intelligence_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_head_of_intelligence_1"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = fir_head_of_intelligence_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { spymaster }
+		}		
+	}
+	FIR_head_of_intelligence_2 = { 
+		name = fir_head_of_intelligence_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_head_of_intelligence_2"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = fir_head_of_intelligence_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { constable }
+		}		
+	}
+	FIR_head_of_intelligence_3 = { 
+		name = fir_head_of_intelligence_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_head_of_intelligence_3"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = fir_head_of_intelligence_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { head_censor }
+		}		
+	}
+	FIR_head_of_intelligence_4 = { 
+		name = fir_head_of_intelligence_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_head_of_intelligence_4"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = fir_head_of_intelligence_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { master_torturer }
+		}		
+	}
+	FIR_head_of_intelligence_5 = { 
+		name = fir_head_of_intelligence_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_head_of_intelligence_5"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = fir_head_of_intelligence_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { master_assassin }
+		}		
+	}
+	FIR_head_of_intelligence_6 = { 
+		name = fir_head_of_intelligence_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_head_of_intelligence_6"
+			}
+		}
+		advisor = {
+			slot = head_of_intelligence
+			idea_token = fir_head_of_intelligence_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { astrologist }
+		}		
+	}
+
+	FIR_quartermaster_1 = { 
+		name = fir_quartermaster_1
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_quartermaster_1"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = fir_quartermaster_1
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { logistician_2 }
+		}		
+	}
+	FIR_quartermaster_2 = { 
+		name = fir_quartermaster_2
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_quartermaster_2"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = fir_quartermaster_2
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { forager_2 }
+		}		
+	}
+	FIR_quartermaster_3 = { 
+		name = fir_quartermaster_3
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_quartermaster_3"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = fir_quartermaster_3
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { jungle_specialist_2 }
+		}		
+	}
+	FIR_quartermaster_4 = { 
+		name = fir_quartermaster_4
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_quartermaster_4"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = fir_quartermaster_4
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { amphibious_specialist_2 }
+		}		
+	}
+	FIR_quartermaster_5 = { 
+		name = fir_quartermaster_5
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_quartermaster_5"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = fir_quartermaster_5
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { winter_specialist_2 }
+		}		
+	}
+	FIR_quartermaster_6 = { 
+		name = fir_quartermaster_6
+		portraits = {
+			army = {
+				small = "GFX_idea_fir_quartermaster_6"
+			}
+		}
+		advisor = {
+			slot = quartermaster
+			idea_token = fir_quartermaster_6
+			cost = 200
+			allowed = {
+				original_tag = FIR
+			}
+			available = {
+				
+			}
+			modifier = {
+				political_power_cost = 0.1
+			}
+			
+			traits = { garrison_master_1 }
+		}		
+	}
+
+}

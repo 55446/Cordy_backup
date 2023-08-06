@@ -1,0 +1,89 @@
+
+state={
+	id=138
+	name="STATE_138"
+
+	history={
+		owner = WBA
+		controller = WBA
+		add_core_of = WBA
+
+		add_dynamic_modifier = { modifier = ostrich_herd }
+		add_to_variable = {
+			var = forest
+			value = 0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = WBA
+			controller = WBA
+			add_core_of = WBA
+			buildings = {
+				infrastructure = 3
+
+			}
+
+		}
+		52.5.16 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		106.2.4 = {
+			owner = WBA
+			controller = FIR
+
+			build_railway = {
+				level = 2
+				path = { 5033 6301 1001 3681 2798 }
+			}
+			buildings = {
+				2798 = {
+					supply_node = 1
+				}
+			}
+
+		}
+		111.10.30 = {
+			owner = WBA
+			controller = WBA
+
+		}
+
+	}
+
+	provinces={
+		202 1291 1365 1369 1525 1682 1838 2481 2546 2798 3257 3681 4440 4481 4545 4643 4797 4936 5287 6455 6465 6481 6509 6529 6542 6549 6573 6583 6597 6649 
+	}
+	manpower=2500
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

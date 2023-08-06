@@ -1,0 +1,99 @@
+
+state={
+	id=154
+	name="STATE_154"
+
+	history={
+		owner = TAK
+		controller = TAK
+		add_core_of = TAK
+		
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.7
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			563 10 
+		}
+		victory_points = {
+			6901 65 
+		}
+		12.1.1 = {
+			owner = TAK
+			controller = TAK
+			add_core_of = TAK
+			buildings = {
+				infrastructure = 6
+				arms_factory = 2
+				harbour = 1
+				crop_weaving = 2
+				mine = 2
+				consumer_good_factory = 2
+				luxury_good_factory = 2
+				563 = {
+					coastal_fortress = 1
+					naval_base = 4
+
+				}
+				6901 = {
+					wall = 3
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = PFC
+			controller = PFC
+			add_core_of = PFC
+
+		}
+		111.10.30 = {
+			owner = PFC
+			controller = PFC
+			add_core_of = PFC
+
+		}
+
+	}
+
+	provinces={
+		563 2483 2523 3414 3646 4221 4614 4820 5104 5608 6850 6894 6901 6924 6972 6987 7017 7056 
+	}
+	manpower=23560
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

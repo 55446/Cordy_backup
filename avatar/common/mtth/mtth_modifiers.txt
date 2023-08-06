@@ -1,0 +1,290 @@
+
+
+inflation_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@currency_amount }
+		clamp_temp_variable = { var = factor min = 0.1 }
+		add = factor
+	}
+}
+
+peasant_food_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@peasant_food_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+peasant_output_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@peasant_output_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+grain_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@grain_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+animal_products_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@animal_products_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+textile_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@textile_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+wood_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@wood_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+minerals_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@minerals_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+fossile_fuels_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@fossile_fuels_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+iron_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@iron_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+steel_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@steel_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+consumer_goods_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@consumer_goods_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+luxury_goods_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@luxury_goods_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+planks_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@planks_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+bricks_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@bricks_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+steel_beams_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = 1 } 
+		add_to_temp_variable = { factor = modifier@steel_beams_demand } 
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+average_consumer_demand = {
+	base = 0
+	modifier = { 
+		set_temp_variable = { factor = modifier@grain_demand } 
+		add_to_temp_variable = { factor = modifier@animal_products_demand } 
+		add_to_temp_variable = { factor = modifier@textile_demand } 
+		add_to_temp_variable = { factor = modifier@wood_demand } 
+		add_to_temp_variable = { factor = modifier@minerals_demand } 
+		add_to_temp_variable = { factor = modifier@fossile_fuels_demand } 
+		add_to_temp_variable = { factor = modifier@iron_demand } 
+		add_to_temp_variable = { factor = modifier@steel_demand } 
+		add_to_temp_variable = { factor = modifier@consumer_goods_demand } 
+		add_to_temp_variable = { factor = modifier@luxury_goods_demand } 
+		add_to_temp_variable = { factor = modifier@planks_demand } 
+		add_to_temp_variable = { factor = modifier@bricks_demand } 
+		add_to_temp_variable = { factor = modifier@steel_beams_demand } 
+		divide_temp_variable = { factor = 13 }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+upkeep_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@building_upkeep_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+
+farmer_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@farmer_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+miller_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@miller_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+fisher_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@fisher_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+rancher_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@rancher_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+lumberjack_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@lumberjack_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+miner_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@miner_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+weaver_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@weaver_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+smith_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@smith_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+harbour_worker_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@harbour_worker_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+shopkeeper_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@shopkeeper_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+craftsman_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@craftsman_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}
+industrial_worker_factor = {
+	base = 0
+	modifier = {
+		set_temp_variable = { factor = 1 }
+		add_to_temp_variable = { factor = modifier@industrial_worker_factor }
+		clamp_temp_variable = { var = factor min = 0 }
+		add = factor
+	}
+}

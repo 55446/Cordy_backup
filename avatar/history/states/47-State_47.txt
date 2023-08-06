@@ -1,0 +1,74 @@
+state={
+	id=47
+	name="STATE_47"
+	manpower = 1200
+	state_category = pastoral
+
+	history={
+		owner = LAM
+		controller = LAM
+		add_core_of = LAM
+		
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0.2		}
+		add_to_variable = {
+			var = field
+			value = 0.3
+		}
+		add_to_variable = {
+			var = water
+			value = 0.5
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+	
+		victory_points = { 3399 5 }
+	
+		12.1.1 = {
+			owner = LAM
+			controller = LAM
+			add_core_of = LAM
+
+			buildings = {
+				infrastructure = 2
+				mill = 1
+			}
+		}
+
+		52.5.16 = {
+			owner = LAM
+			controller = LAM
+		}
+
+		106.2.4 = {
+			victory_points = { 3399 20 }
+
+			owner = LAM
+			controller = LAM
+			FIR = {
+				set_province_controller = 973
+			}
+		}
+
+		111.10.30 = {
+			owner = LAM
+			controller = LAM
+		}
+	}
+
+	provinces={
+		973 2151 2220 2292 2513 3046 3255 3399 4229 5314 6113 6119 6125 6141 
+	}
+}

@@ -1,0 +1,161 @@
+
+#### Cities ########################################################
+
+## RELOAD ME VIA "cityreload"
+
+
+### fire cities
+
+entity = {
+	name = "fire_house_1"
+	pdxmesh = "fire_house_1"
+	scale = 0.2
+}
+entity = {
+	name = "fire_house_2"
+	pdxmesh = "fire_house_2"
+	scale = 0.2
+}
+entity = {
+	name = "fire_house_3"
+	pdxmesh = "fire_house_3"
+	scale = 0.2
+}
+entity = {
+	name = "fire_house_4"
+	pdxmesh = "fire_house_4"
+	scale = 0.2
+}
+entity = {
+	name = "fire_rim_1"
+	pdxmesh = "fire_rim_1"
+	scale = 0.2
+}
+entity = {
+	name = "fire_center_1"
+	pdxmesh = "fire_center_1"
+	scale = 0.2
+}
+
+entity = {
+	name = "water_rim_1"
+	pdxmesh = "water_rim_1"
+	scale = 0.2
+}
+entity = {
+	name = "water_city_2"
+	pdxmesh = "water_city_2"
+	scale = 0.2
+}
+entity = {
+	name = "water_city_center"
+	pdxmesh = "water_city_center"
+	scale = 0.2
+}
+
+entity = {
+	name = "ba_sing_se_1"
+	pdxmesh = "ba_sing_se_1"
+	scale = 0.2
+}
+entity = {
+	name = "ba_sing_se_2"
+	pdxmesh = "ba_sing_se_2"
+	scale = 0.2
+}
+entity = {
+	name = "ba_sing_se_3"
+	pdxmesh = "ba_sing_se_3"
+	scale = 0.2
+}
+entity = {
+	name = "ba_sing_se_4"
+	pdxmesh = "ba_sing_se_4"
+	scale = 0.2
+}
+
+entity = {
+	name = "earth_city_1"
+	pdxmesh = "earth_city_1"
+	scale = 0.2
+}
+entity = {
+	name = "earth_city_2"
+	pdxmesh = "earth_city_2"
+	scale = 0.2
+}
+entity = {
+	name = "earth_city_3"
+	pdxmesh = "earth_city_3"
+	scale = 0.2
+}
+entity = {
+	name = "earth_city_4"
+	pdxmesh = "earth_city_4"
+	scale = 0.2
+}
+
+entity = {
+	name = "desert_city_1"
+	pdxmesh = "desert_city_1"
+	scale = 0.4
+}
+entity = {
+	name = "desert_city_2"
+	pdxmesh = "desert_city_2"
+	scale = 0.4
+}
+entity = {
+	name = "desert_city_3"
+	pdxmesh = "desert_city_3"
+	scale = 0.4
+}
+entity = {
+	name = "desert_city_4"
+	pdxmesh = "desert_city_4"
+	scale = 0.4
+}
+
+
+
+
+#### Buildings ########################################################
+# Name must match "building_" + building tag
+ 
+
+entity = {
+	name = "building_rocket_site"
+	pdxmesh = "building_rocket_site"
+	
+	locator = { name = "damage_locator_01"	position = { 0.0 0.0 0.0 } }
+	locator = { name = "damage_locator_02"	position = { -1.0 0.2 0.4 } }
+	
+	default_state = "idle"
+	state = { name = "idle"
+		#event = { time = 0.0 node="rocket_pad" particle = "rocket_launch_blast_particle" }
+	}
+	state = { name = "damaged" 
+		event = { time = 0.1 node="damage_locator_01" particle = "building_damaged_particle" }
+		event = { time = 0.1 node="damage_locator_02" particle = "building_damaged_particle" }
+	}
+}
+
+entity = {
+	name = "building_nuclear_reactor"
+	pdxmesh = "building_nuclear_reactor"
+	
+	locator = { name = "damage_locator_01"	position = { 1.6 0.4 -0.1 } }
+	locator = { name = "damage_locator_02"	position = { -0.5 0.2 0.4 } }
+	locator = { name = "damage_locator_03"	position = { -0.7 1.5 1.0 } }
+	
+	default_state = "idle"
+	state = { name = "idle" 
+		event = { time = 0.1 node="factorysmoke" particle = "factory_smoke_particle" }
+		event = { time = 0.1 node="factorysmoke2" particle = "factory_smoke_particle" }
+	}
+	state = { name = "damaged" 
+		event = { time = 0.1 node="damage_locator_01" particle = "building_damaged_particle" }
+		event = { time = 0.1 node="damage_locator_02" particle = "building_damaged_particle" }
+		event = { time = 0.1 node="damage_locator_03" particle = "building_damaged_particle" }
+	}
+}

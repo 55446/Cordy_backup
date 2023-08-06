@@ -1,0 +1,80 @@
+
+state={
+	id=38
+	name="STATE_38"
+
+	history={
+		owner = SWT
+		controller = SWT
+		add_core_of = SWT
+		
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.2
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			10281 3 
+		}
+		12.1.1 = {
+			owner = SWT
+			controller = SWT
+			add_core_of = SWT
+			buildings = {
+				infrastructure = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = SWT
+			controller = SWT
+
+		}
+		106.2.4 = {
+			owner = SWT
+			controller = SWT
+
+		}
+		111.10.30 = {
+			owner = SWT
+			controller = SWT
+
+		}
+
+	}
+
+	provinces={
+		6 97 511 1055 1213 1668 1764 2127 2422 2628 2822 3035 3150 3961 4225 4398 4447 5128 5295 5477 5554 10223 10226 10253 10261 10277 10281 10285 10311 10312 10326 10339 10340 10343 
+	}
+	manpower=452
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+}

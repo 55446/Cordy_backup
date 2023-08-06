@@ -1,0 +1,75 @@
+
+state={
+	id=326
+	name="STATE_326"
+
+	history={
+
+		add_dynamic_modifier = { modifier = dragon_moose_herd }
+
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0.7
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+		}
+		add_to_variable = {
+			var = water
+			value = 0.6
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 1
+				mine = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		218 277 819 1331 2007 2493 2979 3280 3363 4279 4829 5048 5111 5233 7866 7907 7925 7939 
+	}
+	manpower=2800
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+}

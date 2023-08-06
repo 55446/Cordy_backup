@@ -1,0 +1,87 @@
+
+state={
+	id=393
+	name="STATE_393"
+
+	history={
+		add_dynamic_modifier = { modifier = mongooze_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.8
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			8122 14 
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 6
+				harbour = 1
+				farm = 3
+				ranch = 1
+				crop_weaving = 1
+				mill = 2
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		49 104 400 539 574 584 597 1722 4657 5274 8063 8077 8082 8107 8110 8122 8130 8137 8138 8144 8146 8147 8151 8156 8162 8183 8193 8205 8211 8228 8255 8304 
+	}
+	manpower=21200
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

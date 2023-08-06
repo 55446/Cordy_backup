@@ -1,0 +1,81 @@
+
+state={
+	id=399
+	name="STATE_399"
+
+	history={
+		add_dynamic_modifier = { modifier = elephant_herd }
+		add_to_variable = {
+			var = forest
+			value = 0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = MPO
+		controller = MPO
+		add_core_of = MPO
+		12.1.1 = {
+			owner = MPO
+			controller = MPO
+			add_core_of = MPO
+			buildings = {
+				infrastructure = 2
+				ranch = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = MPO
+			controller = MPO
+
+		}
+		106.2.4 = {
+			owner = MPO
+			controller = MPO
+
+		}
+		111.10.30 = {
+			owner = MPO
+			controller = MPO
+
+		}
+
+	}
+
+	provinces={
+		109 118 640 699 742 745 942 1026 1184 1861 2059 2559 2610 3313 3846 3896 4312 4371 4835 5651 8149 8253 8320 8331 8408 8444 
+	}
+	manpower=3267
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

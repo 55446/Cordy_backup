@@ -1,0 +1,86 @@
+
+state={
+	id=153
+	name="STATE_153"
+
+	history={
+		owner = XIN
+		controller = XIN
+		add_core_of = XIN
+
+		add_dynamic_modifier = { modifier = eel_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			6648 5 
+		}
+		12.1.1 = {
+			owner = XIN
+			controller = XIN
+			add_core_of = XIN
+			buildings = {
+				infrastructure = 5
+				luxury_good_factory = 2
+
+			}
+
+		}
+		52.5.16 = {
+			controller = XIN
+			FIR = {
+				set_province_controller = 4483
+
+			}
+
+		}
+		106.2.4 = {
+			owner = GFC
+			controller = GFC
+			add_core_of = GFC
+		}
+
+		111.10.30 = {
+			owner = GFC
+			controller = GFC
+		}
+
+	}
+
+	provinces={
+		1285 3829 4289 4483 6648 6706 6782 
+	}
+	manpower=7580
+	buildings_max_level_factor=1.000
+	state_category=town
+}

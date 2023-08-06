@@ -1,0 +1,442 @@
+ideas = {
+
+	
+	trade_laws = { 
+		law = yes
+		use_list_view = yes
+		
+		global_trade = {
+
+			available = {
+				NOT = {
+					has_idea = hidden_economy
+					has_idea = remote_isolation
+					has_idea = remote_isolation_1
+				}
+				has_equipment = {
+				    convoy_1 > 99
+				}
+			}
+						
+			cost = 150
+			removal_cost = -1
+			level = 1
+			
+			modifier = {
+				min_export = 0.6
+				trade_opinion_factor = 0.8
+
+				transport_capacity = -0.4
+				
+				civilian_intel_to_others = 40.0
+				navy_intel_to_others = 20.0
+
+				supply_node_range = 0.3
+
+				weekly_centralisation = 0.06
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				# minors not at war should want to get the bonuses from local markets
+				modifier = {
+					factor = 0
+					
+					is_major = no
+					has_war = no
+				}
+
+
+				modifier = {
+					factor = 0
+					
+					OR = {
+						has_dynamic_modifier = { modifier = famine }
+						has_dynamic_modifier = { modifier = food_shortages }
+					}
+				}
+
+   				modifier = {
+					factor = 0
+					NOT = { 
+						has_idea = intercontinental_trade
+					}
+				}
+
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_grain = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_animal_products = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_wood = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_iron = 0 }
+				}
+
+   			}
+		}
+		
+		intercontinental_trade = {
+			
+			available = {
+				NOT = {
+					has_idea = hidden_economy
+					OR = {
+						has_idea = remote_isolation
+						has_idea = remote_isolation_1
+					}
+				}
+			}
+			
+			
+			cost = 150
+			removal_cost = -1
+			level = 2
+			
+			modifier = {
+				min_export = 0.45
+				trade_opinion_factor = 0.6
+
+				transport_capacity = -0.2
+				
+				civilian_intel_to_others = 30.0
+				navy_intel_to_others = 15.0
+
+				supply_node_range = 0.2
+
+				weekly_centralisation = 0.04
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				# minors not at war should want to get the bonuses from local markets
+				modifier = {
+					factor = 0
+					
+					is_major = no
+					has_war = no
+				}
+
+				modifier = {
+					factor = 0
+					
+					OR = {
+						has_dynamic_modifier = { modifier = famine }
+						has_dynamic_modifier = { modifier = food_shortages }
+					}
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = global_trade
+							has_idea = international_trade
+						}
+					}
+				}
+
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_grain = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_animal_products = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_wood = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_iron = 0 }
+				}
+   			}
+		}
+
+		international_trade = {
+			
+			available = {
+				NOT = {
+					has_idea = hidden_economy
+					OR = {
+						has_idea = remote_isolation
+						has_idea = remote_isolation_1
+					}
+				}
+			}
+			
+			
+			cost = 150
+			removal_cost = -1
+			level = 3
+			
+			modifier = {
+				min_export = 0.3
+				trade_opinion_factor = 0.6
+				
+				civilian_intel_to_others = 20.0
+				navy_intel_to_others = 10.0
+
+				supply_node_range = 0.1
+				supply_combat_penalties_on_core_factor = -0.2
+
+				weekly_centralisation = 0.02
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				# minors not at war should want to get the bonuses from local markets
+				modifier = {
+					factor = 0
+					
+					is_major = no
+					has_war = no
+				}
+
+				modifier = {
+					factor = 0.5
+					
+					OR = {
+						has_dynamic_modifier = { modifier = famine }
+						has_dynamic_modifier = { modifier = food_shortages }
+					}
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = intercontinental_trade
+							has_idea = city_markets
+						}
+					}
+				}
+
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_grain = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_animal_products = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_wood = 0 }
+				}
+				modifier = {
+					add = 2
+					check_variable = { ai_priority_iron = 0 }
+				}
+
+   			}
+		}
+		
+		city_markets = {
+			available = {
+				NOT = {
+					has_idea = hidden_economy
+					OR = {
+						has_idea = remote_isolation
+						has_idea = remote_isolation_1
+					}
+				}
+			}
+		
+			cost = 150
+			removal_cost = -1
+			level = 4
+
+			default = yes
+			
+			modifier = {
+				min_export = 0.15
+
+				peoples_initiative = 0.005
+				peasant_output_factor = 0.15
+				
+				civilian_intel_to_others = 10.0
+				navy_intel_to_others = 5
+
+				supply_combat_penalties_on_core_factor = -0.4
+
+				weekly_centralisation = -0.2
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					factor = 0
+					NOT = { 
+						OR = {
+							has_idea = international_trade
+							has_idea = local_markets
+						}
+					}
+				}
+
+   				modifier = {
+					factor = 10
+					check_variable = { ai_priority_grain > 1 }
+				}
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_animal_products > 1 }
+				}
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_wood > 1 }
+				}
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_iron > 1 }
+				}
+				
+				modifier = {
+					add = 50
+					
+					OR = {
+						has_dynamic_modifier = { modifier = famine }
+						has_dynamic_modifier = { modifier = food_shortages }
+					}
+				}
+				
+				modifier = {
+					add = 1500
+					
+					# revert from local_markets if we have large allies
+					has_idea = local_markets
+					has_large_ally_not_pick_local_markets = yes
+				}
+   			}
+		}
+		
+		local_markets = {
+			
+			available = {
+				#OR = {
+				#	has_idea = remote_isolation
+				#	has_idea = remote_isolation_1
+				#}
+				NOT = {
+					has_idea = hidden_economy
+				}
+			}
+			
+			cost = 150
+			removal_cost = -1
+			level = 5
+			
+			
+			modifier = {
+				min_export = 0
+
+				peoples_initiative = 0.01
+				peasant_output_factor = 0.3
+				
+				supply_combat_penalties_on_core_factor = -0.6
+
+				weekly_centralisation = -0.04
+			}
+			
+			on_add = {
+				custom_effect_tooltip = closed_economy_TT
+			}
+			
+			cancel_if_invalid = no
+
+			ai_will_do = {
+   				factor = 1
+
+   				modifier = {
+					add = -4
+					
+					is_major = yes
+				}
+				
+				modifier = {
+					factor = 0
+					
+					has_large_ally_not_pick_local_markets = yes
+				}
+
+				modifier = {
+					add = 100
+					
+					OR = {
+						has_dynamic_modifier = { modifier = famine }
+						has_dynamic_modifier = { modifier = food_shortages }
+					}
+				}
+
+				modifier = {
+					factor = 0
+					NOT = { has_idea = city_markets }
+				}
+
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_grain > 1 }
+				}
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_animal_products > 1 }
+				}
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_wood > 1 }
+				}
+				modifier = {
+					factor = 10
+					check_variable = { ai_priority_iron > 1 }
+				}
+   			}
+		}
+		
+		hidden_economy = {
+			
+			available = {
+				has_country_flag = lost_civilisation
+			}
+			visible = {
+				has_country_flag = lost_civilisation
+			}
+
+			cost = 150
+			removal_cost = -1
+			
+			
+			modifier = {
+				min_export = 0
+				civilian_intel_to_others = -100
+			}
+			
+			on_add = {
+				custom_effect_tooltip = closed_economy_TT
+			}
+			
+			cancel_if_invalid = no
+		}
+	}
+}

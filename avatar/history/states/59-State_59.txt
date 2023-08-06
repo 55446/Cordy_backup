@@ -1,0 +1,82 @@
+state={
+	id=59
+	name="STATE_59"
+	manpower = 2500
+	state_category = rural
+
+	history={
+		owner = LAM
+		controller = LAM
+		add_core_of = LAM
+		
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+		}
+		add_to_variable = {
+			var = field
+			value = 0.3
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.4
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+	
+		victory_points = { 1202 5 }
+	
+		12.1.1 = {
+			owner = LAM
+			controller = LAM
+			add_core_of = LAM
+
+			buildings = {
+				infrastructure = 2
+				farm = 1
+				lumber_mill = 1
+			}
+		}
+
+		52.5.16 = {
+			owner = LAM
+			controller = LAM
+		}
+
+		106.2.4 = {
+			owner = LAM
+			controller = FIR
+			
+		}
+
+		111.10.30 = {
+			owner = LAM
+			controller = LAM
+			FIR = {
+				set_province_controller = 1231
+				set_province_controller = 1856
+				set_province_controller = 2425
+				set_province_controller = 6201
+				set_province_controller = 3977
+				set_province_controller = 784
+			}
+		}
+	}
+
+	provinces={
+		784 1102 1202 1231 1289 1856 2425 3076 3977 4685 6189 6201 
+	}
+}

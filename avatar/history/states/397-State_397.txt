@@ -1,0 +1,94 @@
+
+state={
+	id=397
+	name="STATE_397"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = MER
+		controller = MER
+		add_core_of = MER
+		12.1.1 = {
+			owner = MER
+			controller = MER
+			add_core_of = MER
+			buildings = {
+				infrastructure = 3
+				carpentry = 1
+				farm = 1
+				consumer_good_factory = 1
+				mill = 1
+				7101 = {
+					naval_base = 2
+
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = MER
+			controller = FIR
+			MER = {
+				set_province_controller = 2103
+				set_province_controller = 6881
+				set_province_controller = 6936
+				set_province_controller = 2004
+				set_province_controller = 1080
+				set_province_controller = 7025
+				set_province_controller = 3923
+			}
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		101 866 1053 1080 1234 1293 1821 2004 2103 2218 2724 3923 3976 6881 6936 6973 6974 7025 7057 7074 7101 7117 7128 
+	}
+	manpower=6200
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

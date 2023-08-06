@@ -1,0 +1,87 @@
+
+state={
+	id=76
+	name="STATE_76"
+
+	history={
+		owner = WBA
+		controller = WBA
+		add_core_of = WBA
+
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			5033 15
+		}
+		12.1.1 = {
+			owner = WBA
+			controller = WBA
+			add_core_of = WBA
+			buildings = {
+				infrastructure = 4
+				arms_factory = 1
+				farm = 1
+				lumber_mill = 1
+				consumer_good_factory = 1
+				mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = WBA
+			controller = WBA
+
+		}
+		106.2.4 = {
+			owner = WBA
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = WBA
+			controller = WBA
+
+		}
+
+	}
+
+	provinces={
+		517 929 1001 1708 2095 3632 3742 4004 4707 4927 5033 5538 6198 6224 6254 6281 6301 6310 6317 
+	}
+	manpower=6000
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

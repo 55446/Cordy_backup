@@ -1,0 +1,79 @@
+
+state={
+	id=184
+	name="STATE_184"
+
+	history={
+		owner = WUL
+		controller = WUL
+		add_core_of = WUL
+
+		add_dynamic_modifier = { modifier = ostrich_herd }
+	
+		add_to_variable = {
+			var = forest
+			value = 0.1		}
+		add_to_variable = {
+			var = mountain
+			value = 0.1		}
+		add_to_variable = {
+			var = field
+			value = 0.2		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		
+		12.1.1 = {
+			owner = WUL
+			controller = WUL
+			add_core_of = WUL
+			buildings = {
+				infrastructure = 2
+				ranch = 1
+				masonry = 1
+			}
+
+		}
+		52.5.16 = {
+			owner = YFC
+			controller = YFC
+			add_core_of = YFC
+			buildings = {
+				infrastructure = 3
+				1397 = {
+					naval_base = 2
+				}
+			}
+		}
+		106.2.4 = {
+			owner = YFC
+			controller = YFC
+			add_core_of = YFC
+		}
+		111.10.30 = {
+			owner = YFC
+			controller = YFC
+			add_core_of = YFC
+		}
+
+	}
+
+	provinces={
+		853 1397 1599 1807 2259 3160 3420 4078 4504 7086 7137 7142 7166 7180 7190 7191 7203 7216 
+	}
+	manpower=3870
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

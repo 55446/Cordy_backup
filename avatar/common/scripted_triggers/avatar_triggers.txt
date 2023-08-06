@@ -1,0 +1,47 @@
+is_southern_league_member = {
+	custom_trigger_tooltip = {
+		tooltip = is_southern_league_member_tt
+		OR = {
+			has_idea = SouthernLeague1
+			has_idea = SouthernLeague2
+			has_idea = SouthernLeague3
+			has_idea = SouthernLeagueArmy
+		}
+	}
+}
+
+state_conflict_attacker_can_pressure_claim = {
+	custom_trigger_tooltip = {
+		tooltip = state_conflict_attacker_can_pressure_claim_tt
+		FROM = {
+			check_variable = { attacker_points > 99 }
+		}
+	}
+}
+
+state_conflict_defender_can_pressure_claim = {
+	custom_trigger_tooltip = {
+		tooltip = state_conflict_defender_can_pressure_claim_tt
+		FROM = {
+			check_variable = { defender_points > 99 }
+		}
+	}
+}
+
+state_conflict_attacker_can_force_fight = {
+	custom_trigger_tooltip = {
+		tooltip = state_conflict_attacker_can_force_fight_tt
+		FROM = {
+			check_variable = { attacker_strength > attacker_strength_min }
+		}
+	}
+}
+
+state_conflict_defender_can_force_fight = {
+	custom_trigger_tooltip = {
+		tooltip = state_conflict_defender_can_force_fight_tt
+		FROM = {
+			check_variable = { defender_strength > defender_strength_min }
+		}
+	}
+}

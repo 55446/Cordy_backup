@@ -1,0 +1,75 @@
+areas = {
+
+	firelands = {
+
+		continents = { 
+			australia
+		}
+	}
+
+	earth_kingdom_ai_area = {
+
+		continents = { 
+			europe
+			north_america 
+			south_america
+		}
+	}
+	earth_plate = {
+
+		continents = { 
+			europe
+		}
+	}
+	north_plate = {
+
+		continents = { 
+			north_america
+		}
+	}
+	south_plate = {
+
+		continents = { 
+			south_america
+		}
+	}
+
+	northpole = {
+
+		continents = { 
+			africa
+		}
+	}
+
+	southpole = {
+
+		continents = { 
+			asia
+		}
+	}
+
+	ba_sing_se = {
+
+		strategic_regions = {
+			118
+		}
+	}
+	NWT_coastal_waters = {
+		strategic_regions = {
+			48 #Orca Sea
+			47 #Boreal Sea
+			46 #Boreal Bay
+			56 #Iceberg Sea
+		}
+	}
+	SWT_coastal_waters = {
+		strategic_regions = {
+			168 #Ice Shard Sea
+			157 #White Haven Bay
+			179 #Shipbreaker Sea
+			145 #Healer Bay
+			143 #South Yesso Sea
+			34 #Ghost Sea
+		}
+	}
+}

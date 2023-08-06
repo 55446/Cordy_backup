@@ -1,0 +1,53 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = {
+	name = GetFoodSurplus
+	text = {
+		trigger = {
+			check_variable = { food_supply < food_demand }
+		}
+		localization_key = food_shortage
+	}
+	text = {
+		trigger = {
+			check_variable = { food_supply = food_demand }
+		}
+		localization_key = enough_food
+	}
+	text = {
+		trigger = {
+			check_variable = { food_supply > food_demand }
+		}
+		localization_key = food_surplus
+	}
+}
+
+defined_text = {
+	name = GetFactoryConversion
+	text = {
+		trigger = {
+			check_variable = { military_ic_transfer < 0 }
+		}
+		localization_key = civ_to_mil_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { military_ic_transfer > 0 }
+		}
+		localization_key = mil_to_civ_tooltip
+	}
+	text = {
+		trigger = {
+			check_variable = { military_ic_transfer = 0 }
+		}
+		localization_key = neither_mil_or_civ_tooltip
+	}
+}

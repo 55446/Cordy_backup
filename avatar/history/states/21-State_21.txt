@@ -1,0 +1,77 @@
+state={
+	id=21
+	name="STATE_21"
+	manpower = 875
+	state_category = pastoral
+
+	history={
+		owner = NWT
+			controller = NWT
+			add_core_of = NWT
+	
+		add_to_variable = {
+			var = forest
+			value = 0.2		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1		}
+		add_to_variable = {
+			var = water
+			value = 0.8
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		12.1.1 = {
+			owner = NWT
+			controller = NWT
+			add_core_of = NWT
+
+			buildings = {
+				infrastructure = 2
+				arms_factory = 0
+				5946 = {
+					naval_base = 1
+				}
+				5906 = {
+					naval_base = 1
+				}
+				5913 = {
+					naval_base = 1
+				}
+			}
+		}
+
+		52.5.16 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		106.2.4 = {
+			owner = NWT
+			controller = NWT
+		}
+
+		111.10.30 = {
+			owner = NWT
+			controller = NWT
+		}
+	}
+
+	provinces={
+		4310 5893 5906 5907 5913 5919 5926 5942 5946 
+	}
+}

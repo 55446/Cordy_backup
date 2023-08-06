@@ -1,0 +1,69 @@
+
+state={
+	id=212
+	name="STATE_212"
+
+	history={
+	
+		add_to_variable = {
+			var = forest
+			value = 0
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.3
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 1.0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = WUL
+		controller = WUL
+		add_core_of = WUL
+		12.1.1 = {
+			owner = WUL
+			controller = WUL
+			add_core_of = WUL
+			buildings = {
+				infrastructure = 2
+				quarry = 2
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		1003 1012 1659 1662 1973 3462 3663 3897 4218 4491 4948 5261 5516 7015 7050 7065 7107 7196 
+	}
+	manpower=1780
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

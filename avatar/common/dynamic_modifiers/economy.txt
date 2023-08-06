@@ -1,0 +1,194 @@
+
+money_printing = {
+	enable = { always = yes }
+
+	currency_amount = var_money_printing
+}
+
+
+
+famine = {
+	enable = { always = yes }
+
+	remove_trigger = {
+		OR = {
+			NOT = {
+				check_variable = { famine_check < ration_penalty }
+				check_variable = { ration_variable = 0 }
+			}
+			check_variable = { ration_penalty > -0.5 }
+		}
+	}
+	MONTHLY_POPULATION = -2
+	stability_factor = -1
+
+	army_org_factor = -0.75
+	navy_org_factor = -0.75
+	supply_consumption_factor = 1
+	production_factory_max_efficiency_factor = -1
+	resistance_target = 1
+}
+food_shortages = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			NOT = {
+				check_variable = { ration_variable = 0 }
+			}
+			check_variable = { famine_check < -0.5 }
+		}
+	}
+	MONTHLY_POPULATION = ration_penalty
+
+	#### army
+	army_org_factor = soldier_penalty
+	navy_org_factor  = soldier_penalty
+	supply_consumption_factor = soldier_penalty_good
+
+	#### population
+	stability_factor = family_penalty
+
+	#### workers
+	production_factory_max_efficiency_factor = working_penalty
+
+	#### occupied
+	resistance_target = occupied_penalty
+}
+food_surplus_idea = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			check_variable = { ration_variable = 0 }
+			check_variable = { ration_variable = ration_max }
+		}
+	}
+	MONTHLY_POPULATION = ration_buff
+	stability_factor = ration_buff
+}
+burgerking = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { ration_variable = ration_max }
+		}
+	}
+	MONTHLY_POPULATION = 1
+	stability_factor = 1
+}
+
+extreme_poverty = {
+
+	#icon = GFX_idea_extreme_poverty
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { average_gdp_netto < cost_of_living_half }
+		}
+	}
+	research_speed_factor = -0.3
+	stability_factor = -0.4
+}
+poverty = {
+
+	#icon = GFX_idea_poverty
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { average_gdp_netto < cost_of_living_75 }
+				check_variable = { average_gdp_netto > cost_of_living_half }
+			}
+		}
+	}
+	research_speed_factor = -0.15
+	stability_factor = -0.2
+}
+struggeling = {
+	
+	#icon = GFX_idea_struggeling
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { average_gdp_netto < cost_of_living }
+				check_variable = { average_gdp_netto > cost_of_living_75 }
+			}
+		}
+	}
+	research_speed_factor = -0.05
+	stability_factor = -0.05
+}
+middeling = {
+	
+	#icon = GFX_idea_middeling
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { average_gdp_netto < cost_of_living_150 }
+				check_variable = { average_gdp_netto > cost_of_living }
+			}
+		}
+	}
+	research_speed_factor = 0.05
+	stability_factor = 0.2
+}
+wealth = {
+
+	#icon = GFX_idea_wealth
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			AND = {
+				check_variable = { average_gdp_netto < cost_of_living_double }
+				check_variable = { average_gdp_netto > cost_of_living_150 }
+			}
+		}
+	}
+	research_speed_factor = 0.1
+	stability_factor = 0.3
+}
+extreme_wealth = {
+
+	#icon = GFX_idea_extreme_wealth
+
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			check_variable = { average_gdp_netto > cost_of_living_double }
+		}
+	}
+	research_speed_factor = 0.2
+	stability_factor = 0.4
+}
+
+
+workless_debuff = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			check_variable = { workless_malus > 0 }
+			check_variable = { workless_malus = 0 }
+		}
+	}
+	stability_factor = workless_malus
+}
+
+missing_workers = {
+	enable = { always = yes }
+	remove_trigger = {
+		OR = {
+			check_variable = { worker_deficit_malus > 0 }
+			check_variable = { worker_deficit_malus = 0 }
+		}
+	}
+	local_resources_factor = worker_deficit_malus
+	industrial_capacity_factory = worker_deficit_malus
+	industrial_capacity_dockyard = worker_deficit_malus
+	production_speed_buildings_factor = worker_deficit_malus
+}

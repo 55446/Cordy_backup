@@ -1,0 +1,53 @@
+
+SWT_tribe_union = {
+
+	SWT_capital_development = {
+
+		icon = buildup
+
+		#on_map_mode = map_only
+		highlight_states = {
+			highlight_state_targets = {
+				state = 85
+			}
+		}
+
+		visible = {
+			tag = SWT
+		}
+		
+		available = {
+			hidden_trigger = {
+				has_start_date < 13.1.1
+			}
+		}
+		
+		fire_only_once = yes		
+
+		cost = 10
+
+		days_remove = 5
+
+		complete_effect = {
+			SWT_recalc_unity_icon_frames = yes
+			85 = {
+				add_building_slots = 2
+			}
+		}
+	}
+	SWT_influence_the_unknown = {
+		icon = water_texticon
+		visible = {
+			tag = SWT
+		}
+		hidden_effect = {
+			85 = {set_state_flag=checking_for_exclusivity}
+		}
+		complete_effect = {
+		SWT_recalc_unity_icon_frames = yes
+		add_to_variable = {SWT_unity_support = 10 }
+		}
+		custom_tooltip = We_will_try_to_get_The_Unknown_on_our_side_tt
+	}
+
+}

@@ -1,0 +1,76 @@
+
+state={
+	id=166
+	name="STATE_166"
+
+	history={
+		owner = MER
+		controller = MER
+		add_core_of = MER
+
+		add_to_variable = {
+			var = forest
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = MER
+			controller = MER
+			add_core_of = MER
+
+		}
+		52.5.16 = {
+			owner = MER
+			controller = MER
+			FIR = {
+				set_province_controller = 6513
+				set_province_controller = 3131
+			}
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		2196 3131 4662 4860 6335 6358 6375 6395 6426 6427 6479 6513 
+	}
+	manpower=4700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

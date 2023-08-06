@@ -1,0 +1,85 @@
+
+state={
+	id=269
+	name="STATE_269"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = GDD
+		controller = GDD
+		add_core_of = GDD
+
+		add_dynamic_modifier = { modifier = crawler_herd }
+
+		victory_points = {
+			3101 10 
+		}
+		12.1.1 = {
+			owner = GDD
+			controller = GDD
+			add_core_of = GDD
+			buildings = {
+				infrastructure = 1
+				arms_factory = 1
+				ranch = 1
+				quarry = 2
+				masonry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			controller = GDD
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		55 117 163 750 1126 1265 1370 1684 1785 2365 2438 2780 2881 3097 3101 3592 3700 4051 4171 4205 4465 4502 4637 4686 5385 5613 7378 7388 7394 7397 7398 7399 7401 7404 7408 7416 7425 7433 7445 7450 7472 7475 7476 7477 7485 7497 7498 7505 7512 7516 
+	}
+	manpower=6540
+	buildings_max_level_factor=1.000
+	state_category=rural
+	local_supplies=0.000
+}

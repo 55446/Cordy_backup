@@ -1,0 +1,84 @@
+
+state={
+	id=66
+	name="STATE_66"
+	resources={
+		rubber=0.000
+		chromium=0.000
+	}
+
+	history={
+		owner = ZIN
+		controller = ZIN
+		add_core_of = ZIN
+		
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.8
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = ZIN
+			controller = ZIN
+			add_core_of = ZIN
+			buildings = {
+				infrastructure = 2
+				arms_factory = 1
+				mine = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = ZIN
+			controller = ZIN
+
+		}
+		106.2.4 = {
+			owner = ZIN
+			controller = ZIN
+
+		}
+		111.10.30 = {
+			owner = ZIN
+			controller = ZIN
+
+		}
+
+	}
+
+	provinces={
+		23 314 726 1323 3062 8795 8842 8844 
+	}
+	manpower=5250
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

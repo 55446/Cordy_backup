@@ -1,0 +1,79 @@
+
+state={
+	id=3
+	name="STATE_3"
+
+	history={
+		owner = NWT
+		controller = NWT
+		add_core_of = NWT
+
+		add_to_variable = {
+			var = forest
+			value = 0.1
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = NWT
+			controller = NWT
+			add_core_of = NWT
+			buildings = {
+				infrastructure = 1
+				quarry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = NWT
+			controller = NWT
+
+		}
+		106.2.4 = {
+			owner = NWT
+			controller = NWT
+
+		}
+		111.10.30 = {
+			owner = NWT
+			controller = NWT
+
+		}
+
+	}
+
+	provinces={
+		168 486 541 1481 2367 2381 3051 3495 3622 3876 4346 5093 5201 5666 5702 5711 5727 5734 5759 5760 5765 5773 5787 5792 5800 5806 5812 5830 5848 5849 
+	}
+	manpower=456
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+}

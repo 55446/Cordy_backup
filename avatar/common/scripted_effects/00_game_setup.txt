@@ -1,0 +1,595 @@
+
+
+hemisphere_setup = {
+	every_state = {
+		limit = {
+			OR = {
+				is_on_continent = north_america
+				is_on_continent = africa
+				region = 96
+				region = 97
+				region = 98
+				region = 99
+				region = 114
+				region = 116
+				region = 117
+				region = 118
+				region = 121
+				region = 126
+			}
+		}
+		set_state_flag = northern_hemisphere
+	}
+
+	every_state = {
+		limit = {
+			OR = {
+				is_on_continent = south_america
+				is_on_continent = asia
+				region = 129
+				region = 105
+				region = 102
+				region = 115
+				region = 106
+			}
+			NOT = {
+				state = 394
+				state = 367
+			}
+		}
+		set_state_flag = southern_hemisphere
+	}
+	
+}
+
+
+war_setup_52 = {
+	KFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	YFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+
+}
+war_setup_106 = {
+
+	POH = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	TAK = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	HAN = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	MAK = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	NIX = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	YUE = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	XIN = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	GAR = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	WUL = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	NOW = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	SEN = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	ISL = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	NCB = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	ECB = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	EBA = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	WBA = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	LAM = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	GDD = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	FMB = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	MER = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	OMS = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	MPO = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	SWA = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	ZAO = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	CHN = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	GAO = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	NAN = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	ZIN = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+	YII = {
+		add_to_war = {
+			targeted_alliance = EAR
+			enemy = FIR
+		}
+	}
+
+
+	
+	PFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	HFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	MFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+	GFC = {
+		add_to_war = {
+			targeted_alliance = FIR
+			enemy = EAR
+		}
+	}
+
+}
+
+taku_puppet_12 = {
+	if = {
+		limit = {
+			has_start_date < 13.1.1
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = POH
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = HAN
+				autonomous_state = autonomy_county
+			}
+			else = {
+				puppet = POH
+				puppet = HAN
+			}
+		}
+	}
+}
+
+earth_puppets_12 = {
+
+	if = {
+		limit = {
+			has_start_date < 13.1.1
+		}
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = WBA
+				autonomous_state = autonomy_royal_domain
+			}
+			set_autonomy = {
+				target = EBA
+				autonomous_state = autonomy_royal_domain
+			}
+			set_autonomy = {
+				target = FMB
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = LAM
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = ECB
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = GDD
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = MER
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = NIX
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = XIN
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = WUL
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = SEN
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = MAK
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = YUE
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = NOW
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = NCB
+				autonomous_state = autonomy_vassalage
+			}
+		}
+		else = {
+			puppet = WBA
+			puppet = EBA
+			puppet = FMB
+			puppet = LAM
+			puppet = ECB
+			puppet = GDD
+			puppet = MER
+			puppet = NIX
+			puppet = XIN
+			puppet = WUL
+			puppet = SEN
+			puppet = MAK
+			puppet = YUE
+			puppet = NOW
+			puppet = NCB
+		}
+	}
+}
+
+
+earth_puppets_52 = {
+
+	if = {
+		limit = {
+			has_start_date < 60.01.01
+		}
+	
+		if = {
+			limit = {
+				has_dlc = "Together for Victory"
+			}
+			set_autonomy = {
+				target = OMS
+				autonomous_state = autonomy_kingdom
+			}
+			set_autonomy = {
+				target = GAO
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = YII
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = YUE
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = MPO
+				autonomous_state = autonomy_tributary
+			}
+			set_autonomy = {
+				target = SWA
+				autonomous_state = autonomy_tributary
+			}
+			set_autonomy = {
+				target = TAK
+				autonomous_state = autonomy_kingdom
+			}
+			set_autonomy = {
+				target = ZAO
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = CHN
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = ISL
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = NAN
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = ZIN
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = GAR
+				autonomous_state = autonomy_county
+			}
+			set_autonomy = {
+				target = POH
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = WBA
+				autonomous_state = autonomy_royal_domain
+			}
+			set_autonomy = {
+				target = EBA
+				autonomous_state = autonomy_royal_domain
+			}
+			set_autonomy = {
+				target = FMB
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = LAM
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = ECB
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = GDD
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = MER
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = NIX
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = XIN
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = WUL
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = SEN
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = MAK
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = NOW
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = NCB
+				autonomous_state = autonomy_vassalage
+			}
+			set_autonomy = {
+				target = HAN
+				autonomous_state = autonomy_county
+			}
+		}
+		else = {
+			puppet = OMS
+			puppet = GAO
+			puppet = YII
+			puppet = YUE
+			puppet = MPO
+			puppet = SWA
+			puppet = TAK
+			puppet = ZAO
+			puppet = CHN
+			puppet = ISL
+			puppet = NAN
+			puppet = ZIN
+			puppet = GAR
+			puppet = POH
+			puppet = WBA
+			puppet = EBA
+			puppet = FMB
+			puppet = LAM
+			puppet = ECB
+			puppet = GDD
+			puppet = MER
+			puppet = NIX
+			puppet = XIN
+			puppet = WUL
+			puppet = SEN
+			puppet = MAK
+			puppet = NOW
+			puppet = NCB
+			puppet = HAN
+		}
+		
+	}
+}
+
+
+ear_exiles_52 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		WUL = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		TAK = {
+			become_exiled_in = { target = EAR legitimacy = 40 }
+		}
+		YUE = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		MAK = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		POH = {
+			become_exiled_in = { target = EAR legitimacy = 35 }
+		}
+		HAN = {
+			become_exiled_in = { target = EAR legitimacy = 35 }
+		}
+	}
+}
+
+ear_exiles_106 = {
+	if = {
+		limit = {
+			has_dlc = "Man the Guns"
+		}
+		MER = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		GDD = {
+			become_exiled_in = { target = EAR legitimacy = 20 }
+		}
+		XIN = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		NIX = {
+			become_exiled_in = { target = EAR legitimacy = 30 }
+		}
+		NOW = {
+			become_exiled_in = { target = EAR legitimacy = 35 }
+		}
+	}
+}

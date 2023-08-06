@@ -1,0 +1,247 @@
+capital = 124
+
+OOB = "XIN_12"
+
+ 
+set_country_flag = EARTH_special_forces
+
+EAR_generic_starting_tech = yes
+
+if = {
+	limit = {
+		not = { has_dlc = "Man the Guns" }
+	}
+	set_technology = {
+		
+	}
+}
+if = {
+	limit = {
+		has_dlc = "Man the Guns"
+	}
+	set_technology = {
+		oars_tech_1 = 1
+		sails_tech_1 = 1
+		galley_tech_1 = 1
+		barque_tech_1 = 1
+		light_armor_tech_1 = 1
+	}
+
+}
+
+set_research_slots = 2
+set_convoys = 10
+set_stability = 0.55 
+set_war_support = 0.6
+
+
+
+
+set_politics = {
+	ruling_party = earth_culture
+	last_election = "2.1.1"
+	election_frequency = 120
+	elections_allowed = no
+}
+
+set_popularities = {
+	water_culture = 5
+	pluralist_culture = 5
+	fire_culture = 0
+	earth_culture = 85
+	air_culture = 5
+}
+
+add_ideas = {
+	volunteer_earth_nation
+	earth_volunteers
+	intercontinental_trade
+	economy_1
+	family_support_3
+	no_education
+}
+
+set_cosmetic_tag = GAR_puppet
+
+#if = {
+#	limit = {
+#		has_dlc = "Together for Victory"
+#	}
+#	set_autonomy = {
+#		target = WUL
+#		autonomous_state = autonomy_county
+#	}
+#	else = {
+#		puppet = WUL
+#	}
+#}
+
+recruit_character = XIN_bao
+
+recruit_character = XIN_minister_of_personnel_1
+recruit_character = XIN_minister_of_personnel_2
+recruit_character = XIN_minister_of_personnel_3
+recruit_character = XIN_minister_of_personnel_4
+recruit_character = XIN_minister_of_personnel_5
+recruit_character = XIN_minister_of_personnel_6
+
+recruit_character = XIN_minister_of_finance_1
+recruit_character = XIN_minister_of_finance_2
+recruit_character = XIN_minister_of_finance_3
+recruit_character = XIN_minister_of_finance_4
+recruit_character = XIN_minister_of_finance_5
+recruit_character = XIN_minister_of_finance_6
+
+recruit_character = XIN_minister_of_culture_1
+recruit_character = XIN_minister_of_culture_2
+recruit_character = XIN_minister_of_culture_3
+recruit_character = XIN_minister_of_culture_4
+recruit_character = XIN_minister_of_culture_5
+recruit_character = XIN_minister_of_culture_6
+
+recruit_character = XIN_minister_of_justice_1
+recruit_character = XIN_minister_of_justice_2
+recruit_character = XIN_minister_of_justice_3
+recruit_character = XIN_minister_of_justice_4
+recruit_character = XIN_minister_of_justice_5
+recruit_character = XIN_minister_of_justice_6
+
+recruit_character = XIN_minister_of_works_1
+recruit_character = XIN_minister_of_works_2
+recruit_character = XIN_minister_of_works_3
+recruit_character = XIN_minister_of_works_4
+recruit_character = XIN_minister_of_works_5
+recruit_character = XIN_minister_of_works_6
+
+recruit_character = XIN_minister_of_rites_1
+recruit_character = XIN_minister_of_rites_2
+recruit_character = XIN_minister_of_rites_3
+recruit_character = XIN_minister_of_rites_4
+recruit_character = XIN_minister_of_rites_5
+recruit_character = XIN_minister_of_rites_6
+
+recruit_character = XIN_head_of_intelligence_1
+recruit_character = XIN_head_of_intelligence_2
+recruit_character = XIN_head_of_intelligence_3
+recruit_character = XIN_head_of_intelligence_4
+recruit_character = XIN_head_of_intelligence_5
+recruit_character = XIN_head_of_intelligence_6
+
+recruit_character = XIN_quartermaster_1
+recruit_character = XIN_quartermaster_2
+recruit_character = XIN_quartermaster_3
+recruit_character = XIN_quartermaster_4
+recruit_character = XIN_quartermaster_5
+recruit_character = XIN_quartermaster_6
+
+52.5.16 ={
+
+	OOB = "XIN_52"
+
+	set_cosmetic_tag = GAR_puppet
+	#add_to_war = {
+	#	targeted_alliance = EAR
+	#	enemy = FIR
+	#}
+
+set_stability = 0.75
+set_war_support = 0.5
+set_convoys = 60
+
+add_ideas = {
+	earth_indiscriminate
+	all_adults_serve
+	city_markets
+	economy_4
+	family_support_1
+	no_education
+}
+
+set_technology = {
+	basic_spear_1 = 1
+	basic_sword_1 = 1
+	basic_polearm_1 = 1	
+
+	basic_armor = 1
+	heavy_armor_1 = 1
+
+	ranged_weapons = 1
+	bow0 = 1
+	arrow0 = 1
+	arrowheadb0 = 1
+	light_armor_0 = 1
+	ballista0 = 1
+	bolt0 = 1
+
+	tech_support = 1
+	tech_engineers = 1
+	tech_scavengers = 1
+	tech_combat_pioneers = 1
+	tech_scouts = 1
+
+	tech_transport = 1
+	tech_supply_wagons = 1
+	tech_supply_wagons2 = 1
+	tech_supply_wagons3 = 1
+
+	earthbender_equipment_1 = 1
+
+	substance = 1
+	persistence = 1
+	endurance = 1
+	military_might = 1
+	military_modernization = 1
+	multiplanar_warfare = 1
+	root_b = 1
+	sacral_b = 1
+	
+	road_1 = 1
+	reform_0 = 1
+	reform_1 = 1
+	reform_2 = 1
+}
+
+}
+
+
+
+106.2.4 ={
+
+	set_cosmetic_tag = GAR_puppet
+
+	OOB = "empty"
+	set_naval_oob = "empty"
+# 	set_technology = {
+
+# }
+
+# if = {
+# 	limit = {
+# 		NOT = { has_dlc = "Man the Guns" }
+# 	}
+# 	set_technology = {
+		
+# 	}
+# }
+# if = {
+# 	limit = {
+# 		has_dlc = "Man the Guns"
+# 	}
+# 	set_technology = {
+		
+# 	}
+
+# }
+}
+
+
+111.10.30 ={
+
+	set_cosmetic_tag = GAR_puppet
+
+	OOB = "empty"
+
+}
+
+# Different Ideology Leaders
+recruit_character = XIN_generic

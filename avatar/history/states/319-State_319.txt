@@ -1,0 +1,65 @@
+
+state={
+	id=319
+	name="STATE_319"
+
+	history={
+		add_dynamic_modifier = { modifier = cat_herd }
+		
+		add_to_variable = {
+			var = mountain
+			value = 0.5
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2		}
+		add_to_variable = {
+			var = water
+			value = 0.2		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.6
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		owner = SAT
+		controller = SAT
+		add_core_of = SAT
+		12.1.1 = {
+			owner = SAT
+			controller = SAT
+			add_core_of = SAT
+			buildings = {
+				infrastructure = 1
+				ranch = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = SAT
+			controller = SAT
+
+		}
+		106.2.4 = {
+			owner = SAT
+			controller = SAT
+
+		}
+		111.10.30 = {
+			owner = SAT
+			controller = SAT
+
+		}
+
+	}
+
+	provinces={
+		399 544 1246 1432 2214 2455 3320 4480 5176 5648 9391 9399 9400 9406 9443 9448 9459 9461 9462 9473 9474 9499 9511 9515 10589 
+	}
+	manpower=900
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

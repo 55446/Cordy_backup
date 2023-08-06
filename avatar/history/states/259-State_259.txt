@@ -1,0 +1,74 @@
+state={
+	id=259
+	name="STATE_259"
+	manpower = 6570
+	state_category = rural
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 1.0
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.3
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = HAN
+		controller = HAN
+		add_core_of = HAN
+		12.1.1 = {
+			owner = HAN
+			controller = HAN
+			add_core_of = HAN
+
+			buildings = {
+				infrastructure = 4
+				arms_factory = 1
+				lumber_mill = 3
+				carpentry = 1
+			}
+		}
+
+		52.5.16 = {
+			controller = FIR
+
+			buildings = {
+				2781 = {
+					supply_node = 1
+				}
+			}
+		}
+
+		106.2.4 = {
+			controller = FIR
+		}
+
+		111.10.30 = {
+			controller = FIR
+		}
+	}
+
+	provinces={
+		852 1014 1587 1884 2280 2505 2703 2781 3403 3447 3799 3861 4190 4199 4595 5631 7285 7297 7301 7311 7329 7342 7361 7370 7371 7387 7391 7411 
+	}
+}

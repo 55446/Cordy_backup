@@ -1,0 +1,79 @@
+state={
+	id=124
+	name="STATE_124"
+	manpower = 18560
+	state_category = city
+
+	history={
+		owner = XIN
+		controller = XIN
+		add_core_of = XIN
+	
+		add_to_variable = {
+			var = forest
+			value = 0.1		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.5
+		}
+		add_to_variable = {
+			var = water
+			value = 0.5
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+	
+		victory_points = { 5449 55 }
+	
+		12.1.1 = {
+			owner = XIN
+			controller = XIN
+			add_core_of = XIN
+
+			buildings = {
+				infrastructure = 6
+				arms_factory = 2
+				dockyard = 1
+				fishing_stand = 1
+				crop_weaving = 1
+				consumer_good_factory = 2
+				luxury_good_factory = 1
+				5449 = {
+					naval_base = 1
+				}
+			}
+		}
+
+		52.5.16 = {
+			controller = XIN
+		}
+
+		106.2.4 = {
+			owner = GFC
+			controller = GFC
+			add_core_of = GFC
+		}
+
+		111.10.30 = {
+			owner = GFC
+			controller = GFC
+		}
+	}
+
+	provinces={
+		3947 4524 5449 6804 6805 6849 6855 6873
+	}
+}

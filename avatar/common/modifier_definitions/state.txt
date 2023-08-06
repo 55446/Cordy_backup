@@ -1,0 +1,74 @@
+harvesting_factor = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	postfix = none
+	#category = state 
+}
+
+revolt_target = {
+	color_type = bad
+	value_type = percentage_in_hundred
+	precision = 0
+	postfix = none
+	category = state 
+}
+revolt_growth = {
+	color_type = bad
+	value_type = percentage_in_hundred
+	precision = 3
+	postfix = none
+	category = state 
+}
+
+monthly_fire_culture_in_state = {
+
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_earth_culture_in_state = {
+
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_water_culture_in_state = {
+
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_air_culture_in_state = {
+
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+
+monthly_pluralist_culture_in_state = {
+
+	color_type = neutral 
+	value_type = percentage_in_hundred
+	precision = 2
+	postfix = none
+	category = state 
+}
+modifier_state_literate_population_increase = {
+	color_type = good
+	value_type = number
+	precision = 0
+	postfix = none
+	category = state
+}

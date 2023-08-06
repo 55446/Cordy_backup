@@ -1,0 +1,92 @@
+
+state={
+	id=171
+	name="STATE_171"
+
+	history={
+		owner = YUE
+		controller = YUE
+		add_core_of = YUE
+
+		add_to_variable = {
+			var = forest
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.1
+		}
+		add_to_variable = {
+			var = field
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.8
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			6807 70 
+		}
+		12.1.1 = {
+			owner = YUE
+			controller = YUE
+			add_core_of = YUE
+			buildings = {
+				arms_factory = 2
+				mill = 1
+				infrastructure = 7
+				crop_weaving = 2
+				consumer_good_factory = 2
+				luxury_good_factory = 2
+				6807 = {
+					naval_base = 2
+					coastal_fortress = 3
+
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = HFC
+			controller = HFC
+			add_core_of = HFC
+
+		}
+		111.10.30 = {
+			owner = HFC
+			controller = HFC
+			add_core_of = HFC
+
+		}
+
+	}
+
+	provinces={
+		2219 2572 3851 5484 6739 6751 6764 6772 6779 6780 6783 6806 6807 6816 6837 6844 6869 
+	}
+	manpower=26780
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

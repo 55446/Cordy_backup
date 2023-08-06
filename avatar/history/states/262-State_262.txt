@@ -1,0 +1,76 @@
+
+state={
+	id=262
+	name="STATE_262"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0.2
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.1
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = FMB
+		controller = FMB
+		add_core_of = FMB
+		12.1.1 = {
+			owner = FMB
+			controller = FMB
+			add_core_of = FMB
+			buildings = {
+				infrastructure = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FMB
+			controller = FMB
+
+		}
+		106.2.4 = {
+			owner = FMB
+			controller = FMB
+
+		}
+		111.10.30 = {
+			owner = FMB
+			controller = FMB
+
+		}
+
+	}
+
+	provinces={
+		71 916 1750 2317 3081 4156 4213 4264 7276 7284 7298 7309 7316 7331 7336 7351 7355 7369 10454 10456 10457 
+	}
+	manpower=560
+	buildings_max_level_factor=1.000
+	state_category=barren_wasteland
+	local_supplies=0.000
+}

@@ -1,0 +1,87 @@
+
+state={
+	id=213
+	name="STATE_213"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.1		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+		}
+		add_to_variable = {
+			var = field
+			value = 0.9
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = EAR
+		controller = EAR
+		add_core_of = EAR
+		12.1.1 = {
+			owner = EAR
+			controller = EAR
+			add_core_of = EAR
+			buildings = {
+				infrastructure = 8
+				farm = 4
+				mill = 1
+				
+				7149 = {
+					wall = 40
+				}
+				10388 = {
+					wall = 40
+				}
+				7143 = {
+					wall = 40
+				}
+				10389 = {
+					wall = 40
+				}
+				7140 = {
+					wall = 40
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = EAR
+			controller = EAR
+
+		}
+		106.2.4 = {
+			owner = EAR
+			controller = EAR
+
+		}
+		111.10.30 = {
+			owner = EAR
+			controller = EAR
+
+		}
+
+	}
+
+	provinces={
+		860 2062 2813 3339 3411 3487 3772 3971 4101 4162 4519 4840 5639 6981 6990 6998 7006 7018 7034 7035 7046 7062 7076 7082 7114 7120 7140 7143 7149 10388 10389 
+	}
+	manpower=9800
+	buildings_max_level_factor=1.000
+	state_category=large_town
+}

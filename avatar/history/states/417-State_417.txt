@@ -1,0 +1,106 @@
+
+state={
+	id=417
+	name="STATE_417"
+
+	history={
+
+		add_to_variable = {
+			var = forest
+			value = 0.3
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.7
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		
+		victory_points = {
+			8259 80 
+		}
+		victory_points = {
+			1084 4 
+		}
+		victory_points = {
+			8245 10 
+		}
+		victory_points = {
+			8218 15 
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				infrastructure = 10
+				dockyard = 3
+				arms_factory = 2
+				crop_weaving = 2
+				steelworks = 2
+				#mine = 2
+				consumer_good_factory = 2
+				luxury_good_factory = 1
+				carpentry = 1
+				masonry = 2
+				steel_beam_factory = 3
+				8218 = {
+					naval_base = 10
+
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+
+			#set_variable = { manpower_temp = manpower }
+			#multiply_variable = { manpower_temp = 40 }
+			#multiply_variable = { manpower_temp = 12 }
+			#multiply_variable = { manpower_temp = 0.12 }
+
+			#add_manpower = 55000
+
+		}
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		469 963 1084 2592 2900 4253 4986 5347 5361 8206 8209 8210 8218 8227 8232 8233 8234 8239 8240 8244 8245 8246 8256 8259 8260 8265 8271 8272 8275 8276 8283 8284 8291 8296 
+	}
+	manpower=55000
+	buildings_max_level_factor=1.000
+	state_category=metropolis
+}

@@ -1,0 +1,70 @@
+state={
+	id=403
+	name="STATE_403"
+	manpower = 440
+	state_category = tiny_island
+
+	history={
+	
+		add_to_variable = {
+			var = forest
+			value = 0.3
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.1		}
+		add_to_variable = {
+			var = field
+			value = 0.2		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.1		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = PIR
+		controller = PIR
+		add_core_of = PIR
+		12.1.1 = {
+			owner = PIR
+			controller = PIR
+			add_core_of = PIR
+
+			buildings = {
+				infrastructure = 1
+				harbour = 1
+				lumber_mill = 1
+				10513 = {
+					naval_base = 2
+				}
+			}
+		}
+
+		52.5.16 = {
+			owner = PIR
+			controller = PIR
+		}
+
+		106.2.4 = {
+			owner = PIR
+			controller = PIR
+		}
+
+		111.10.30 = {
+			owner = PIR
+			controller = PIR
+		}
+	}
+
+	provinces={
+		10513 
+	}
+}

@@ -1,0 +1,84 @@
+
+state={
+	id=343
+	name="STATE_343"
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			615 5 
+		}
+		owner = NAN
+		controller = NAN
+		add_core_of = NAN
+		12.1.1 = {
+			owner = NAN
+			controller = NAN
+			add_core_of = NAN
+			buildings = {
+				infrastructure = 3
+				lumber_mill = 1
+				mine = 1
+				masonry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = NAN
+			controller = NAN
+
+		}
+		106.2.4 = {
+			owner = NAN
+			controller = NAN
+
+		}
+		111.10.30 = {
+			owner = NAN
+			controller = NAN
+
+		}
+
+	}
+	provinces={
+		605 615 1216 1636 1801 2176 2182 2567 2587 2617 2700 2831 3872 4496 4660 5192 5334 5410 5643 9288 9302 9323 9353 
+	}
+	manpower=6370
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

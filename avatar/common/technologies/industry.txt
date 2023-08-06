@@ -1,0 +1,4544 @@
+technologies = {
+
+	basic_construction = {
+		
+		industry_repair_factor = 0.02
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = construction_l1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = construction_r1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = repair_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l1 = {
+	
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+		
+		path = {
+			leads_to_tech = construction_l2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r1 = {
+
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = repair_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = construction_r2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_1 = {
+		
+		industry_repair_factor = 0.05
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l2 = {
+		
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+		
+		path = {
+			leads_to_tech = construction_l3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r2 = {
+	
+		production_speed_buildings_factor = 0.05
+		
+		path = {
+			leads_to_tech = repair_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = construction_r3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_2 = {
+		
+		industry_repair_factor = 0.05
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l3 = {
+		
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+		
+		path = {
+			leads_to_tech = construction_l4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r3 = {
+	
+		production_speed_buildings_factor = 0.05
+	
+		path = {
+			leads_to_tech = repair_4
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			leads_to_tech = construction_r4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_3 = {
+		
+		industry_repair_factor = 0.05
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l4 = {
+		
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+		
+		path = {
+			leads_to_tech = construction_l5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r4 = {
+	
+		production_speed_buildings_factor = 0.05
+	
+		path = {
+			leads_to_tech = repair_5
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			leads_to_tech = construction_r5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_4 = {
+		
+		industry_repair_factor = 0.05
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l5 = {
+		
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+		
+		path = {
+			leads_to_tech = construction_l6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r5 = {
+	
+		production_speed_buildings_factor = 0.05
+	
+		path = {
+			leads_to_tech = repair_6
+			research_cost_coeff = 1
+		}
+	
+		path = {
+			leads_to_tech = construction_r6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_5 = {
+		
+		industry_repair_factor = 0.05
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l6 = {
+
+		path = {
+			leads_to_tech = construction_l7
+			research_cost_coeff = 1
+		}
+
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r6 = {
+		
+		path = {
+			leads_to_tech = construction_r7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = repair_7
+			research_cost_coeff = 1
+		}
+		
+		production_speed_buildings_factor = 0.05
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_6 = {
+		
+		industry_repair_factor = 0.05
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l7 = {
+
+		path = {
+			leads_to_tech = construction_l8
+			research_cost_coeff = 1
+		}
+
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_r7 = {
+		
+		
+		production_speed_buildings_factor = 0.05
+		
+		research_cost = 2
+		start_year = 84
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	repair_7 = {
+		
+		industry_repair_factor = 0.05
+		
+		path = {
+			leads_to_tech = construction_r2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	construction_l8 = {
+
+		global_building_slots_factor = 0.10
+		building_upkeep_factor = 0.1
+
+		research_cost = 2
+		start_year = 90
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_construction
+		}
+	}
+	
+	basic_production = {
+	
+		industrial_capacity_factory = 0.05
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = production_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = naval_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	
+	production_1 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = smithy_output
+			add_to_variable = { smithy_output = 1 }
+		}
+		
+		path = {
+			leads_to_tech = production_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	naval_1 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = naval_2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	production_2 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = smithy_output
+			add_to_variable = { smithy_output = 1 }
+		}
+		
+		path = {
+			leads_to_tech = production_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	naval_2 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = naval_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	production_3 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = smithy_output
+			add_to_variable = { smithy_output = 1 }
+		}
+		
+		path = {
+			leads_to_tech = production_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_production
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	naval_3 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = naval_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	production_4 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = factory_output
+			add_to_variable = { factory_output = 1 }
+		}
+		
+		path = {
+			leads_to_tech = production_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_production
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	naval_4 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = naval_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	production_5 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = factory_output
+			add_to_variable = { factory_output = 1 }
+		}
+		
+		path = {
+			leads_to_tech = production_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_production
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	naval_5 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = naval_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	production_6 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = factory_output
+			add_to_variable = { factory_output = 1 }
+		}
+		
+		path = {
+			leads_to_tech = production_7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_production
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	naval_6 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		path = {
+			leads_to_tech = naval_7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_production
+		}
+	}
+	
+	production_7 = {
+		
+		industrial_capacity_factory = 0.05
+		on_research_complete = {
+			custom_effect_tooltip = factory_output
+			add_to_variable = { factory_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = 1 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_production
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	naval_7 = {
+		
+		industrial_capacity_dockyard = 0.05
+		
+		research_cost = 2
+		start_year = 84
+		folder = {
+			name = industry_folder
+			position = { x = -1 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_production
+		}
+	}
+
+	gathering_tech_1 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = basic_gathering
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = stone_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = storage_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = farming_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tanning_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_2 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_3
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_3 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_4
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_4 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_5
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_5 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_6
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_6 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_7
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_7 = {
+
+		local_resources_factor = 0.05
+	
+		path = {
+			leads_to_tech = gathering_tech_8
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	gathering_tech_8 = {
+
+		local_resources_factor = 0.05
+		
+		research_cost = 2
+		start_year = 84
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+	}
+	
+	basic_gathering = {
+	
+		path = {
+			leads_to_tech = wood_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = plank_1
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = lumber_mill
+				resource = aluminium
+				amount = 2
+			}
+			add_to_variable = { lumber_mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	plank_1 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = carpentry
+				resource = planks_resource
+				amount = 1
+			}
+			add_to_variable = { carpentry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	wood_1 = {
+		
+		path = {
+			leads_to_tech = wood_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = plank_2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = lumber_mill
+				resource = aluminium
+				amount = 2
+			}
+			add_to_variable = { lumber_mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	plank_2 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = carpentry
+				resource = planks_resource
+				amount = 1
+			}
+			add_to_variable = { carpentry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	wood_2 = {
+		
+		path = {
+			leads_to_tech = wood_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = plank_3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = lumber_mill
+				resource = aluminium
+				amount = 2
+			}
+			add_to_variable = { lumber_mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	plank_3 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = carpentry
+				resource = planks_resource
+				amount = 1
+			}
+			add_to_variable = { carpentry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	wood_3 = {
+		
+		path = {
+			leads_to_tech = wood_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = plank_4
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = lumber_mill
+				resource = aluminium
+				amount = 2
+			}
+			add_to_variable = { lumber_mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	plank_4 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = carpentry
+				resource = planks_resource
+				amount = 1
+			}
+			add_to_variable = { carpentry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	wood_4 = {
+		
+		path = {
+			leads_to_tech = wood_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = plank_5
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = lumber_mill
+				resource = aluminium
+				amount = 2
+			}
+			add_to_variable = { lumber_mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	plank_5 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = carpentry
+				resource = planks_resource
+				amount = 1
+			}
+			add_to_variable = { carpentry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	wood_5 = {
+
+		path = {
+			leads_to_tech = plank_6
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = lumber_mill
+				resource = aluminium
+				amount = 2
+			}
+			add_to_variable = { lumber_mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	plank_6 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = carpentry
+				resource = planks_resource
+				amount = 1
+			}
+			add_to_variable = { carpentry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	stone_1 = {
+	
+		path = {
+			leads_to_tech = stone_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = brick_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mining_1
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = quarry
+				resource = stone
+				amount = 3
+			}
+			add_to_variable = { quarry_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	brick_1 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = masonry
+				resource = bricks_resource
+				amount = 1
+			}
+			add_to_variable = { masonry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	stone_2 = {
+
+		path = {
+			leads_to_tech = stone_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = brick_2
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = quarry
+				resource = stone
+				amount = 3
+			}
+			add_to_variable = { quarry_output = 3 }
+		}
+
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	brick_2 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = masonry
+				resource = bricks_resource
+				amount = 1
+			}
+			add_to_variable = { masonry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	stone_3 = {
+
+		path = {
+			leads_to_tech = stone_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = brick_3
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = quarry
+				resource = stone
+				amount = 3
+			}
+			add_to_variable = { quarry_output = 3 }
+		}
+
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	brick_3 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = masonry
+				resource = bricks_resource
+				amount = 1
+			}
+			add_to_variable = { masonry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	stone_4 = {
+
+		path = {
+			leads_to_tech = stone_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = brick_4
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = quarry
+				resource = stone
+				amount = 3
+			}
+			add_to_variable = { quarry_output = 3 }
+		}
+
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	brick_4 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = masonry
+				resource = bricks_resource
+				amount = 1
+			}
+			add_to_variable = { masonry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	stone_5 = {
+
+		path = {
+			leads_to_tech = stone_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = brick_5
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = quarry
+				resource = stone
+				amount = 3
+			}
+			add_to_variable = { quarry_output = 3 }
+		}
+
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	brick_5 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = masonry
+				resource = bricks_resource
+				amount = 1
+			}
+			add_to_variable = { masonry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	stone_6 = {
+
+		path = {
+			leads_to_tech = brick_6
+			research_cost_coeff = 1
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = quarry
+				resource = stone
+				amount = 3
+			}
+			add_to_variable = { quarry_output = 3 }
+		}
+
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	brick_6 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = masonry
+				resource = bricks_resource
+				amount = 1
+			}
+			add_to_variable = { masonry_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 5 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	storage_1 = {
+		
+		path = {
+			leads_to_tech = storage_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fish_1
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_2 = {
+		
+		path = {
+			leads_to_tech = storage_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = bread_1
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_3 = {
+		
+		path = {
+			leads_to_tech = storage_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fish_2
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_4 = {
+		
+		path = {
+			leads_to_tech = storage_5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = bread_2
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_5 = {
+	
+		path = {
+			leads_to_tech = storage_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fish_3
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_6 = {
+
+		path = {
+			leads_to_tech = storage_7
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = bread_3
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_7 = {
+
+		path = {
+			leads_to_tech = storage_8
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fish_4
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	storage_8 = {
+
+		path = {
+			leads_to_tech = bread_4
+			research_cost_coeff = 1
+		}
+		
+		ration_capacity_factor = 0.05
+		
+		research_cost = 2
+		start_year = 90
+		folder = {
+			name = industry_folder
+			position = { x = -4 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+
+	fish_1 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = fishing_stand
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { fishing_stand_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	bread_1 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mill
+				resource = food_resource
+				amount = 2
+			}
+			add_to_variable = { mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fish_2 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = fishing_stand
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { fishing_stand_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	bread_2 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mill
+				resource = food_resource
+				amount = 2
+			}
+			add_to_variable = { mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fish_3 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = fishing_stand
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { fishing_stand_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	bread_3 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mill
+				resource = food_resource
+				amount = 2
+			}
+			add_to_variable = { mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fish_4 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = fishing_stand
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { fishing_stand_output = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	bread_4 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mill
+				resource = food_resource
+				amount = 2
+			}
+			add_to_variable = { mill_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 90
+		folder = {
+			name = industry_folder
+			position = { x = -2 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	farming_1 = {
+		
+		path = {
+			leads_to_tech = farming_2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = food_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = textile_1
+			research_cost_coeff = 1
+		}
+
+		harvesting_factor = 0.05
+		
+		on_research_complete = {
+			
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = -6 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	food_1 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = oil
+				amount = 2
+			}
+			add_to_variable = { farm_output = 2 }
+
+			modify_building_resources = {
+				building = farm
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { farm_output_2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = -5 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	tanning_1 = {
+
+		path = {
+			leads_to_tech = tanning_2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = ranch
+				resource = chromium
+				amount = 2
+			}
+			add_to_variable = { ranch_output = 2 }
+		}
+		
+		path = {
+			leads_to_tech = textile_1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 6
+		folder = {
+			name = industry_folder
+			position = { x = -8 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+			ranch_tech
+		}
+
+		show_effect_as_desc = yes
+	}
+	tanning_2 = {
+
+		path = {
+			leads_to_tech = tanning_3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = ranch
+				resource = chromium
+				amount = 2
+			}
+			add_to_variable = { ranch_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = -8 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+			ranch_tech
+		}
+
+		show_effect_as_desc = yes
+	}
+	tanning_3 = {
+
+		path = {
+			leads_to_tech = tanning_4
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = ranch
+				resource = chromium
+				amount = 2
+			}
+			add_to_variable = { ranch_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = -8 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+			ranch_tech
+		}
+
+		show_effect_as_desc = yes
+	}
+	tanning_4 = {
+
+		path = {
+			leads_to_tech = tanning_5
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = ranch
+				resource = chromium
+				amount = 2
+			}
+			add_to_variable = { ranch_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = -8 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+			ranch_tech
+		}
+
+		show_effect_as_desc = yes
+	}
+	tanning_5 = {
+
+		path = {
+			leads_to_tech = tanning_6
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = ranch
+				resource = chromium
+				amount = 2
+			}
+			add_to_variable = { ranch_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = -8 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+			ranch_tech
+		}
+
+		show_effect_as_desc = yes
+	}
+	tanning_6 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = ranch
+				resource = chromium
+				amount = 2
+			}
+			add_to_variable = { ranch_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = -8 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+			ranch_tech
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_1 = {
+		
+		path = {
+			leads_to_tech = mining_2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = iron
+				amount = 1
+			}
+			add_to_variable = { mine_output1 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_c1 = {
+		
+		path = {
+			leads_to_tech = mining_c2
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = burning_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = fossile_fuels_1
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = rubber
+				amount = 1
+			}
+			add_to_variable = { mine_output2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fossile_fuels_1 = {
+		
+		path = {
+			leads_to_tech = fossile_fuels_2
+			research_cost_coeff = 1
+		}
+		
+		fuel_gain_factor = 0.2
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 11 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fossile_fuels_2 = {
+		
+		path = {
+			leads_to_tech = fossile_fuels_3
+			research_cost_coeff = 1
+		}
+		
+		fuel_gain_factor = 0.2
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 11 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fossile_fuels_3 = {
+		
+		path = {
+			leads_to_tech = fossile_fuels_4
+			research_cost_coeff = 1
+		}
+		
+		fuel_gain_factor = 0.2
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 11 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fossile_fuels_4 = {
+		
+		path = {
+			leads_to_tech = fossile_fuels_5
+			research_cost_coeff = 1
+		}
+		
+		fuel_gain_factor = 0.2
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 11 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	fossile_fuels_5 = {
+		
+		fuel_gain_factor = 0.2
+		
+		research_cost = 2
+		start_year = 84
+		folder = {
+			name = industry_folder
+			position = { x = 11 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	burning_1 = {
+
+		fuel_burning = -0.1
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+	}
+	
+	textile_1 = {
+		
+		path = {
+			leads_to_tech = textile_2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = crop_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { crop_weaving_output = 3 }
+			modify_building_resources = {
+				building = animal_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { animal_weaving_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 12
+		folder = {
+			name = industry_folder
+			position = { x = -7 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_1
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	textile_2 = {
+		
+		path = {
+			leads_to_tech = textile_3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = crop_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { crop_weaving_output = 3 }
+			modify_building_resources = {
+				building = animal_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { animal_weaving_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = -7 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	textile_3 = {
+		
+		path = {
+			leads_to_tech = textile_4
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = crop_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { crop_weaving_output = 3 }
+			modify_building_resources = {
+				building = animal_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { animal_weaving_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = -7 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	textile_4 = {
+		
+		path = {
+			leads_to_tech = textile_5
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = crop_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { crop_weaving_output = 3 }
+			modify_building_resources = {
+				building = animal_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { animal_weaving_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = -7 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	textile_5 = {
+		
+		path = {
+			leads_to_tech = textile_6
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = crop_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { crop_weaving_output = 3 }
+			modify_building_resources = {
+				building = animal_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { animal_weaving_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = -7 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	textile_6 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = crop_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { crop_weaving_output = 3 }
+			modify_building_resources = {
+				building = animal_weaving
+				resource = tungsten
+				amount = 3
+			}
+			add_to_variable = { animal_weaving_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = -7 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	farming_2 = {
+		
+		path = {
+			leads_to_tech = farming_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = food_2
+			research_cost_coeff = 1
+		}
+
+		harvesting_factor = 0.05
+		
+		on_research_complete = {
+			
+		}
+		
+		research_cost = 2
+		start_year = 18
+		folder = {
+			name = industry_folder
+			position = { x = -6 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	food_2 = {
+		path = {
+			leads_to_tech = food_2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = oil
+				amount = 2
+			}
+			add_to_variable = { farm_output = 2 }
+
+			modify_building_resources = {
+				building = farm
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { farm_output_2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = -5 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_2 = {
+		
+		path = {
+			leads_to_tech = mining_3
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mining_c1
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = iron
+				amount = 2
+			}
+			add_to_variable = { mine_output1 = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 24
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_c2 = {
+		
+		path = {
+			leads_to_tech = smelting_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = burning_2
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = mining_c3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = rubber
+				amount = 1
+			}
+			add_to_variable = { mine_output2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	burning_2 = {
+
+		fuel_burning = -0.1
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_2
+
+			industry_tech
+			industry_resources
+		}
+	}
+	
+	farming_3 = {
+		path = {
+			leads_to_tech = food_3
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = farming_4
+			research_cost_coeff = 1
+		}
+
+		harvesting_factor = 0.05
+		
+		on_research_complete = {
+			
+		}
+		
+		research_cost = 2
+		start_year = 30
+		folder = {
+			name = industry_folder
+			position = { x = -6 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	food_3 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = oil
+				amount = 2
+			}
+			add_to_variable = { farm_output = 2 }
+
+			modify_building_resources = {
+				building = farm
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { farm_output_2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = -5 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_3 = {
+		
+		path = {
+			leads_to_tech = mining_4
+			research_cost_coeff = 1
+		}
+		
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = iron
+				amount = 3
+			}
+			add_to_variable = { mine_output1 = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 36
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_c3 = {
+		
+		path = {
+			leads_to_tech = mining_c4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = burning_3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = rubber
+				amount = 1
+			}
+			add_to_variable = { mine_output2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	burning_3 = {
+
+		fuel_burning = -0.1
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+	}
+	
+	farming_4 = {
+		path = {
+			leads_to_tech = food_4
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = farming_5
+			research_cost_coeff = 1
+		}
+
+		harvesting_factor = 0.05
+		
+		on_research_complete = {
+			
+		}
+		
+		research_cost = 2
+		start_year = 42
+		folder = {
+			name = industry_folder
+			position = { x = -6 y = 14 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	food_4 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = oil
+				amount = 2
+			}
+			add_to_variable = { farm_output = 2 }
+
+			modify_building_resources = {
+				building = farm
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { farm_output_2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = -5 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_4 = {
+		
+		path = {
+			leads_to_tech = smelting_1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = mining_5
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = iron
+				amount = 4
+			}
+			add_to_variable = { mine_output1 = 4 }
+		}
+		
+		research_cost = 2
+		start_year = 48
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 16 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_c4 = {
+		
+		path = {
+			leads_to_tech = mining_c5
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = burning_4
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = rubber
+				amount = 1
+			}
+			add_to_variable = { mine_output2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	burning_4 = {
+
+		fuel_burning = -0.1
+		
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = 10 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+	}
+	
+	farming_5 = {
+		
+		path = {
+			leads_to_tech = farming_6
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = food_5
+			research_cost_coeff = 1
+		}
+
+		harvesting_factor = 0.05
+		
+		on_research_complete = {
+			
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = -6 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	food_5 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = oil
+				amount = 2
+			}
+			add_to_variable = { farm_output = 2 }
+
+			modify_building_resources = {
+				building = farm
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { farm_output_2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = -5 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_5 = {
+		
+		path = {
+			leads_to_tech = mining_6
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = iron
+				amount = 5
+			}
+			add_to_variable = { mine_output1 = 5 }
+		}
+		
+		research_cost = 2
+		start_year = 60
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 20 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	farming_6 = {
+		path = {
+			leads_to_tech = food_6
+			research_cost_coeff = 1
+		}
+
+		harvesting_factor = 0.05
+		
+		on_research_complete = {
+			
+		}
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = -6 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	food_6 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = farm
+				resource = oil
+				amount = 2
+			}
+			add_to_variable = { farm_output = 2 }
+
+			modify_building_resources = {
+				building = farm
+				resource = food_resource
+				amount = 1
+			}
+			add_to_variable = { farm_output_2 = 1 }
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = -5-5 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	mining_6 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = mine
+				resource = iron
+				amount = 6
+			}
+			add_to_variable = { mine_output1 = 6 }
+		}
+		
+		research_cost = 2
+		start_year = 72
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 24 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_1 = {
+		
+		path = {
+			leads_to_tech = smelting_2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 2
+			}
+			add_to_variable = { steelworks_output = 2 }
+		}
+		
+		research_cost = 2
+		start_year = 54
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 18 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_3
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_2 = {
+		
+		path = {
+			leads_to_tech = smelting_3
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 3
+			}
+			add_to_variable = { steelworks_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 66
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 22 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_4
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_3 = {
+		
+		path = {
+			leads_to_tech = smelting_l1
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = smelting_r1
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 5
+			}
+			add_to_variable = { steelworks_output = 5 }
+		}
+		
+		research_cost = 2
+		start_year = 78
+		folder = {
+			name = industry_folder
+			position = { x = 8 y = 26 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_5
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_l1 = {
+		
+		path = {
+			leads_to_tech = smelting_l2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 6
+			}
+			add_to_variable = { steelworks_output = 6 }
+			modify_building_resources = {
+				building = steel_beam_factory
+				resource = steel_beams_resource
+				amount = 3
+			}
+			add_to_variable = { steel_beam_factory_output = 3 }
+		}
+		
+		XOR = {
+			smelting_r1
+		}
+		
+		research_cost = 2
+		start_year = 84
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_r1 = {
+		
+		path = {
+			leads_to_tech = smelting_r2
+			research_cost_coeff = 1
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 10
+			}
+			add_to_variable = { steelworks_output = 10 }
+		}
+		
+		XOR = {
+			smelting_l1
+		}
+		
+		research_cost = 2
+		start_year = 84
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 28 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_l2 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 6
+			}
+			add_to_variable = { steelworks_output = 6 }
+			modify_building_resources = {
+				building = steel_beam_factory
+				resource = steel_beams_resource
+				amount = 3
+			}
+			add_to_variable = { steel_beam_factory_output = 3 }
+		}
+		
+		research_cost = 2
+		start_year = 90
+		folder = {
+			name = industry_folder
+			position = { x = 7 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	smelting_r2 = {
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steelworks
+				resource = steel
+				amount = 10
+			}
+			add_to_variable = { steelworks_output = 10 }
+		}
+		
+		research_cost = 2
+		start_year = 90
+		folder = {
+			name = industry_folder
+			position = { x = 9 y = 30 }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		categories = {
+			age_6
+
+			industry_tech
+			industry_resources
+		}
+
+		show_effect_as_desc = yes
+	}
+	
+	
+}

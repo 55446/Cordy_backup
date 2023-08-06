@@ -1,0 +1,90 @@
+
+state={
+	id=165
+	name="STATE_165"
+
+	history={
+		owner = YUE
+		controller = YUE
+		add_core_of = YUE
+
+		add_dynamic_modifier = { modifier = eel_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = water
+			value = 1.0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			6790 35 
+		}
+		12.1.1 = {
+			owner = YUE
+			controller = YUE
+			add_core_of = YUE
+			buildings = {
+				infrastructure = 6
+				arms_factory = 1
+				harbour = 1
+				farm = 1
+				consumer_good_factory = 1
+				mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = HFC
+			controller = HFC
+			add_core_of = HFC
+
+		}
+		111.10.30 = {
+			owner = HFC
+			controller = HFC
+			add_core_of = HFC
+
+		}
+
+	}
+
+	provinces={
+		372 2672 3029 4302 4400 4521 4641 4934 5019 5441 6691 6697 6734 6771 6790 6812 
+	}
+	manpower=18900
+	buildings_max_level_factor=1.000
+	state_category=large_city
+}

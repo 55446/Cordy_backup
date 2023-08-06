@@ -1,0 +1,89 @@
+
+state={
+	id=360
+	name="STATE_360"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.7
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		victory_points = {
+			8563 10 
+		}
+		victory_points = {
+			8647 30 
+		}
+		owner = NCB
+		controller = NCB
+		add_core_of = NCB
+		12.1.1 = {
+			owner = NCB
+			controller = NCB
+			add_core_of = NCB
+			buildings = {
+				infrastructure = 3
+				farm = 1
+				consumer_good_factory = 1
+				mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = NCB
+			controller = NCB
+
+		}
+		106.2.4 = {
+			owner = NCB
+			controller = NCB
+
+		}
+		111.10.30 = {
+			owner = NCB
+			controller = NCB
+
+		}
+
+	}
+
+	provinces={
+		103 362 485 692 1582 1726 2541 2573 2599 2803 3415 3764 4114 4817 5655 8517 8544 8563 8572 8592 8604 8647 8669 
+	}
+	manpower=5800
+	buildings_max_level_factor=1.000
+	state_category=large_town
+	local_supplies=0.000
+}

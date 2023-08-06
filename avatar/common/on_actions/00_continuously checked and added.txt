@@ -1,0 +1,69 @@
+on_actions = {
+
+	on_monthly = {
+		effect = {
+
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = additional_scripted_resources }
+					}
+				}
+				add_dynamic_modifier = { modifier = additional_scripted_resources }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = factory_resource_consumption }
+					}
+				}
+				add_dynamic_modifier = { modifier = factory_resource_consumption }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = population_resource_bought_on_market }
+					}
+				}
+				add_dynamic_modifier = { modifier = population_resource_bought_on_market }
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						has_dynamic_modifier = { modifier = dynamic_bender_capacity }
+					}
+				}
+				add_dynamic_modifier = { modifier = dynamic_bender_capacity }
+			}
+
+
+			if = {
+				limit = {
+					NOT = {
+						has_tech = long_march
+						has_idea = strategic_redeployment_blocker
+					}
+				}
+				add_ideas = strategic_redeployment_blocker
+			}
+
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = age_1_bonus
+							has_idea = age_2_bonus
+							has_idea = age_3_bonus
+							has_idea = age_4_bonus
+							has_idea = age_5_bonus
+							has_idea = age_6_bonus
+						}
+					}
+				}
+				add_ideas = age_1_bonus
+			}
+
+		}
+	}
+}

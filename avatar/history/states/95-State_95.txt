@@ -1,0 +1,76 @@
+state={
+	id=95
+	name="STATE_95"
+	manpower = 4000
+	state_category = rural
+
+	history={
+		owner = SNW
+		controller = SNW
+		add_core_of = SNW
+	
+		add_to_variable = {
+			var = forest
+			value = 0.3
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.2		}
+		add_to_variable = {
+			var = field
+			value = 0.2		}
+		add_to_variable = {
+			var = water
+			value = 0.4
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.3
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.3
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		
+		12.1.1 = {
+			owner = SNW
+			controller = SNW
+			add_core_of = SNW
+
+			buildings = {
+				infrastructure = 1
+				arms_factory = 1
+				fishing_stand = 1
+				lumber_mill = 1
+				mill = 1
+				carpentry = 1
+				3938 = {
+					naval_base = 2
+				}
+			}
+		}
+
+		52.5.16 = {
+			owner = SNW
+			controller = SNW
+		}
+
+		106.2.4 = {
+			owner = SNW
+			controller = SNW
+		}
+
+		111.10.30 = {
+			owner = SNW
+			controller = SNW
+		}
+	}
+
+	provinces={
+		3938 4881 7634 7636
+	}
+}

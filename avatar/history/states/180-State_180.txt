@@ -1,0 +1,78 @@
+
+state={
+	id=180
+	name="STATE_180"
+
+	history={
+		owner = ZIN
+		controller = ZIN
+		add_core_of = ZIN
+
+		add_to_variable = {
+			var = forest
+			value = 0.2
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = ZIN
+			controller = ZIN
+			add_core_of = ZIN
+			buildings = {
+				infrastructure = 3
+				lumber_mill = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = ZIN
+			controller = ZIN
+
+		}
+		106.2.4 = {
+			owner = ZIN
+			controller = ZIN
+
+		}
+		111.10.30 = {
+			owner = ZIN
+			controller = ZIN
+
+		}
+
+	}
+
+	provinces={
+		196 302 499 581 1732 2349 3210 3284 8696 8697 8704 8825 
+	}
+	manpower=4500
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+}

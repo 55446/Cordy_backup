@@ -1,0 +1,79 @@
+state = {
+	id = 240
+	name = "STATE_447"
+	history = {
+		add_to_variable = {
+			var = forest
+			value = 0.1		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+		}
+		add_to_variable = {
+			var = field
+			value = 0.2		}
+		add_to_variable = {
+			var = water
+			value = 0.1		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		owner = EAT
+		controller = EAT
+		add_core_of = EAT
+		12.1.1 = {
+			owner = EAT
+			controller = EAT
+			add_core_of = EAT
+			buildings = {
+				infrastructure = 1
+				quarry = 1
+			}
+		}
+		52.5.16 = {
+			owner = EAT
+			controller = EAT
+		}
+		106.2.4 = {
+			owner = EAT
+			controller = EAT
+		}
+		111.10.30 = {
+			owner = EAT
+			controller = EAT
+		}
+	}
+	provinces = {
+		1377
+		2714
+		3040
+		3306
+		4096
+		4374
+		4395
+		4739
+		4907
+		4959
+		5289
+		5350
+		5549
+		9150
+		9168
+		9169
+		9171
+		9188
+		9201
+		9226
+	}
+	manpower = 600
+	buildings_max_level_factor = 1
+	state_category = pastoral
+	local_supplies = 0
+}

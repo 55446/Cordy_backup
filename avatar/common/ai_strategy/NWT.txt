@@ -1,0 +1,730 @@
+NWT_build_manufactories = {
+	allowed = {
+		tag = NWT
+	}
+	enable = {
+		NWT = {
+		num_civillian_factories < 10
+		}
+	}
+	abort = {
+		OR = {
+			NWT = {
+			num_civillian_factories > 60
+			}
+			NWT = {
+			has_war = yes
+			}
+		}
+	}
+	ai_strategy = {
+		type = building_target
+		id = civillian_factory
+		value = 60
+	}
+}
+NWT_get_wood = {
+	allowed = {
+		tag = NWT
+	}
+	enable = {
+		NWT = {
+			has_resources_in_country = {
+				resource = aluminium
+				amount < 1
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = lumber_mill
+		value = 1
+		target = 6 # North Spirit Woods
+	}
+}
+NWT_only_build_railways_once_you_have_civillian_capacities_for_it = {
+	allowed = {
+		tag = NWT
+	}
+	enable = {
+		NWT = {
+		num_of_civilian_factories < 50 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = rail_way
+		value = 0
+	}
+	ai_strategy = {
+		type = building_target
+		id = rail_way
+		value = 0
+	}
+	weight = 4
+}
+NWT_get_out_of_states_with_barbarians_in_them = {
+	allowed = {
+		tag = NWT
+	}
+	enable = {
+		NWT = {
+			any_controlled_state = {
+				has_modifier = barbarians_rampant
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+		id = PREV
+		value = 0
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_1 = {
+	allowed = {tag = NWT}
+	enable = {
+		1 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 1
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_2 = {
+	allowed = {tag = NWT}
+	enable = {
+		2 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 2
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_3 = {
+	allowed = {tag = NWT}
+	enable = {
+		3 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 3
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_4 = {
+	allowed = {tag = NWT}
+	enable = {
+		4 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 4
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_5 = {
+	allowed = {tag = NWT}
+	enable = {
+		5 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 5
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_6 = {
+	allowed = {tag = NWT}
+	enable = {
+		6 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 6
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_7 = {
+	allowed = {tag = NWT}
+	enable = {
+		7 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 7
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_8 = {
+	allowed = {tag = NWT}
+	enable = {
+		8 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 8
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_9 = {
+	allowed = {tag = NWT}
+	enable = {
+		9 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 9
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_10 = {
+	allowed = {tag = NWT}
+	enable = {
+		10 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 10
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_11 = {
+	allowed = {tag = NWT}
+	enable = {
+		11 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 11
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_12 = {
+	allowed = {tag = NWT}
+	enable = {
+		12 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 12
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_13 = {
+	allowed = {tag = NWT}
+	enable = {
+		13 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 13
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_14 = {
+	allowed = {tag = NWT}
+	enable = {
+		14 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 14
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_15 = {
+	allowed = {tag = NWT}
+	enable = {
+		15 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 15
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_17 = {
+	allowed = {tag = NWT}
+	enable = {
+		17 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 17
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_18 = {
+	allowed = {tag = NWT}
+	enable = {
+		4 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 18
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_20 = {
+	allowed = {tag = NWT}
+	enable = {
+		20 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 20
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_21 = {
+	allowed = {tag = NWT}
+	enable = {
+		21 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 21
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_26 = {
+	allowed = {tag = NWT}
+	enable = {
+		26 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 26
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_30 = {
+	allowed = {tag = NWT}
+	enable = {
+		30 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 30
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_311 = {
+	allowed = {tag = NWT}
+	enable = {
+		311 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 311
+	}
+	weight = 4
+}
+NWT_complete_build_carpentry_mission_in_389 = {
+	allowed = {tag = NWT}
+	enable = {
+		389 = {has_state_flag = NWT_build_carpentry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = carpentry
+		value = 1
+		target = 389
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_1 = {
+	allowed = {tag = NWT}
+	enable = {
+		1 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 1
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_2 = {
+	allowed = {tag = NWT}
+	enable = {
+		2 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 2
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_3 = {
+	allowed = {tag = NWT}
+	enable = {
+		3 = {has_state_flag = NWT_build_masonry}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 3
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_4 = {
+	allowed = {tag = NWT}
+	enable = {
+		4 = {has_state_flag = NWT_build_masonry}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 4
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_5 = {
+	allowed = {tag = NWT}
+	enable = {
+		5 = {has_state_flag = NWT_build_masonry}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 5
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_6 = {
+	allowed = {tag = NWT}
+	enable = {
+		6 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 6
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_7 = {
+	allowed = {tag = NWT}
+	enable = {
+		7 = {has_state_flag = NWT_build_masonry}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 7
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_8 = {
+	allowed = {tag = NWT}
+	enable = {
+		8 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 8
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_9 = {
+	allowed = {tag = NWT}
+	enable = {
+		9 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 9
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_10 = {
+	allowed = {tag = NWT}
+	enable = {
+		10 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 10
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_11 = {
+	allowed = {tag = NWT}
+	enable = {
+		11 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 11
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_12 = {
+	allowed = {tag = NWT}
+	enable = {
+		12 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 12
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_13 = {
+	allowed = {tag = NWT}
+	enable = {
+		13 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 13
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_14 = {
+	allowed = {tag = NWT}
+	enable = {
+		14 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 14
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_15 = {
+	allowed = {tag = NWT}
+	enable = {
+		15 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 15
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_17 = {
+	allowed = {tag = NWT}
+	enable = {
+		17 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 17
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_18 = {
+	allowed = {tag = NWT}
+	enable = {
+		4 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 18
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_20 = {
+	allowed = {tag = NWT}
+	enable = {
+		20 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 20
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_21 = {
+	allowed = {tag = NWT}
+	enable = {
+		21 = {has_state_flag = NWT_build_masonry}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 21
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_26 = {
+	allowed = {tag = NWT}
+	enable = {
+		26 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 26
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_30 = {
+	allowed = {tag = NWT}
+	enable = {
+		30 = {has_state_flag = NWT_build_masonry}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 30
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_311 = {
+	allowed = {tag = NWT}
+	enable = {
+		311 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 311
+	}
+	weight = 4
+}
+NWT_complete_build_masonry_mission_in_389 = {
+	allowed = {tag = NWT}
+	enable = {
+		389 = {has_state_flag = NWT_build_masonry }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = build_building
+		id = masonry
+		value = 1
+		target = 389
+	}
+	weight = 4
+}

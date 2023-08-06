@@ -1,0 +1,81 @@
+
+state={
+	id=373
+	name="STATE_373"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.1
+		}
+		add_to_variable = {
+			var = water
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+
+		owner = EAT
+		controller = EAT
+		add_core_of = EAT
+		
+		12.1.1 = {
+			owner = EAT
+			controller = EAT
+			add_core_of = EAT
+			buildings = {
+				infrastructure = 1
+				ranch = 1
+
+			}
+
+		}
+		52.5.16 = {
+			owner = EAT
+			controller = EAT
+
+		}
+		106.2.4 = {
+			owner = EAT
+			controller = EAT
+
+		}
+		111.10.30 = {
+			owner = EAT
+			controller = EAT
+
+		}
+
+	}
+
+	provinces={
+		1553 1674 1941 2415 2785 2846 3756 4323 4887 5003 5118 9224 9245 9249 9252 9268 9270 9271 9275 9282 9292 9295 9299 9305 9324 9327 9328 9340 9350 9351 9365 9367 
+	}
+	manpower=700
+	buildings_max_level_factor=1.000
+	state_category=pastoral
+	local_supplies=0.000
+}

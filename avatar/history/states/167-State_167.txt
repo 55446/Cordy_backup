@@ -1,0 +1,67 @@
+state={
+	id=167
+	name="STATE_167"
+	manpower = 450
+	state_category = barren_wasteland
+
+	history={
+		owner = WAT
+		controller = WAT
+		add_core_of = WAT
+		
+		add_dynamic_modifier = { modifier = walrus_herd }
+		add_to_variable = {
+			var = forest
+			value = 0.1		}
+		add_to_variable = {
+			var = mountain
+			value = 0.8
+		}
+		add_to_variable = {
+			var = field
+			value = 0
+		}
+		add_to_variable = {
+			var = water
+			value = 0.1		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.8
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.2		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		12.1.1 = {
+			owner = WAT
+			controller = WAT
+			add_core_of = WAT
+
+			buildings = {
+				infrastructure = 1
+			}
+		}
+
+		52.5.16 = {
+			owner = WAT
+			controller = WAT
+		}
+
+		106.2.4 = {
+			owner = WAT
+			controller = WAT
+		}
+
+		111.10.30 = {
+			owner = WAT
+			controller = WAT
+		}
+	}
+
+	provinces={
+		33 759 1018 1023 1417 1904 2074 2392 2517 2535 3321 3372 3594 3806 4009 4168 4185 4212 4367 5424 6666 6696 6703 6731 6737 6796 6811 6815 6826 6842 6843 6847 6862 6886 6887 6918 6933 6956 6964 6988 7004 7010 7022 7042 7058 10428 10429
+	}
+}

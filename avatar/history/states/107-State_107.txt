@@ -1,0 +1,87 @@
+
+state={
+	id=107
+	name="STATE_107"
+
+	history={
+		owner = XIN
+		controller = XIN
+		add_core_of = XIN
+
+		add_to_variable = {
+			var = forest
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		12.1.1 = {
+			owner = XIN
+			controller = XIN
+			add_core_of = XIN
+			buildings = {
+				infrastructure = 4
+				farm = 1
+				lumber_mill = 1
+				carpentry = 1
+
+			}
+
+		}
+		52.5.16 = {
+			controller = FIR
+
+			buildings = {
+				4678 = {
+					supply_node = 1
+				}
+
+			}
+
+		}
+		106.2.4 = {
+			controller = FIR
+
+		}
+		111.10.30 = {
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		61 219 1269 1964 2437 2653 2735 3536 3834 4093 4344 4678 6329 6345 6401 6541 
+	}
+	manpower=6670
+	buildings_max_level_factor=1.000
+	state_category=town
+}

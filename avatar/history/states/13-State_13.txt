@@ -1,0 +1,90 @@
+
+state={
+	id=13
+	name="STATE_13"
+
+	history={
+		owner = NWT
+			controller = NWT
+			add_core_of = NWT
+	
+		add_dynamic_modifier = { modifier = polar_herd }
+		
+		add_to_variable = {
+			var = forest
+			value = 0
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.2		}
+		add_to_variable = {
+			var = field
+			value = 0
+		}
+		add_to_variable = {
+			var = water
+			value = 1.0
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.2		}
+		add_to_variable = {
+			var = animal
+			value = 0.6
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+		}
+		
+		victory_points = {
+			5898 5 
+		}
+		victory_points = {
+			5810 5 
+		}
+		victory_points = {
+			5963 5 
+		}
+		12.1.1 = {
+			owner = NWT
+			controller = NWT
+			add_core_of = NWT
+			buildings = {
+				infrastructure = 3
+				ranch = 1
+				dockyard = 1
+				fishing_stand = 1
+				consumer_good_factory = 1
+				5810 = {
+					naval_base = 2
+				}
+
+			}
+
+		}
+		52.5.16 = {
+			owner = NWT
+			controller = NWT
+
+		}
+		106.2.4 = {
+			owner = NWT
+			controller = NWT
+
+		}
+		111.10.30 = {
+			owner = NWT
+			controller = NWT
+
+		}
+
+	}
+
+	provinces={
+		1175 1350 1857 2150 3272 3331 3715 4013 4602 4706 5258 5540 5586 5751 5758 5782 5783 5795 5805 5810 5816 5817 5826 5829 5843 5847 5854 5855 5871 5872 5879 5888 5898 5902 5908 5927 5947 5963 5968 5975 
+	}
+	manpower=8750
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

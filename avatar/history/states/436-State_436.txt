@@ -1,0 +1,85 @@
+
+state={
+	id=436
+	name="STATE_436"
+
+	history={
+		add_to_variable = {
+			var = forest
+			value = 0.6
+
+		}
+		add_to_variable = {
+			var = mountain
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = field
+			value = 0.3
+
+		}
+		add_to_variable = {
+			var = water
+			value = 0
+
+		}
+		add_to_variable = {
+			var = stonefield
+			value = 0.4
+
+		}
+		add_to_variable = {
+			var = animal
+			value = 0.5
+
+		}
+		add_to_variable = {
+			var = resource_deposites
+			value = 0.6
+
+		}
+		owner = FIR
+		controller = FIR
+		add_core_of = FIR
+		12.1.1 = {
+			owner = FIR
+			controller = FIR
+			add_core_of = FIR
+			buildings = {
+				arms_factory = 1
+				infrastructure = 5
+				farm = 1
+				carpentry = 1
+				steelworks = 2
+				mine = 3
+
+			}
+
+		}
+		52.5.16 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		106.2.4 = {
+			owner = FIR
+			controller = FIR
+
+		}
+		111.10.30 = {
+			owner = FIR
+			controller = FIR
+
+		}
+
+	}
+
+	provinces={
+		427 1590 2903 2985 3254 3600 4340 5049 5080 5263 8462 8538 8553 8593 
+	}
+	manpower=12800
+	buildings_max_level_factor=1.000
+	state_category=town
+	local_supplies=0.000
+}
